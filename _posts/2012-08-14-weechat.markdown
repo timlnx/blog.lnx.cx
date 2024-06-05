@@ -1,0 +1,590 @@
+---
+author: tbielawa
+comments: true
+date: 2012-08-14 17:36:48+00:00
+layout: post
+link: https://blog.lnx.cx/2012/08/14/weechat/
+slug: weechat
+title: Weechat
+wordpress_id: 195
+categories:
+- /dev/null
+- Planet
+tags:
+- weehcat
+---
+
+# Plugins ("Scripts")
+
+
+
+
+## Show the channels you have joined
+
+
+
+
+
+	
+  * From: [http://www.weechat.org/scripts/source/stable/buffers.pl.html/](http://www.weechat.org/scripts/source/stable/buffers.pl.html/)
+
+
+
+	
+  * No setup required to get going.
+
+
+
+	
+  * Drop into `~/.weechat/perl/autoload`
+
+
+
+
+## Direct message notifications
+
+
+
+
+
+	
+  * [http://www.weechat.org/scripts/source/stable/notify.py.html/](http://www.weechat.org/scripts/source/stable/notify.py.html/)
+
+	
+  * No setup required to get going.
+
+	
+  * Drop into `~/.weechat/python/autoload`
+
+
+Needs some tweaks on Gnome 3 though for better functionality
+
+	
+  * [http://pastebin.com/7iuu9Bn9](http://pastebin.com/7iuu9Bn9)
+
+
+Explanation for having this:
+
+By default, in GNOME3 every notification you recieve from weechat will stack up in your notification panel until acknowledged. This is not my idea of ideal. In libnotify, setting notifications to transient (see patch) means that they will not hang around on your notification panel forever -- waiting for you to acknowledge them -- one-by-one, before they disappear
+
+
+## Plugin for opening links in your browser
+
+
+
+
+
+	
+  * From: [http://www.weechat.org/scripts/source/stable/urlgrab.py.html/](http://www.weechat.org/scripts/source/stable/urlgrab.py.html/)
+
+	
+  * Useful with a `/open` alias, see the aliases section below.
+
+	
+  * Drop into  `~/.weechat/python/autoload`
+
+
+Why not just click the links normally? Presumably, you're running weechat in a terminal, this will cause long links to hard-wrap around the screen. When the links are hard-wrapped like this it causes the clickable portion of the URL to become truncated (you won't be able to click the full url).
+
+With this plugin you can use a simple command (within weechat) to launch links for you. The plugin watches your channels for text that looks like links and makes a note of them.
+
+This has one obvious limitation: it doesn't work well if you're running weechat on a remote host, i.e., you have to ssh to the host you run weechat on. (But there are ways around that).
+
+
+# Built-In Keybindings
+
+
+
+
+## Go to the buffer I was last pinged in
+
+
+
+
+
+	
+  * `Alt + a`
+
+
+
+
+## Go to buffer #
+
+
+
+
+
+	
+  * `Alt + #`
+
+	
+  * Usage:
+
+	
+    * `Alt + 5`
+
+
+
+
+	
+  * The current window will now display buffer number 5
+
+
+See the next tip if you need to show a buffer whose number is two or more digits.
+
+
+## Go to buffer ##
+
+
+
+
+
+	
+  * `Alt + j ##`
+
+	
+  * Usage:
+
+	
+    * `Alt + j 10`
+
+
+
+
+
+The current window will now display buffer number 10
+
+
+## Moving your cursor focus between split windows
+
+
+
+
+
+	
+  * Previous Window: `F7`
+
+	
+  * Next Window: `F8`
+
+
+
+
+## Clear all activity/notification colors from your buffer list
+
+
+
+
+
+	
+  * `Alt + h`
+
+
+
+
+## Go up/down channels ("buffers")
+
+
+
+
+
+	
+  * `Ctrl + N`
+
+	
+  * `Ctrl + P`
+
+
+
+
+# Helpful Custom Key Bindings
+
+
+
+
+## Scrolling the user list
+
+
+
+
+
+	
+  * Scroll down is `F12` by default
+
+	
+  * Scroll up is `F11` by default
+
+
+This conflicts with the common `F11` = full screen idiom. Instead, lets leave `F12` as scroll down, but make `Shift + F12` scroll up.
+
+
+
+	
+  * `/key bind meta2-24;2~ /bar scroll nicklist * y-100%`
+
+
+Enter it exactly as shown: with the tilde (`~`) and semicolon (`;`).
+
+
+# User Interface Tweaks
+
+
+
+
+## More colors for users nicks
+
+
+WeeChat >= 0.3.5, terminal with 256 colors
+
+
+
+	
+  * `Run the command in this link: [http://lnx.cx/~tbielawa/blog/weechat_nick_colors.txt](http://lnx.cx/~tbielawa/blog/weechat_nick_colors.txt)`
+
+
+
+	
+  * From: [http://dev.weechat.org/post/2011/08/28/Beautify-your-WeeChat](http://dev.weechat.org/post/2011/08/28/Beautify-your-WeeChat)
+
+
+
+
+## Don't show every join/part/quit
+
+
+
+
+
+	
+  * `/set irc.look.smart_filter on`
+
+	
+  * `/filter add irc_smart * irc_smart_filter *`
+
+	
+  * `/set irc.look.smart_filter_delay 5`
+
+	
+  * From: [http://dev.weechat.org/post/2008/10/25/Smart-IRC-join-part-quit-message-filter](http://dev.weechat.org/post/2008/10/25/Smart-IRC-join-part-quit-message-filter)
+
+
+If you want to see who has joined/left recently, press `ALT + =` (alt and the equals key). Pressing it again rehides the notices.
+
+
+## Fix the buffer titles
+
+
+You may have a problem where your buffer titles (channel topics) only color the bar to the end of their text. This is a configuration issue and the fix is documented on the [weechat FAQ](http://www.weechat.org/files/doc/weechat_faq.en.html#bars_background).
+
+
+
+
+# Useful Basic Aliases ("slash command" shortcuts)
+
+
+
+
+## Set a handle on multiple servers
+
+
+
+
+At work I am logged into three IRC networks all day long: devel, corp, and freenode, I use this to set a status (tbielawa|brb, or tbielawa|wfh, ...) on all three at once:
+
+
+
+
+
+
+	
+  * `/alias appendnick /allserv nick tbielawa|$*`
+
+	
+  * Usage:
+
+	
+    * `/appendnick wfh`
+
+
+
+
+
+Nick on all networks is now: tbielawa|wfh.
+
+
+## Close the current buffer (channel window)
+
+
+
+
+
+	
+  * `/alias cb /buffer close`
+
+	
+  * Usage:
+
+	
+    * `/cb`
+
+
+
+
+
+
+
+## Reconnect to multiple networks
+
+
+
+
+If I have been disconnected (dropped off the VPN, or switched locations) and I need to reconnect to all my IRC networks I use this:
+
+
+
+
+
+
+	
+  * `/alias rejoin /reconnect -all`
+
+	
+  * Usage:
+
+	
+    * `/rejoin`
+
+
+
+
+
+
+
+## Open the last URL posted
+
+
+
+
+If you're using the `urlgrab.py` plugin (above), this will open the last URL it found in your current channel:
+
+
+
+
+
+
+	
+  * `/alias open /url 1`
+
+	
+  * Usage:
+
+	
+    * `/open`
+
+
+
+
+
+The last link sent in your channel will be launched in your browser.
+
+
+## Split into three windows
+
+
+
+
+Split weechat into three horizontally stacked windows:
+
+
+
+
+
+
+	
+  * `/alias split3 /window splith 33; /window +1; /window splith`
+
+	
+  * Usage:
+
+	
+    * `/split3`
+
+
+
+
+
+I don't normally run this by hand, it's actually a part of a more complex alias I run when I first open weechat. See `/mychannels` and `/startup`, below.
+
+
+# Useful Advanced Aliases
+
+
+
+
+These will build off of some of the aliases we already setup in the "Basic Aliases" section.
+
+
+
+
+
+## Set a 'work from home' nick
+
+
+
+
+
+	
+  * `/alias wfh /appendnick wfh`
+
+	
+  * Usage:
+
+	
+    * `/wfh`
+
+
+
+
+
+My nick would now be set to tbielawa|wfh on all logged in servers. Requires you made the `/appendnick` alias already.
+
+
+## Set a 'lunch' nick
+
+
+
+
+
+	
+  * `/alias lunch /appendnick lunch`
+
+	
+  * Usage:
+
+	
+    * `/lunch`
+
+
+
+
+
+My nick would now be set to tbielawa|lunch on all logged in servers.
+
+
+## Set back my normal nick (as if returning from lunch)
+
+
+
+
+
+	
+  * `/alias unlunch /allserv nick tbielawa`
+
+	
+  * Usage:
+
+	
+    * `/unlunch`
+
+
+
+
+
+My nick would now be set back to 'tbielawa' on all logged in servers.
+
+
+## Do a Figlet in another buffer
+
+
+
+
+Ask the _GCA_ bot in #it-eng to do a [Figlet](http://www.figlet.org/) (Figlets are large ASCII text banners). This works no matter what channel you're viewing presently, as long as it's on the same irc network:
+
+
+
+
+
+
+	
+  * `/alias fig /msg #it-eng gca: figlet $*`
+
+	
+  * Usage:
+
+	
+    * `/fig LOLCATS!`
+
+
+
+
+
+The phrase **LOLCATS!** will appear in a large ASCII font in the #it-eng channel.
+
+
+## Display three buffers in multiple windows
+
+
+
+
+This requires that you have three horizontally stacked windows open (see `/split3` above). It will cycle the focus through each window and then set it to display a specific buffer (channel).
+
+
+Say for example you automatically join three channels when opening weechat: #it, #secretfunchannel, and #myteamchannel:
+
+
+
+	
+  * `/alias mychannels /window up; /buffer #it; /window down; /buffer #secretfunchannel; /window down; /buffer #myteamchannel; /window up`
+
+	
+  * Usage:
+
+	
+    * `/mychannels`
+
+
+
+
+
+When the alias finishes the cursor will be focused on the center buffer (channel), which in this example would be #secretfunchannel.
+
+Final Window <-> buffer arrangement after running `/mychannels`:
+
+
+
+	
+  * `Top <->  #it`
+
+	
+  * `Middle <-> #secretfunchannel` has the cursor focus
+
+	
+  * `Bottom <-> #myteamchannel`
+
+
+I don't actually run this alias directly (like `/split3`, above). It is part of a more complex macro. See `/startup`, below.
+
+
+## The best alias ever
+
+
+Sets up your windows and what channels they display correctly when you start weechat. This will split weechat into three horizontally stacked windows, each showing a specific channel:
+
+
+
+	
+  * `/alias startup /split3; /mychannels`
+
+	
+  * Usage:
+
+	
+    * `/startup`
+
+
+
+
+	
+  * This alias depends on the `/split3` alias and the `/mychannels` alias, defined above.
+
+

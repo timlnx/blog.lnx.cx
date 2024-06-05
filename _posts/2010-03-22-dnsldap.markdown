@@ -1,0 +1,20 @@
+---
+author: tbielawa
+comments: true
+date: 2010-03-22 02:30:17+00:00
+layout: post
+link: https://blog.lnx.cx/2010/03/21/dnsldap/
+slug: dnsldap
+title: DNS/LDAP
+wordpress_id: 127
+categories:
+- /dev/null
+- Planet
+tags:
+- DHCP
+- DNS
+- LDAP
+- Virtualization
+---
+
+Hopefully getting something that resembles a DNS server polling from LDAP set up tonight. I love virtual machines.
