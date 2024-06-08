@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2009-10-18 22:39:51+00:00
 layout: post
-link: https://blog.lnx.cx/2009/10/18/emacs-hacking-reverse-other-buffer/
-slug: emacs-hacking-reverse-other-buffer
 title: Emacs Hacking, reverse other buffer
-wordpress_id: 97
 categories:
 - Emacs
 - Planet

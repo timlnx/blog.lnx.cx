@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2013-05-01 19:09:03+00:00
 layout: post
-link: https://blog.lnx.cx/2013/05/01/rails-bootstrap-icons-and-classes/
-slug: rails-bootstrap-icons-and-classes
 title: Rails, Bootstrap, Icons, and Classes
-wordpress_id: 344
 categories:
 - Documentation
 - Planet

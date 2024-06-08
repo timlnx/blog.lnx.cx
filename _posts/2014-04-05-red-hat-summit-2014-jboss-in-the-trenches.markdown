@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2014-04-05 22:15:46+00:00
 layout: post
-link: https://blog.lnx.cx/2014/04/05/red-hat-summit-2014-jboss-in-the-trenches/
-slug: red-hat-summit-2014-jboss-in-the-trenches
 title: Red Hat Summit 2014 - JBoss In The Trenches
-wordpress_id: 557
 categories:
 - Conference
 - GNU/Linux

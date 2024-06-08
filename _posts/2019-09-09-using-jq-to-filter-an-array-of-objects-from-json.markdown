@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2019-09-09 17:18:50+00:00
 layout: post
-link: https://blog.lnx.cx/2019/09/09/using-jq-to-filter-an-array-of-objects-from-json/
-slug: using-jq-to-filter-an-array-of-objects-from-json
 title: Using jq to filter an array of objects from JSON
-wordpress_id: 1026
 categories:
 - /dev/null
 - GNU/Linux

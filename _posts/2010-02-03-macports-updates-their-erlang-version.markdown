@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2010-02-03 05:08:37+00:00
 layout: post
-link: https://blog.lnx.cx/2010/02/03/macports-updates-their-erlang-version/
-slug: macports-updates-their-erlang-version
 title: Macports updates their Erlang version, update your load-path's
-wordpress_id: 115
 categories:
 - Emacs
 - Planet

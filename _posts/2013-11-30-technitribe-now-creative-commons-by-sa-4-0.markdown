@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2013-11-30 19:57:34+00:00
 layout: post
-link: https://blog.lnx.cx/2013/11/30/technitribe-now-creative-commons-by-sa-4-0/
-slug: technitribe-now-creative-commons-by-sa-4-0
 title: Technitribe now Creative Commons BY-SA 4.0
-wordpress_id: 480
 categories:
 - Planet
 tags:

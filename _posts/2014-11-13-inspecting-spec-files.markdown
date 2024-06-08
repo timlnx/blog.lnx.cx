@@ -1,12 +1,8 @@
 ---
 author: al
-comments: true
 date: 2014-11-13 22:32:30+00:00
 layout: post
-link: https://blog.lnx.cx/2014/11/13/inspecting-spec-files/
-slug: inspecting-spec-files
 title: Inspecting Spec Files
-wordpress_id: 663
 categories:
 - Fedora
 tags:

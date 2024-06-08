@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2015-07-03 02:14:19+00:00
 layout: post
-link: https://blog.lnx.cx/2015/07/02/bootstrapping-a-devops-movement-in-red-hat-it-video/
-slug: bootstrapping-a-devops-movement-in-red-hat-it-video
 title: Bootstrapping a DevOps Movement in Red Hat IT - Video
-wordpress_id: 745
 categories:
 - Conference
 - Fedora

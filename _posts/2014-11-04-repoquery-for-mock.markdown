@@ -1,12 +1,8 @@
 ---
 author: al
-comments: true
 date: 2014-11-04 16:31:22+00:00
 layout: post
-link: https://blog.lnx.cx/2014/11/04/repoquery-for-mock/
-slug: repoquery-for-mock
 title: Repoquery for mock
-wordpress_id: 638
 categories:
 - Fedora
 tags:

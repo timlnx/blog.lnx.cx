@@ -1,13 +1,9 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2011-04-06 23:16:24+00:00
 layout: post
-link: https://blog.lnx.cx/?p=148
 published: false
-slug: updating-the-operating-system-certificate-authorities
 title: Updating the Operating System Certificate Authorities
-wordpress_id: 148
 categories:
 - /dev/null
 tags:

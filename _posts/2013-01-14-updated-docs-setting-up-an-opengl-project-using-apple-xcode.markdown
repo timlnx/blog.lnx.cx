@@ -1,12 +1,8 @@
 ---
 author: abutcher
-comments: true
 date: 2013-01-14 03:46:42+00:00
 layout: post
-link: https://blog.lnx.cx/2013/01/13/updated-docs-setting-up-an-opengl-project-using-apple-xcode/
-slug: updated-docs-setting-up-an-opengl-project-using-apple-xcode
 title: 'Updated Docs: Setting up an OpenGL project using Apple Xcode'
-wordpress_id: 255
 categories:
 - OS X
 - Planet

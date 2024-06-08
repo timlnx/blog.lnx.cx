@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2009-08-13 21:38:46+00:00
 layout: post
-link: https://blog.lnx.cx/2009/08/13/enabling-automatic-slash-completion-in-nxml-mode/
-slug: enabling-automatic-slash-completion-in-nxml-mode
 title: Enabling automatic slash completion in nXML-Mode
-wordpress_id: 12
 categories:
 - Emacs
 - Planet

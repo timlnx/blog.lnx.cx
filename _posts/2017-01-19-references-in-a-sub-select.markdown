@@ -1,12 +1,8 @@
 ---
 author: al
-comments: true
 date: 2017-01-19 21:14:25+00:00
 layout: post
-link: https://blog.lnx.cx/2017/01/19/references-in-a-sub-select/
-slug: references-in-a-sub-select
 title: References in a sub-select
-wordpress_id: 983
 categories:
 - /dev/null
 ---

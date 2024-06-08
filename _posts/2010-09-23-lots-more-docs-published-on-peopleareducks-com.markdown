@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2010-09-23 00:38:09+00:00
 layout: post
-link: https://blog.lnx.cx/2010/09/22/lots-more-docs-published-on-peopleareducks-com/
-slug: lots-more-docs-published-on-peopleareducks-com
 title: Lots more docs published on PeopleAreDucks.com
-wordpress_id: 134
 categories:
 - DocBook
 - Documentation

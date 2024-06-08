@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2010-02-20 01:28:10+00:00
 layout: post
-link: https://blog.lnx.cx/2010/02/19/desktop-upgrade-tonight/
-slug: desktop-upgrade-tonight
 title: Desktop Upgrade Tonight
-wordpress_id: 125
 categories:
 - GNU/Linux
 tags:

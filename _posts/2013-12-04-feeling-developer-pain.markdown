@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2013-12-04 14:27:06+00:00
 layout: post
-link: https://blog.lnx.cx/2013/12/04/feeling-developer-pain/
-slug: feeling-developer-pain
 title: Feeling Developer Pain
-wordpress_id: 489
 categories:
 - Fedora
 - GNU/Linux

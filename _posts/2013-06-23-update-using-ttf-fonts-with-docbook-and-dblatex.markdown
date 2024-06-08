@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2013-06-23 18:46:17+00:00
 layout: post
-link: https://blog.lnx.cx/2013/06/23/update-using-ttf-fonts-with-docbook-and-dblatex/
-slug: update-using-ttf-fonts-with-docbook-and-dblatex
 title: 'Update: Using TTF Fonts with DocBook and Dblatex'
-wordpress_id: 370
 categories:
 - DocBook
 - Documentation

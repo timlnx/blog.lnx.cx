@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2012-10-13 01:40:45+00:00
 layout: post
-link: https://blog.lnx.cx/2012/10/12/running-despotify-on-fedora-17/
-slug: running-despotify-on-fedora-17
 title: Running despotify on Fedora 17 x64
-wordpress_id: 235
 categories:
 - GNU/Linux
 - Planet

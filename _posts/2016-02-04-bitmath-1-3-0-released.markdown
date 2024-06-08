@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2016-02-04 02:08:24+00:00
 layout: post
-link: https://blog.lnx.cx/2016/02/03/bitmath-1-3-0-released/
-slug: bitmath-1-3-0-released
 title: bitmath-1.3.0 released
-wordpress_id: 843
 categories:
 - Fedora
 - GNU/Linux

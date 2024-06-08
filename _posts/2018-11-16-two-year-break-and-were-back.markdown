@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2018-11-16 16:39:46+00:00
 layout: post
-link: https://blog.lnx.cx/2018/11/16/two-year-break-and-were-back/
-slug: two-year-break-and-were-back
 title: Two Year Break -- And we're back!
-wordpress_id: 1017
 categories:
 - Life
 ---

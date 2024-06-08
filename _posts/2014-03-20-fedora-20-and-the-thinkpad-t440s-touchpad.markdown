@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2014-03-20 17:14:23+00:00
 layout: post
-link: https://blog.lnx.cx/2014/03/20/fedora-20-and-the-thinkpad-t440s-touchpad/
-slug: fedora-20-and-the-thinkpad-t440s-touchpad
 title: Fedora 20 and the ThinkPad T440s touchpad
-wordpress_id: 541
 categories:
 - Fedora
 - GNU/Linux

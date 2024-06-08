@@ -1,13 +1,9 @@
 ---
 author: cvenghaus
-comments: true
 date: 2009-09-10 15:26:55+00:00
 layout: post
-link: https://blog.lnx.cx/2009/09/10/rsync-on-cygwin/
 published: false
-slug: rsync-on-cygwin
 title: RSYNC on Cygwin
-wordpress_id: 86
 categories:
 - GNU/Linux
 tags:

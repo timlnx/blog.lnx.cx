@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2016-07-03 13:59:07+00:00
 layout: post
-link: https://blog.lnx.cx/2016/07/03/bitmath-now-available-in-ubuntu-ppas/
-slug: bitmath-now-available-in-ubuntu-ppas
 title: bitmath - Now available in Ubuntu PPAs
-wordpress_id: 954
 categories:
 - Fedora
 - GNU/Linux

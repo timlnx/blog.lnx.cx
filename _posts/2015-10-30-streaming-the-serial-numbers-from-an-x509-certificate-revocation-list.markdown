@@ -1,12 +1,8 @@
 ---
 author: al
-comments: true
 date: 2015-10-30 20:52:08+00:00
 layout: post
-link: https://blog.lnx.cx/2015/10/30/streaming-the-serial-numbers-from-an-x509-certificate-revocation-list/
-slug: streaming-the-serial-numbers-from-an-x509-certificate-revocation-list
 title: Streaming the serial numbers from an X509 certificate revocation list
-wordpress_id: 817
 categories:
 - Programming
 tags:

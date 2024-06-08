@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2016-08-24 16:33:03+00:00
 layout: post
-link: https://blog.lnx.cx/2016/08/24/bitmath-1-3-1-released/
-slug: bitmath-1-3-1-released
 title: bitmath-1.3.1 released
-wordpress_id: 969
 categories:
 - Planet
 - Programming

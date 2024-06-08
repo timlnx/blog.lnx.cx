@@ -1,12 +1,8 @@
 ---
 author: al
-comments: true
 date: 2015-03-16 14:55:27+00:00
 layout: post
-link: https://blog.lnx.cx/2015/03/16/open-url-bug-with-xdg-on-xfce4/
-slug: open-url-bug-with-xdg-on-xfce4
 title: Open URL Bug with XDG on XFCE4
-wordpress_id: 722
 categories:
 - /dev/null
 ---

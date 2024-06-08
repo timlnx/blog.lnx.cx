@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2009-08-31 03:39:20+00:00
 layout: post
-link: https://blog.lnx.cx/2009/08/30/linux-101-tutorial-for-lcsee/
-slug: linux-101-tutorial-for-lcsee
 title: Linux 101 Tutorial for LCSEE
-wordpress_id: 29
 categories:
 - GNU/Linux
 - Planet

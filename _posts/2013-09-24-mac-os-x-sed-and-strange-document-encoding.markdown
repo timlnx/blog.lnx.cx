@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2013-09-24 15:03:10+00:00
 layout: post
-link: https://blog.lnx.cx/2013/09/24/mac-os-x-sed-and-strange-document-encoding/
-slug: mac-os-x-sed-and-strange-document-encoding
 title: Mac OS X, Sed, and strange document encoding
-wordpress_id: 403
 categories:
 - OS X
 - Planet

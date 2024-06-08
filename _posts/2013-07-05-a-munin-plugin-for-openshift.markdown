@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2013-07-05 21:01:23+00:00
 layout: post
-link: https://blog.lnx.cx/2013/07/05/a-munin-plugin-for-openshift/
-slug: a-munin-plugin-for-openshift
 title: A Munin plugin for OpenShift
-wordpress_id: 388
 categories:
 - GNU/Linux
 - Planet

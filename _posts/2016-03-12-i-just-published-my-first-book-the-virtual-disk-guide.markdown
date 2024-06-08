@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2016-03-12 00:19:47+00:00
 layout: post
-link: https://blog.lnx.cx/2016/03/11/i-just-published-my-first-book-the-virtual-disk-guide/
-slug: i-just-published-my-first-book-the-virtual-disk-guide
 title: I just published my first book, The Virtual Disk Guide
-wordpress_id: 876
 categories:
 - DocBook
 - Documentation

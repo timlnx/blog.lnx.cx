@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2009-08-14 01:18:11+00:00
 layout: post
-link: https://blog.lnx.cx/2009/08/13/fixing-my-missing-locales/
-slug: fixing-my-missing-locales
 title: Fixing my missing locales
-wordpress_id: 20
 categories:
 - GNU/Linux
 - Planet

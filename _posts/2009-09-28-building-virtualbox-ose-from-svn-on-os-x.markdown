@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2009-09-28 05:56:21+00:00
 layout: post
-link: https://blog.lnx.cx/2009/09/28/building-virtualbox-ose-from-svn-on-os-x/
-slug: building-virtualbox-ose-from-svn-on-os-x
 title: Building VirtualBox OSE from SVN on OS X
-wordpress_id: 90
 categories:
 - OS X
 - Planet

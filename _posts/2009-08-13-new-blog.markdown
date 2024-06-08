@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2009-08-13 14:37:06+00:00
 layout: post
-link: https://blog.lnx.cx/2009/08/13/new-blog/
-slug: new-blog
 title: New Blog
-wordpress_id: 3
 categories:
 - /dev/null
 tags:

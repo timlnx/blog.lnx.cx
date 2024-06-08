@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2009-12-04 09:05:38+00:00
 layout: post
-link: https://blog.lnx.cx/2009/12/04/installing-dblatex-from-the-latest-macports/
-slug: installing-dblatex-from-the-latest-macports
 title: Installing dblatex from the latest MacPorts
-wordpress_id: 107
 categories:
 - OS X
 - Planet

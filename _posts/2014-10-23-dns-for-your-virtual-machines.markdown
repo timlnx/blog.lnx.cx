@@ -1,12 +1,8 @@
 ---
 author: al
-comments: true
 date: 2014-10-23 21:21:51+00:00
 layout: post
-link: https://blog.lnx.cx/2014/10/23/dns-for-your-virtual-machines/
-slug: dns-for-your-virtual-machines
 title: DNS for Your Virtual Machines
-wordpress_id: 617
 categories:
 - GNU/Linux
 tags:

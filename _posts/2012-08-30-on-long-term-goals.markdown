@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2012-08-30 03:37:07+00:00
 layout: post
-link: https://blog.lnx.cx/2012/08/29/on-long-term-goals/
-slug: on-long-term-goals
 title: On Long-Term Goals
-wordpress_id: 217
 categories:
 - Life
 - Planet

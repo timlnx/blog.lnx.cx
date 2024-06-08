@@ -1,12 +1,8 @@
 ---
 author: al
-comments: true
 date: 2015-09-18 14:00:12+00:00
 layout: post
-link: https://blog.lnx.cx/2015/09/18/eclipse-darkness/
-slug: eclipse-darkness
 title: Eclipse Darkness
-wordpress_id: 803
 categories:
 - Fedora
 tags:

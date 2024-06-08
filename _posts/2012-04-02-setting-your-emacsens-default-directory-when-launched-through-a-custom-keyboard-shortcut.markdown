@@ -1,13 +1,9 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2012-04-02 16:47:54+00:00
 layout: post
-link: https://blog.lnx.cx/2012/04/02/setting-your-emacsens-default-directory-when-launched-through-a-custom-keyboard-shortcut/
-slug: setting-your-emacsens-default-directory-when-launched-through-a-custom-keyboard-shortcut
 title: Setting your Emacsens default directory when launched through a custom keyboard
   shortcut
-wordpress_id: 133
 categories:
 - Emacs
 - Planet

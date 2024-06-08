@@ -1,12 +1,8 @@
 ---
 author: ajfarrell
-comments: true
 date: 2009-09-10 04:33:59+00:00
 layout: post
-link: https://blog.lnx.cx/2009/09/09/because-old-archived-logs-on-secure-servers-are-pointless/
-slug: because-old-archived-logs-on-secure-servers-are-pointless
 title: Because old archived logs on secure servers are pointless...
-wordpress_id: 83
 categories:
 - GNU/Linux
 - OS X

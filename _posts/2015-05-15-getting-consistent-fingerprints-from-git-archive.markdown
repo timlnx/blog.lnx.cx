@@ -1,12 +1,8 @@
 ---
 author: al
-comments: true
 date: 2015-05-15 14:09:43+00:00
 layout: post
-link: https://blog.lnx.cx/2015/05/15/getting-consistent-fingerprints-from-git-archive/
-slug: getting-consistent-fingerprints-from-git-archive
 title: Getting consistent fingerprints from git-archive
-wordpress_id: 732
 categories:
 - /dev/null
 ---

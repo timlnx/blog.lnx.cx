@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2013-01-22 03:21:04+00:00
 layout: post
-link: https://blog.lnx.cx/2013/01/21/working-on-the-virtual-disk-guide/
-slug: working-on-the-virtual-disk-guide
 title: Working on The Virtual Disk Guide
-wordpress_id: 265
 categories:
 - DocBook
 - Documentation

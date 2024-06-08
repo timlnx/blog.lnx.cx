@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2012-08-14 17:36:48+00:00
 layout: post
-link: https://blog.lnx.cx/2012/08/14/weechat/
-slug: weechat
 title: Weechat
-wordpress_id: 195
 categories:
 - /dev/null
 - Planet

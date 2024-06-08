@@ -1,12 +1,8 @@
 ---
 author: al
-comments: true
 date: 2015-08-12 15:29:40+00:00
 layout: post
-link: https://blog.lnx.cx/2015/08/12/eclipse-graphene/
-slug: eclipse-graphene
 title: Eclipse Graphene
-wordpress_id: 788
 categories:
 - Fedora
 - Programming

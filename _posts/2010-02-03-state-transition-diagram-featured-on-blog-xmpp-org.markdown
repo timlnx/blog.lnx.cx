@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2010-02-03 08:44:52+00:00
 layout: post
-link: https://blog.lnx.cx/2010/02/03/state-transition-diagram-featured-on-blog-xmpp-org/
-slug: state-transition-diagram-featured-on-blog-xmpp-org
 title: State Transition Diagram featured on blog.xmpp.org
-wordpress_id: 120
 categories:
 - Planet
 - XMPP

@@ -1,13 +1,9 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2014-03-16 23:23:01+00:00
 layout: post
-link: https://blog.lnx.cx/2014/03/16/new-side-project-bitmath-a-python-module-for-representing-file-sizes-with-different-prefix-notations/
-slug: new-side-project-bitmath-a-python-module-for-representing-file-sizes-with-different-prefix-notations
 title: 'New side-project: bitmath - A Python module for representing file sizes with
   different prefix notations'
-wordpress_id: 521
 categories:
 - Fedora
 - GNU/Linux

@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2011-09-14 06:27:22+00:00
 layout: post
-link: https://blog.lnx.cx/2011/09/14/fedora-15-and-the-lenovo-t520-thinkpad/
-slug: fedora-15-and-the-lenovo-t520-thinkpad
 title: Fedora 15 and the Lenovo T520 Thinkpad
-wordpress_id: 161
 categories:
 - Fedora
 - GNU/Linux

@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2014-09-28 20:38:05+00:00
 layout: post
-link: https://blog.lnx.cx/2014/09/28/new-update-for-python-bitmath-released/
-slug: new-update-for-python-bitmath-released
 title: New update for python-bitmath released
-wordpress_id: 596
 categories:
 - Fedora
 - Planet

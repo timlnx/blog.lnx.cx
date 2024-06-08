@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2011-03-25 06:35:40+00:00
 layout: post
-link: https://blog.lnx.cx/2011/03/25/thems-the-rules-programming-guidelines/
-slug: thems-the-rules-programming-guidelines
 title: Them's the rules (programming guidelines)
-wordpress_id: 145
 categories:
 - /dev/null
 - Planet

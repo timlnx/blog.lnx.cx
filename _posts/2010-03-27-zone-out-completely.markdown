@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2010-03-27 01:00:48+00:00
 layout: post
-link: https://blog.lnx.cx/2010/03/26/zone-out-completely/
-slug: zone-out-completely
 title: Zone out completely
-wordpress_id: 128
 categories:
 - Emacs
 - Planet

@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2014-03-27 16:46:22+00:00
 layout: post
-link: https://blog.lnx.cx/2014/03/27/python-bitmath-now-available-in-fedora/
-slug: python-bitmath-now-available-in-fedora
 title: python-bitmath - Now available in Fedora!
-wordpress_id: 550
 categories:
 - Fedora
 - Planet

@@ -1,12 +1,8 @@
 ---
 author: al
-comments: true
 date: 2014-10-24 18:17:55+00:00
 layout: post
-link: https://blog.lnx.cx/2014/10/24/what-i-know-about-pki-and-asn1/
-slug: what-i-know-about-pki-and-asn1
 title: What I Know About PKI and ASN1
-wordpress_id: 628
 categories:
 - Tutorials
 tags:

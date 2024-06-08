@@ -1,12 +1,8 @@
 ---
 author: al
-comments: true
 date: 2015-03-02 16:30:50+00:00
 layout: post
-link: https://blog.lnx.cx/2015/03/02/custom-mappings-for-the-logitech-r400-under-fedora-20/
-slug: custom-mappings-for-the-logitech-r400-under-fedora-20
 title: Custom mappings for the Logitech R400 under Fedora 20
-wordpress_id: 711
 categories:
 - Fedora
 - GNU/Linux

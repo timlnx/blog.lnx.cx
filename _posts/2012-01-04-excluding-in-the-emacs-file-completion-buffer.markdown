@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2012-01-04 03:29:51+00:00
 layout: post
-link: https://blog.lnx.cx/2012/01/03/excluding-in-the-emacs-file-completion-buffer/
-slug: excluding-in-the-emacs-file-completion-buffer
 title: Excluding in the Emacs file completion buffer
-wordpress_id: 174
 categories:
 - Emacs
 - Planet

@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2017-01-20 19:43:50+00:00
 layout: post
-link: https://blog.lnx.cx/2017/01/20/github-gmail-filtering-for-review-requests-and-mentions/
-slug: github-gmail-filtering-for-review-requests-and-mentions
 title: '[Updated] GitHub + Gmail — Filtering for Review Requests and Mentions'
-wordpress_id: 988
 categories:
 - Planet
 - Programming

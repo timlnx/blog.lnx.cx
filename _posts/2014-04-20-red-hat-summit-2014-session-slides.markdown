@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2014-04-20 17:26:36+00:00
 layout: post
-link: https://blog.lnx.cx/2014/04/20/red-hat-summit-2014-session-slides/
-slug: red-hat-summit-2014-session-slides
 title: Red Hat Summit 2014 - Session Slides
-wordpress_id: 567
 categories:
 - Conference
 - GNU/Linux

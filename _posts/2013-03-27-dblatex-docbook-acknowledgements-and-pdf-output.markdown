@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2013-03-27 15:15:23+00:00
 layout: post
-link: https://blog.lnx.cx/2013/03/27/dblatex-docbook-acknowledgements-and-pdf-output/
-slug: dblatex-docbook-acknowledgements-and-pdf-output
 title: dblatex, DocBook, acknowledgements and PDF output
-wordpress_id: 276
 categories:
 - DocBook
 - Documentation

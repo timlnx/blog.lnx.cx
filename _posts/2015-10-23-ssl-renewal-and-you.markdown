@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2015-10-23 16:54:31+00:00
 layout: post
-link: https://blog.lnx.cx/2015/10/23/ssl-renewal-and-you/
-slug: ssl-renewal-and-you
 title: SSL Renewal And You
-wordpress_id: 808
 categories:
 - /dev/null
 - Tutorials

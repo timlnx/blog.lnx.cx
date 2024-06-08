@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2011-04-30 05:19:26+00:00
 layout: post
-link: https://blog.lnx.cx/2011/04/30/vnc-on-fedora-14-on-linode/
-slug: vnc-on-fedora-14-on-linode
 title: VNC On Fedora 14 on Linode
-wordpress_id: 158
 categories:
 - Fedora
 - Planet

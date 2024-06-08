@@ -1,12 +1,8 @@
 ---
 author: al
-comments: true
 date: 2015-07-09 21:27:24+00:00
 layout: post
-link: https://blog.lnx.cx/2015/07/09/eclipse_content_assist_colors/
-slug: eclipse_content_assist_colors
 title: Eclipse Content Assist Colors
-wordpress_id: 765
 categories:
 - Fedora
 - Programming

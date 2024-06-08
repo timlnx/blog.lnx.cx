@@ -1,12 +1,8 @@
 ---
 author: abutcher
-comments: true
 date: 2009-08-31 06:50:04+00:00
 layout: post
-link: https://blog.lnx.cx/2009/08/31/setting-up-an-opengl-project-using-apple-xcode/
-slug: setting-up-an-opengl-project-using-apple-xcode
 title: Setting Up An OpenGL Project Using Apple Xcode
-wordpress_id: 48
 categories:
 - OS X
 - Tutorials

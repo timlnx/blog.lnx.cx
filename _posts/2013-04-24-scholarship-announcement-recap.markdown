@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2013-04-24 05:22:52+00:00
 layout: post
-link: https://blog.lnx.cx/2013/04/24/scholarship-announcement-recap/
-slug: scholarship-announcement-recap
 title: Scholarship Announcement Recap
-wordpress_id: 335
 categories:
 - GNU/Linux
 - Life

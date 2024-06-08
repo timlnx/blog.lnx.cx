@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2013-03-30 03:17:44+00:00
 layout: post
-link: https://blog.lnx.cx/2013/03/29/protip-shell-functions-cdmkdir/
-slug: protip-shell-functions-cdmkdir
 title: 'PROTIP: Shell Functions - cdmkdir'
-wordpress_id: 287
 categories:
 - GNU/Linux
 - Planet

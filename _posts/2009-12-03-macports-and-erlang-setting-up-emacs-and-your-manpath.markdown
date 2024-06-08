@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2009-12-03 03:32:05+00:00
 layout: post
-link: https://blog.lnx.cx/2009/12/02/macports-and-erlang-setting-up-emacs-and-your-manpath/
-slug: macports-and-erlang-setting-up-emacs-and-your-manpath
 title: 'Macports, and Erlang: Setting up Emacs and your $MANPATH'
-wordpress_id: 101
 categories:
 - Emacs
 - OS X

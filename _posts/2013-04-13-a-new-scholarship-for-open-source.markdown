@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2013-04-13 15:30:51+00:00
 layout: post
-link: https://blog.lnx.cx/2013/04/13/a-new-scholarship-for-open-source/
-slug: a-new-scholarship-for-open-source
 title: A new scholarship for open source
-wordpress_id: 319
 categories:
 - GNU/Linux
 - Life

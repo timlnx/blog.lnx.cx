@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2023-02-04 19:49:47+00:00
 layout: post
-link: https://blog.lnx.cx/2023/02/04/querying-block-device-sizes-in-python-on-linux-and-mac-os-x/
-slug: querying-block-device-sizes-in-python-on-linux-and-mac-os-x
 title: Querying block device sizes in Python on Linux and Mac OS X
-wordpress_id: 678
 categories:
 - GNU/Linux
 - OS X

@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2011-10-15 19:19:11+00:00
 layout: post
-link: https://blog.lnx.cx/2011/10/15/mac-os-x-10-7-getting-songs-off-an-ipod/
-slug: mac-os-x-10-7-getting-songs-off-an-ipod
 title: Mac OS X 10.7 - Getting songs off an iPod
-wordpress_id: 165
 categories:
 - OS X
 - Planet

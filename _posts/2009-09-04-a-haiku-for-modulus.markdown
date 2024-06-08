@@ -1,12 +1,8 @@
 ---
-author: tbielawa
-comments: true
+author: Tim Bielawa
 date: 2009-09-04 10:27:40+00:00
 layout: post
-link: https://blog.lnx.cx/2009/09/04/a-haiku-for-modulus/
-slug: a-haiku-for-modulus
 title: A haiku for modulus
-wordpress_id: 79
 categories:
 - Planet
 - Programming
