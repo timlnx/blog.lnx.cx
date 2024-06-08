@@ -27,42 +27,23 @@ tags:
 Just 3 days after publishing this blog post GitHub made a new blog post:
 
 
-<blockquote>[Pull request reviews](https://help.github.com/articles/about-pull-request-reviews/) are a great way to share the weight of building software, and with [review requests](https://help.github.com/articles/requesting-a-pull-request-review/) you can get the exact feedback you need.
+<blockquote><a href="https://help.github.com/articles/about-pull-request-reviews/" target=_blank>Pull request reviews</a> are a great way to share the weight of building software, and with <a href="https://help.github.com/articles/requesting-a-pull-request-review/" target=_blank>review requests</a> you can get the exact feedback you need.</blockquote>
 
 To make it easier to find the pull requests that need your attention, you can now [filter by review status](https://help.github.com/articles/filtering-pull-requests-by-review-status) from your repository pull request index.</blockquote>
 
-
-
-
 Source: [Filter pull request reviews and review requests](https://github.com/blog/2306-filter-pull-request-reviews-and-review-requests)
-
-
-
 
 I have tried this out and it's great! Like most everything else on GitHub it's very intuitive and simple to use. I won't steal their thunder and describe it all here. So [go check out the blog post for yourself](https://github.com/blog/2306-filter-pull-request-reviews-and-review-requests) and read up on the details (screenshots included!).
 
 
-
-
-Continue reading if you're still interested in incorporating this kind of filtering and labeling into your Gmail account.
-
-
-
-
-
 # The Problem
-
 
 I've been looking for a way to filter my GitHub Pull Request lists under the condition that **a review is requested of me**. The online docs didn't show any filter options for this, so I checked out the [@GitHubHelp](https://twitter.com/GitHubHelp) twitter account. The answer was there on the front page — they don't support filtering PRs by `review-requested-by:me` yet:
 
 
-<blockquote>
+<blockquote><a href="https://twitter.com/zaghnaboot" target=_blank>@zaghnaboot</a> Adding a filter for reviewers is definitely on our radar, though I don't have a specific timeline to share. --SJ
 
-> 
-> [@zaghnaboot](https://twitter.com/zaghnaboot) Adding a filter for reviewers is definitely on our radar, though I don't have a specific timeline to share. --SJ
-> 
-> 
-— GitHub Support (@GitHubHelp) [January 19, 2017](https://twitter.com/GitHubHelp/status/822203227395518464)</blockquote>
+— GitHub Support (@GitHubHelp) <a href="https://twitter.com/GitHubHelp/status/822203227395518464" target=_blank>January 19, 2017</a></blockquote>
 
 
 
