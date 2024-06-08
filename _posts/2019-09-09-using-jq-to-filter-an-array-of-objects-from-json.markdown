@@ -58,14 +58,4 @@ $ jq '.prefixes | map(. | select(.service=="AMAZON"))' < ip-ranges.json | head
   },
 {% endhighlight %}
 
-
-
-Now we are getting each object returned as a member of an array. The difference is that we're putting the `.prefixes` array objects into the `map` function and telling it to iterate every object through the `select` function. The `map` takes all of those matching objects and returns them as an array, whereas, previously we were only selecting objects that matched our `select` criteria. To get the objects back in a list we required the `map`. 
-
-
-
-
-
-
-
-
+Now we are getting each object returned as a member of an array. The difference is that we're putting the `.prefixes` array objects into the `map` function and telling it to iterate every object through the `select` function. The `map` takes all of those matching objects and returns them as an array, whereas, previously we were only selecting objects that matched our `select` criteria. To get the objects back in a list we required the `map`.
