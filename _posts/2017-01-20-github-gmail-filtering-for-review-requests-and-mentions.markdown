@@ -59,11 +59,6 @@ So what is one to do? I'm using Gmail so I began considering what filter options
   * Comments where I am `@mention`'d
 
 
-Interested in knowing more? Read on after the break for all the setup details.
-
-<!-- more -->
-
-
 ## Review Requested
 
 
