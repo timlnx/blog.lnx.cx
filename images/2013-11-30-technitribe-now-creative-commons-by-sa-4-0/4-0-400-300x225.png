@@ -1,0 +1,415 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xmlns:og="http://ogp.me/ns/fb#" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:addthis="http://www.addthis.com/help/api-spec">
+<head profile="http://gmpg.org/xfn/11">
+<meta charset="UTF-8" />
+<title>
+	Page not found | Technitribe</title>
+<!--Set Viewport for Mobile Devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<!-- Setup OpenGraph support-->
+<meta property="og:title" content=""/>
+<meta property="og:description" content=""/>
+<meta property="og:url" content=""/>
+<meta property="og:image" content=""/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Technitribe"/>
+<!--Begin styling -->
+<link href="https://blog.lnx.cx/wp-content/themes/minimal/style.css" rel="stylesheet" type="text/css" />
+<link href="https://blog.lnx.cx/wp-content/themes/minimal/responsive.css" rel="stylesheet" type="text/css" />
+<link type="text/css" href="https://blog.lnx.cx/?stylesheet=custom" rel="stylesheet" type="text/css" />
+<link href="https://blog.lnx.cx/wp-content/themes/minimal/custom.css" rel="stylesheet" type="text/css" />
+<link href="https://blog.lnx.cx/wp-content/themes/minimal/ocmx/jplayer.css" rel="stylesheet" type="text/css" />
+
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+
+
+	<link rel="alternate" type="application/rss+xml" title="Technitribe RSS Feed" href="https://blog.lnx.cx/feed/" />
+
+<link rel="pingback" href="https://blog.lnx.cx/xmlrpc.php" />
+
+
+
+<!--[if lt IE 8]>
+       <link rel="stylesheet" type="text/css" href="https://blog.lnx.cx/wp-content/themes/minimal/ie.css" media="screen" />
+<![endif]-->
+
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Technitribe &raquo; Feed" href="https://blog.lnx.cx/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Technitribe &raquo; Comments Feed" href="https://blog.lnx.cx/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/blog.lnx.cx\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.0.1"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='welcome-page-css'  href='https://blog.lnx.cx/wp-content/themes/minimal/ocmx/welcome-page.css?ver=5.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://blog.lnx.cx/wp-includes/css/dist/block-library/style.min.css?ver=5.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='theme-my-login-css'  href='https://blog.lnx.cx/wp-content/plugins/theme-my-login/assets/styles/theme-my-login.min.css?ver=7.0.11' type='text/css' media='all' />
+<script type='text/javascript' src='https://blog.lnx.cx/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://blog.lnx.cx/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ThemeAjax = {"ajaxurl":"https:\/\/blog.lnx.cx\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.lnx.cx/wp-content/themes/minimal/ocmx/includes/upgrade.js?ver=5.0.1'></script>
+<script type='text/javascript' src='https://blog.lnx.cx/wp-content/themes/minimal/scripts/superfish.js?ver=5.0.1'></script>
+<script type='text/javascript' src='https://blog.lnx.cx/wp-content/themes/minimal/scripts/jquery.resize.end.js?ver=5.0.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ThemeAjax = {"ajaxurl":"https:\/\/blog.lnx.cx\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.lnx.cx/wp-content/themes/minimal/scripts/minimal_jquery.js?ver=5.0.1'></script>
+<script type='text/javascript' src='https://blog.lnx.cx/wp-content/themes/minimal/scripts/jquery.fitvids.js?ver=5.0.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var themeMyLogin = {"action":"","errors":[]};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.lnx.cx/wp-content/plugins/theme-my-login/assets/scripts/theme-my-login.min.js?ver=7.0.11'></script>
+<link rel='https://api.w.org/' href='https://blog.lnx.cx/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.lnx.cx/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.lnx.cx/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.0.1" />
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+
+</head>
+
+<body class="error404 custom-background">
+
+<div id="sitewrapper">
+
+    <div id="header-container">
+        <div id="header" class="clearfix">
+            
+            <div class="logo">
+                                    <h1>
+                        <a href="https://blog.lnx.cx">
+                            Technitribe                        </a>
+                    </h1>
+                                                    <p class="tagline">
+                        interesting problems (and a few solutions, too)                    </p>
+                                                    <a href="https://blog.lnx.cx"><img src="https://blog.lnx.cx/wp-content/uploads/2014/10/subway_map_reduced1.jpg" alt="Technitribe" /></a>
+                            </div>
+    
+            <ul id="nav" class="clearfix"><li class="page_item page-item-467"><a href="https://blog.lnx.cx/info/">About the Authors</a></li>
+<li class="page_item page-item-856"><a href="https://blog.lnx.cx/login/">Log In</a></li>
+<li class="page_item page-item-857"><a href="https://blog.lnx.cx/logout/">Log Out</a></li>
+<li class="page_item page-item-859"><a href="https://blog.lnx.cx/lostpassword/">Lost Password</a></li>
+<li class="page_item page-item-858"><a href="https://blog.lnx.cx/register/">Register</a></li>
+<li class="page_item page-item-860"><a href="https://blog.lnx.cx/resetpass/">Reset Password</a></li>
+</ul>            
+        </div><!--End header -->
+        
+    </div><!--End header-container -->
+
+	<!--Begin Content -->
+	<div id="content-container" class="clearfix">
+	    <a href="#" id="menu-drop-button"></a>	<h2 class="section-title-404">(404) The page you are looking for does not exist.</h2>
+		<ul class="double-cloumn clearfix">
+	    <li id="left-column">	
+	        <ul class="blog-main-post-container">
+				<li id="post-678" class="post clearfix post-678 type-post status-publish format-standard hentry category-gnulinux category-os-x category-planet category-programming tag-bitmath tag-block-device tag-interrupt tag-ioctl tag-os-x tag-python tag-storage tag-system-call">		
+	<div class="content clearfix">
+		
+		 <div class="post-title-block">
+			 
+				<h5 class="dater">
+					<span>4 Feb</span>
+					<span>2023</span>
+				</h5>
+			
+			<!--Show the Title -->
+			<h2 class="post-title typography-title"><a href="https://blog.lnx.cx/2023/02/04/querying-block-device-sizes-in-python-on-linux-and-mac-os-x/">Querying block device sizes in Python on Linux and Mac OS X</a></h2>
+                        <h4 class="author-meta">Written by <a href="https://blog.lnx.cx" title="Visit Tim Bielawa&#8217;s website" rel="author external">Tim Bielawa</a></h4>
+		</div>
+		<!--Show the Featured Image or Video -->
+				<!--Begin Excerpt -->
+		<div class="copy ">
+			<p>I drafted this blog post in 2016 (at least), but held off publishing it until I could have it fact checked. Well, 6 years have passed&#8230; I am 99% sure the information in this blog post is correct. But if you find an error with my explanation of the userspace-kernel-device dataflow then please send me an email so I can understand it better and update this post. Thank you!</p>
+<h1>The Problem</h1>
+<p>I&#8217;ve been experimenting with creating functionality within <a href="https://bitmath.readthedocs.org/en/latest/" target="_blank" rel="nofollow noopener">bitmath</a> for reading the size of storage devices. This would provide a function similar to Python&#8217;s <a href="https://docs.python.org/3/library/os.path.html#os.path.getsize" target="_blank" rel="nofollow noopener"><code>os.path.getsize</code></a>, but for storage device capacity instead of file sizes.</p>
+<p>Unfortunately, it turns out that there is no out of the box (and cross-platform) solution in Python for reading the capacity of system storage devices. This meant some research was going to be required. Luckily, possible solutions for how to do this are abundant across the internet. Well, for Linux anyway. Figuring out how to make this work on Mac OS X was more challenging.</p>
+<p>And that&#8217;s where the story gets interesting.</p>
+<p>In the rest of this blog post we&#8217;ll learn the basics of how programs can interact with storage devices via the <code>ioctl()</code> <a href="https://en.wikipedia.org/wiki/System_call" target="_blank" rel="nofollow noopener">system call</a>. Then we&#8217;ll discuss the things we have to do and information we&#8217;ll need to have in order to implement an <code>ioctl()</code> request in Python. Next we&#8217;ll see how to gather all the necessary information (request codes and expected result sizes). Finally we&#8217;ll put all of this together into a runnable Python program.</p>
+<p><em>If you&#8217;re not familiar with that acronym, &#8220;ioctl&#8221; stands for &#8220;input/output control&#8221;.</em></p>
+<p> <a href="https://blog.lnx.cx/2023/02/04/querying-block-device-sizes-in-python-on-linux-and-mac-os-x/#more-678" class="more-link"><span aria-label="Continue reading Querying block device sizes in Python on Linux and Mac OS X">(more&hellip;)</span></a></p>
+		</div>
+
+	</div>
+	<div class="post-meta">
+				<div class="post-comments">
+			<a href="https://blog.lnx.cx/2023/02/04/querying-block-device-sizes-in-python-on-linux-and-mac-os-x/#respond">0 Comments</a>
+		</div>
+	</div>
+</li><li id="post-1026" class="post clearfix post-1026 type-post status-publish format-standard hentry category-null category-gnulinux category-programming tag-amazon tag-array tag-filter tag-jq tag-json tag-list tag-map">		
+	<div class="content clearfix">
+		
+		 <div class="post-title-block">
+			 
+				<h5 class="dater">
+					<span>9 Sep</span>
+					<span>2019</span>
+				</h5>
+			
+			<!--Show the Title -->
+			<h2 class="post-title typography-title"><a href="https://blog.lnx.cx/2019/09/09/using-jq-to-filter-an-array-of-objects-from-json/">Using jq to filter an array of objects from JSON</a></h2>
+                        <h4 class="author-meta">Written by <a href="https://blog.lnx.cx" title="Visit Tim Bielawa&#8217;s website" rel="author external">Tim Bielawa</a></h4>
+		</div>
+		<!--Show the Featured Image or Video -->
+				<!--Begin Excerpt -->
+		<div class="copy ">
+			<p>For some reason it took me an unreasonable amount of time to figure out how to filter an array (or list) of objects from a JSON stream. Every single example I found was a little too weird for me, or resulted in printing each object, but not in a final array format. Here&#8217;s what I came up with:</p>
+<p>Say for example you are parsing the <a href="https://aws.amazon.com/blogs/aws/aws-ip-ranges-json/">AWS IP ranges JSON stream</a>, you will receive an object like this:</p>
+<pre>{
+  "syncToken": "1567728788",
+  "createDate": "2019-09-06-00-13-08",
+  "prefixes": [
+    {
+      "ip_prefix": "18.208.0.0/13",
+      "region": "us-east-1",
+      "service": "AMAZON"
+    },
+    ... more objects here ...</pre>
+<p>I was attempting to filter this down to ONLY objects where the <code>service</code> attribute was <code>AMAZON</code>. Using this jql I would get objects printed one after the other which is not what I wanted:</p>
+<pre>$ jq -c '.prefixes[] | select(.service=="AMAZON")' &lt; ip-ranges.json | head<br />{"ip_prefix":"18.208.0.0/13","region":"us-east-1","service":"AMAZON"}<br />{"ip_prefix":"52.95.245.0/24","region":"us-east-1","service":"AMAZON"}<br />{"ip_prefix":"99.77.142.0/24","region":"ap-east-1","service":"AMAZON"}</pre>
+<p>The correct syntax was ultimately very similar. </p>
+<pre>$ jq '.prefixes | map(. | select(.service=="AMAZON"))' &lt; ip-ranges.json  | head<br />[<br />  {<br />    "ip_prefix": "18.208.0.0/13",<br />    "region": "us-east-1",<br />    "service": "AMAZON"<br />  },<br /><br /></pre>
+<p>Now we are getting each object returned as a member of an array. The difference is that we&#8217;re putting the <code>.prefixes</code> array objects into the <code>map</code> function and telling it to iterate every object through the <code>select</code> function. The <code>map</code> takes all of those matching objects and returns them as an array, whereas, previously we were only selecting objects that matched our <code>select</code> criteria. To get the objects back in a list we required the <code>map</code>. </p>
+
+
+<p></p>
+		</div>
+
+	</div>
+	<div class="post-meta">
+				<div class="post-comments">
+			<a href="https://blog.lnx.cx/2019/09/09/using-jq-to-filter-an-array-of-objects-from-json/#comments">1 Comment</a>
+		</div>
+	</div>
+</li><li id="post-1017" class="post clearfix post-1017 type-post status-publish format-standard hentry category-life">		
+	<div class="content clearfix">
+		
+		 <div class="post-title-block">
+			 
+				<h5 class="dater">
+					<span>16 Nov</span>
+					<span>2018</span>
+				</h5>
+			
+			<!--Show the Title -->
+			<h2 class="post-title typography-title"><a href="https://blog.lnx.cx/2018/11/16/two-year-break-and-were-back/">Two Year Break &#8212; And we&#8217;re back!</a></h2>
+                        <h4 class="author-meta">Written by <a href="https://blog.lnx.cx" title="Visit Tim Bielawa&#8217;s website" rel="author external">Tim Bielawa</a></h4>
+		</div>
+		<!--Show the Featured Image or Video -->
+				<!--Begin Excerpt -->
+		<div class="copy ">
+			<p>Where has Technitribe been for the last 2 years? The short answer: in domain limbo.</p>
+<h1>Christmas Islands</h1>
+<p><code>.cx</code> is a Christmas Islands <a href="https://en.wikipedia.org/wiki/.cx" target="_blank" rel="noopener">top-level domain</a> (TLD). I did not have the domain set to auto-renew because I was trying to get away from my old registrar. At the time it was expiring I didn&#8217;t have the cash on hand to renew it. I will admit, I did not read all the Term &amp; Conditions for the <code>.cx</code> TLD before registering. I guess I really screwed the pooch there.</p>
+<p>It turns out that if you have a <code>.cx</code>domain, and it expires, then you have a problem. They will effectively hold it hostage for a period of 4 months. During this time you have the &#8220;option&#8221; to restore the domain, but at the cost of $400.00 USD.  Like I said, I was not very cash flush at the time.</p>
+<h1>Waiting Period</h1>
+<p>Shortly after the domain expired I moved across the country. While getting set up in my new location the domain left the restoration period and was open to general registration again. As is typical, a reseller had squatted the <code>lnx.cx</code> domain and bought it as soon as it became available. I resigned myself to my fate, I would have to let it go for a while.</p>
+<h1>Return of lnx.cx</h1>
+<p>The blog is now back! A few weeks ago I finally had the cash necessary to register it from a new registrar who isn&#8217;t evil (<a href="https://www.netim.com/" target="_blank" rel="noopener">Netim</a>). We have a new SSL Certificate issued by <a href="https://letsencrypt.org/" target="_blank" rel="noopener">Let&#8217;s Encrypt</a>, no more untrusted RapidSSL security alerts in your browser. And, as an aside, the setup for installing this new certificate was incredibly easy. I am genuinely surprised at how smooth it was using the <a href="https://certbot.eff.org/" target="_blank" rel="noopener">certbot</a> tool.</p>
+<h1>What&#8217;s Next?</h1>
+<p>I need to start writing more blog posts! I might shift the focus of the blog from being so Tech focused and open it up to capture some of my other interests, too. Such as woodworking. I really enjoy making and restoring furniture. I should write some blog posts about that.</p>
+		</div>
+
+	</div>
+	<div class="post-meta">
+				<div class="post-comments">
+			<a href="https://blog.lnx.cx/2018/11/16/two-year-break-and-were-back/#respond">0 Comments</a>
+		</div>
+	</div>
+</li><li id="post-988" class="post clearfix post-988 type-post status-publish format-standard hentry category-planet category-programming category-tutorials tag-filtering tag-github tag-gmail tag-gmail-labels tag-mentions tag-pull-requests tag-reviews">		
+	<div class="content clearfix">
+		
+		 <div class="post-title-block">
+			 
+				<h5 class="dater">
+					<span>20 Jan</span>
+					<span>2017</span>
+				</h5>
+			
+			<!--Show the Title -->
+			<h2 class="post-title typography-title"><a href="https://blog.lnx.cx/2017/01/20/github-gmail-filtering-for-review-requests-and-mentions/">[Updated] GitHub + Gmail — Filtering for Review Requests and Mentions</a></h2>
+                        <h4 class="author-meta">Written by <a href="https://blog.lnx.cx" title="Visit Tim Bielawa&#8217;s website" rel="author external">Tim Bielawa</a></h4>
+		</div>
+		<!--Show the Featured Image or Video -->
+				<!--Begin Excerpt -->
+		<div class="copy ">
+			<h1>Update &#8211; 2017-01-27</h1>
+<p>Just 3 days after publishing this blog post GitHub made a new blog post:</p>
+<blockquote><p><a href="https://help.github.com/articles/about-pull-request-reviews/">Pull request reviews</a> are a great way to share the weight of building software, and with <a href="https://help.github.com/articles/requesting-a-pull-request-review/">review requests</a> you can get the exact feedback you need.</p>
+<p>To make it easier to find the pull requests that need your attention, you can now <a href="https://help.github.com/articles/filtering-pull-requests-by-review-status">filter by review status</a> from your repository pull request index.</p></blockquote>
+<p style="text-align: right;">Source: <a href="https://github.com/blog/2306-filter-pull-request-reviews-and-review-requests" target="_blank">Filter pull request reviews and review requests</a></p>
+<p style="text-align: left;">I have tried this out and it&#8217;s great! Like most everything else on GitHub it&#8217;s very intuitive and simple to use. I won&#8217;t steal their thunder and describe it all here. So <a href="https://github.com/blog/2306-filter-pull-request-reviews-and-review-requests">go check out the blog post for yourself</a> and read up on the details (screenshots included!).</p>
+<p style="text-align: left;">Continue reading if you&#8217;re still interested in incorporating this kind of filtering and labeling into your Gmail account.</p>
+<h1>The Problem</h1>
+<p>I&#8217;ve been looking for a way to filter my GitHub Pull Request lists under the condition that <strong>a review is requested of me</strong>. The online docs didn&#8217;t show any filter options for this, so I checked out the <a href="https://twitter.com/GitHubHelp" target="_blank">@GitHubHelp</a> twitter account. The answer was there on the front page — they don&#8217;t support filtering PRs by <code>review-requested-by:me</code> yet:</p>
+<blockquote class="twitter-tweet" data-lang="en">
+<p dir="ltr" lang="en"><a href="https://twitter.com/zaghnaboot">@zaghnaboot</a> Adding a filter for reviewers is definitely on our radar, though I don&#8217;t have a specific timeline to share. &#8211;SJ</p>
+<p>— GitHub Support (@GitHubHelp) <a href="https://twitter.com/GitHubHelp/status/822203227395518464">January 19, 2017</a></p></blockquote>
+<p><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+<p>So what is one to do? I&#8217;m using Gmail so I began considering what filter options were available to me there. My objectives were to clearly label and highlight:</p>
+<ul>
+<li> PRs where review has been requested</li>
+<li>Comments where I am <code>@mention</code>&#8216;d</li>
+</ul>
+<p>Interested in knowing more? Read on after the break for all the setup details.</p>
+<p> <a href="https://blog.lnx.cx/2017/01/20/github-gmail-filtering-for-review-requests-and-mentions/#more-988" class="more-link"><span aria-label="Continue reading [Updated] GitHub + Gmail — Filtering for Review Requests and Mentions">(more&hellip;)</span></a></p>
+		</div>
+
+	</div>
+	<div class="post-meta">
+				<div class="post-comments">
+			<a href="https://blog.lnx.cx/2017/01/20/github-gmail-filtering-for-review-requests-and-mentions/#comments">2 Comments</a>
+		</div>
+	</div>
+</li><li id="post-983" class="post clearfix post-983 type-post status-publish format-standard hentry category-null">		
+	<div class="content clearfix">
+		
+		 <div class="post-title-block">
+			 
+				<h5 class="dater">
+					<span>19 Jan</span>
+					<span>2017</span>
+				</h5>
+			
+			<!--Show the Title -->
+			<h2 class="post-title typography-title"><a href="https://blog.lnx.cx/2017/01/19/references-in-a-sub-select/">References in a sub-select</a></h2>
+                        <h4 class="author-meta">Written by <a href="https://github.com/awood" title="Visit Alex Wood&#8217;s website" rel="author external">Alex Wood</a></h4>
+		</div>
+		<!--Show the Featured Image or Video -->
+				<!--Begin Excerpt -->
+		<div class="copy ">
+			<p>Have you ever had a sub-select where you really needed to reference a value in the outer query?  I know I have!  The naive way would be to run the outer query and then loop over the results running the inner query on each one.  Luckily, there&#8217;s a better way.  The <a href="https://en.wikipedia.org/wiki/Correlated_subquery">Correlated subquery</a>.  Check it out!  The example given is </p>
+<p><code></p>
+<pre>
+SELECT employee_number, name
+  FROM employees AS Bob
+  WHERE salary > (
+    SELECT AVG(salary)
+      FROM employees
+      WHERE department = Bob.department);
+</pre>
+<p></code></p>
+<p>See how the sub-select references the outer query?  It&#8217;s SQL magic.</p>
+		</div>
+
+	</div>
+	<div class="post-meta">
+				<div class="post-comments">
+			<a href="https://blog.lnx.cx/2017/01/19/references-in-a-sub-select/#respond">0 Comments</a>
+		</div>
+	</div>
+</li>	        </ul>
+	        		</li>
+		<li id="right-column">
+	<ul class="widget-list">
+			<li class="widget search-form column">
+        <form action="https://blog.lnx.cx" method="get" class="search-form">
+            <input type="text" name="s" id="s" class="search" maxlength="50" value="" />
+            <input type="submit" class="search_button" value="Search" />
+        </form>
+	</li>
+<li id="text-4" class="widget column widget_text"><div class="content">			<div class="textwidget"><b><a href=" https://blog.lnx.cx/info/">The Authors</a></b></div>
+		</div></li><li id="text-3" class="widget column widget_text"><div class="content"><h4 class="widgettitle">Virtual Disk Guide</h4>			<div class="textwidget"><p>Interested in virtualization? Do QCOWs rule your filesystem? Are you a libvirt or KVM+QEMU wizard? I wrote a book about virtual disk management. Check out the <i>The Linux Sysadmin's Guide to Virtual Disks</i> online for free at <a href="http://scribesguides.com/" target="_blank">ScribesGuides.com</a>.</p>
+<hr />
+<p><small>Consider supporting the author by purchasing a hard copy of the first edition for just <a href="https://www.lulu.com/content/paperback-book/the-linux-sysadmins-guide-to-virtual-disks/18420783" target="_blank">$10.00 on Lulu.com</a>.</small></p>
+</div>
+		</div></li><li id="text-5" class="widget column widget_text"><div class="content"><h4 class="widgettitle">bitmath</h4>			<div class="textwidget"><p><a href="http://bitmath.readthedocs.org/en/latest/" target="_blank">bitmath</a> is a Python library for dealing with file size units (GiB's, kB's, etc) in a sane way. bitmath supports arithmetic, rich comparison, conversion, automatic best human-readable representation, and <i>many other</i> <a href="http://bitmath.readthedocs.org/en/latest/module.html" target="_blank">utility functions</a>. Read some examples on the <a href="http://bitmath.readthedocs.org/en/latest/" target="_blank">docs site</a> or check out the source on <a href="https://github.com/tbielawa/bitmath/" target="_blank">GitHub</a>. </p>
+</div>
+		</div></li>		<li id="recent-posts-3" class="widget column widget_recent_entries"><div class="content">		<h4 class="widgettitle">latest posts</h4>		<ul>
+											<li>
+					<a href="https://blog.lnx.cx/2023/02/04/querying-block-device-sizes-in-python-on-linux-and-mac-os-x/">Querying block device sizes in Python on Linux and Mac OS X</a>
+											<span class="post-date">February 4, 2023</span>
+									</li>
+											<li>
+					<a href="https://blog.lnx.cx/2019/09/09/using-jq-to-filter-an-array-of-objects-from-json/">Using jq to filter an array of objects from JSON</a>
+											<span class="post-date">September 9, 2019</span>
+									</li>
+											<li>
+					<a href="https://blog.lnx.cx/2018/11/16/two-year-break-and-were-back/">Two Year Break &#8212; And we&#8217;re back!</a>
+											<span class="post-date">November 16, 2018</span>
+									</li>
+					</ul>
+		</div></li><li id="tag_cloud-2" class="widget column widget_tag_cloud"><div class="content"><h4 class="widgettitle">tags</h4><div class="tagcloud"><a href="https://blog.lnx.cx/tag/bitmath/" class="tag-cloud-link tag-link-142 tag-link-position-1" style="font-size: 19.2pt;" aria-label="bitmath (5 items)">bitmath</a>
+<a href="https://blog.lnx.cx/tag/blog/" class="tag-cloud-link tag-link-3 tag-link-position-2" style="font-size: 8pt;" aria-label="blog (1 item)">blog</a>
+<a href="https://blog.lnx.cx/tag/conference-2/" class="tag-cloud-link tag-link-133 tag-link-position-3" style="font-size: 15pt;" aria-label="conference (3 items)">conference</a>
+<a href="https://blog.lnx.cx/tag/css/" class="tag-cloud-link tag-link-97 tag-link-position-4" style="font-size: 12.2pt;" aria-label="css (2 items)">css</a>
+<a href="https://blog.lnx.cx/tag/dblatex/" class="tag-cloud-link tag-link-38 tag-link-position-5" style="font-size: 15pt;" aria-label="dblatex (3 items)">dblatex</a>
+<a href="https://blog.lnx.cx/tag/dns/" class="tag-cloud-link tag-link-47 tag-link-position-6" style="font-size: 12.2pt;" aria-label="DNS (2 items)">DNS</a>
+<a href="https://blog.lnx.cx/tag/docbook/" class="tag-cloud-link tag-link-185 tag-link-position-7" style="font-size: 15pt;" aria-label="DocBook (3 items)">DocBook</a>
+<a href="https://blog.lnx.cx/tag/eclipse/" class="tag-cloud-link tag-link-180 tag-link-position-8" style="font-size: 15pt;" aria-label="eclipse (3 items)">eclipse</a>
+<a href="https://blog.lnx.cx/tag/emacs/" class="tag-cloud-link tag-link-186 tag-link-position-9" style="font-size: 22pt;" aria-label="Emacs (7 items)">Emacs</a>
+<a href="https://blog.lnx.cx/tag/erlang/" class="tag-cloud-link tag-link-34 tag-link-position-10" style="font-size: 12.2pt;" aria-label="Erlang (2 items)">Erlang</a>
+<a href="https://blog.lnx.cx/tag/fedora/" class="tag-cloud-link tag-link-43 tag-link-position-11" style="font-size: 19.2pt;" aria-label="Fedora (5 items)">Fedora</a>
+<a href="https://blog.lnx.cx/tag/fedora-22/" class="tag-cloud-link tag-link-181 tag-link-position-12" style="font-size: 12.2pt;" aria-label="fedora 22 (2 items)">fedora 22</a>
+<a href="https://blog.lnx.cx/tag/filter/" class="tag-cloud-link tag-link-73 tag-link-position-13" style="font-size: 12.2pt;" aria-label="filter (2 items)">filter</a>
+<a href="https://blog.lnx.cx/tag/gnu-screen/" class="tag-cloud-link tag-link-19 tag-link-position-14" style="font-size: 8pt;" aria-label="GNU Screen (1 item)">GNU Screen</a>
+<a href="https://blog.lnx.cx/tag/haiku/" class="tag-cloud-link tag-link-22 tag-link-position-15" style="font-size: 8pt;" aria-label="Haiku (1 item)">Haiku</a>
+<a href="https://blog.lnx.cx/tag/introduction/" class="tag-cloud-link tag-link-12 tag-link-position-16" style="font-size: 8pt;" aria-label="Introduction (1 item)">Introduction</a>
+<a href="https://blog.lnx.cx/tag/java/" class="tag-cloud-link tag-link-151 tag-link-position-17" style="font-size: 17.333333333333pt;" aria-label="java (4 items)">java</a>
+<a href="https://blog.lnx.cx/tag/jboss/" class="tag-cloud-link tag-link-129 tag-link-position-18" style="font-size: 12.2pt;" aria-label="jboss (2 items)">jboss</a>
+<a href="https://blog.lnx.cx/tag/lcsee/" class="tag-cloud-link tag-link-13 tag-link-position-19" style="font-size: 8pt;" aria-label="LCSEE (1 item)">LCSEE</a>
+<a href="https://blog.lnx.cx/tag/linux/" class="tag-cloud-link tag-link-11 tag-link-position-20" style="font-size: 19.2pt;" aria-label="Linux (5 items)">Linux</a>
+<a href="https://blog.lnx.cx/tag/locale/" class="tag-cloud-link tag-link-102 tag-link-position-21" style="font-size: 12.2pt;" aria-label="locale (2 items)">locale</a>
+<a href="https://blog.lnx.cx/tag/locales-fix-slicehost-ubuntu/" class="tag-cloud-link tag-link-20 tag-link-position-22" style="font-size: 8pt;" aria-label="locales fix slicehost ubuntu (1 item)">locales fix slicehost ubuntu</a>
+<a href="https://blog.lnx.cx/tag/macports/" class="tag-cloud-link tag-link-35 tag-link-position-23" style="font-size: 12.2pt;" aria-label="Macports (2 items)">Macports</a>
+<a href="https://blog.lnx.cx/tag/module/" class="tag-cloud-link tag-link-123 tag-link-position-24" style="font-size: 17.333333333333pt;" aria-label="module (4 items)">module</a>
+<a href="https://blog.lnx.cx/tag/nist/" class="tag-cloud-link tag-link-124 tag-link-position-25" style="font-size: 12.2pt;" aria-label="nist (2 items)">nist</a>
+<a href="https://blog.lnx.cx/tag/nxml-mode/" class="tag-cloud-link tag-link-9 tag-link-position-26" style="font-size: 8pt;" aria-label="nXML-Mode (1 item)">nXML-Mode</a>
+<a href="https://blog.lnx.cx/tag/opengl/" class="tag-cloud-link tag-link-16 tag-link-position-27" style="font-size: 12.2pt;" aria-label="opengl (2 items)">opengl</a>
+<a href="https://blog.lnx.cx/tag/open-source/" class="tag-cloud-link tag-link-94 tag-link-position-28" style="font-size: 12.2pt;" aria-label="open source (2 items)">open source</a>
+<a href="https://blog.lnx.cx/tag/os-x/" class="tag-cloud-link tag-link-188 tag-link-position-29" style="font-size: 15pt;" aria-label="OS X (3 items)">OS X</a>
+<a href="https://blog.lnx.cx/tag/package/" class="tag-cloud-link tag-link-122 tag-link-position-30" style="font-size: 12.2pt;" aria-label="package (2 items)">package</a>
+<a href="https://blog.lnx.cx/tag/packaging/" class="tag-cloud-link tag-link-155 tag-link-position-31" style="font-size: 15pt;" aria-label="packaging (3 items)">packaging</a>
+<a href="https://blog.lnx.cx/tag/pki/" class="tag-cloud-link tag-link-150 tag-link-position-32" style="font-size: 12.2pt;" aria-label="pki (2 items)">pki</a>
+<a href="https://blog.lnx.cx/tag/prefix-units/" class="tag-cloud-link tag-link-126 tag-link-position-33" style="font-size: 12.2pt;" aria-label="prefix units (2 items)">prefix units</a>
+<a href="https://blog.lnx.cx/tag/presentation/" class="tag-cloud-link tag-link-137 tag-link-position-34" style="font-size: 12.2pt;" aria-label="presentation (2 items)">presentation</a>
+<a href="https://blog.lnx.cx/tag/project/" class="tag-cloud-link tag-link-198 tag-link-position-35" style="font-size: 12.2pt;" aria-label="project (2 items)">project</a>
+<a href="https://blog.lnx.cx/tag/pypi/" class="tag-cloud-link tag-link-127 tag-link-position-36" style="font-size: 15pt;" aria-label="pypi (3 items)">pypi</a>
+<a href="https://blog.lnx.cx/tag/python/" class="tag-cloud-link tag-link-37 tag-link-position-37" style="font-size: 22pt;" aria-label="Python (7 items)">Python</a>
+<a href="https://blog.lnx.cx/tag/scholarship/" class="tag-cloud-link tag-link-93 tag-link-position-38" style="font-size: 12.2pt;" aria-label="scholarship (2 items)">scholarship</a>
+<a href="https://blog.lnx.cx/tag/si/" class="tag-cloud-link tag-link-125 tag-link-position-39" style="font-size: 12.2pt;" aria-label="si (2 items)">si</a>
+<a href="https://blog.lnx.cx/tag/summit/" class="tag-cloud-link tag-link-131 tag-link-position-40" style="font-size: 12.2pt;" aria-label="summit (2 items)">summit</a>
+<a href="https://blog.lnx.cx/tag/tutorial/" class="tag-cloud-link tag-link-14 tag-link-position-41" style="font-size: 17.333333333333pt;" aria-label="Tutorial (4 items)">Tutorial</a>
+<a href="https://blog.lnx.cx/tag/ubuntu/" class="tag-cloud-link tag-link-101 tag-link-position-42" style="font-size: 12.2pt;" aria-label="ubuntu (2 items)">ubuntu</a>
+<a href="https://blog.lnx.cx/tag/xcode/" class="tag-cloud-link tag-link-17 tag-link-position-43" style="font-size: 12.2pt;" aria-label="xcode (2 items)">xcode</a>
+<a href="https://blog.lnx.cx/tag/xml/" class="tag-cloud-link tag-link-184 tag-link-position-44" style="font-size: 15pt;" aria-label="XML (3 items)">XML</a>
+<a href="https://blog.lnx.cx/tag/xmpp/" class="tag-cloud-link tag-link-189 tag-link-position-45" style="font-size: 12.2pt;" aria-label="XMPP (2 items)">XMPP</a></div>
+</div></li><li id="psk_sgw-2" class="widget column psk_sgw"><div class="content"><h4 class="widgettitle">h4ck teh world</h4><center><table style="border:0;margin:0;padding:0;width:100%"><tr style="border:0;margin:0;padding:0" ><td style="border:0;margin:0;padding:0;vertical-align:top;text-align:left;"><img style="width:40px;height:40px;border:1px solid #888;" alt="tbielawa" src="https://avatars.githubusercontent.com/u/33121?v=4" /></td><td style="border:0;margin:0;padding:0;vertical-align:middle;text-align:right;font-weight:bold;"><a href="http://github.com/tbielawa" >tbielawa</a></td></tr></table></center><ul><li style="padding-top:4px;"><strong><a href="https://api.github.com/repos/tbielawa/bitmath/issues/99/comments">Issue Comment</a></strong><br/>bitmath<br/><small>June 2, 2024 - 9:42 pm UTC</small></li><li style="padding-top:4px;"><strong><a href="https://api.github.com/repos/tbielawa/bitmath/issues/106/comments">Issue Comment</a></strong><br/>bitmath<br/><small>June 2, 2024 - 9:40 pm UTC</small></li><li style="padding-top:4px;"><strong><a href="https://www.github.com/tbielawa/blog.lnx.cx">Push</a></strong><br/>blog.lnx.cx<br/><small>June 2, 2024 - 9:29 pm UTC</small></li><li style="padding-top:4px;"><strong><a href="https://www.github.com/tbielawa/blog.lnx.cx">Create</a></strong><br/>blog.lnx.cx<br/><small>June 2, 2024 - 9:15 pm UTC</small></li><li style="padding-top:4px;"><strong><a href="https://www.github.com/tbielawa/blog.lnx.cx">Create</a></strong><br/>blog.lnx.cx<br/><small>June 2, 2024 - 9:15 pm UTC</small></li></ul></div></li>     </ul>
+</li>	</ul>
+
+	</div><!--End Content Container -->
+	
+	<div id="footer-container">
+		<div class="footer-text">
+			<p class="copyright"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://blog.lnx.cx/wp-content/uploads/2014/12/cc-license-80x15.png" height="15" width="80"/></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Technitribe</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://blog.lnx.cx" property="cc:attributionName" rel="cc:attributionURL">Tim Bielawa</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+					</div>
+	</div>
+
+</div> <!--End Site Wrapper -->
+
+<script type='text/javascript' src='https://blog.lnx.cx/wp-includes/js/wp-embed.min.js?ver=5.0.1'></script>
+<!--Get Google Analytics -->
+
+</body>
+</html>
