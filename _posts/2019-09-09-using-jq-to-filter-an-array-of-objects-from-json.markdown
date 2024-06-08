@@ -23,45 +23,40 @@ tags:
 
 For some reason it took me an unreasonable amount of time to figure out how to filter an array (or list) of objects from a JSON stream. Every single example I found was a little too weird for me, or resulted in printing each object, but not in a final array format. Here's what I came up with:
 
-
-
-
 Say for example you are parsing the [AWS IP ranges JSON stream](https://aws.amazon.com/blogs/aws/aws-ip-ranges-json/), you will receive an object like this:
 
-
-
-    
+{% highlight json %}
+{
+  "syncToken": "1567728788",
+  "createDate": "2019-09-06-00-13-08",
+  "prefixes": [
     {
-      "syncToken": "1567728788",
-      "createDate": "2019-09-06-00-13-08",
-      "prefixes": [
-        {
-          "ip_prefix": "18.208.0.0/13",
-          "region": "us-east-1",
-          "service": "AMAZON"
-        },
-        ... more objects here ...
-
-
-
+      "ip_prefix": "18.208.0.0/13",
+      "region": "us-east-1",
+      "service": "AMAZON"
+    },
+{% endhighlight %}
 
 I was attempting to filter this down to ONLY objects where the `service` attribute was `AMAZON`. Using this jql I would get objects printed one after the other which is not what I wanted:
 
-
-
-    
-    $ jq -c '.prefixes[] | select(.service=="AMAZON")' < ip-ranges.json | head<br></br>{"ip_prefix":"18.208.0.0/13","region":"us-east-1","service":"AMAZON"}<br></br>{"ip_prefix":"52.95.245.0/24","region":"us-east-1","service":"AMAZON"}<br></br>{"ip_prefix":"99.77.142.0/24","region":"ap-east-1","service":"AMAZON"}
-
-
-
+{% highlight bash %}
+$ jq -c '.prefixes[] | select(.service=="AMAZON")' < ip-ranges.json | head
+{"ip_prefix":"18.208.0.0/13","region":"us-east-1","service":"AMAZON"}
+{"ip_prefix":"52.95.245.0/24","region":"us-east-1","service":"AMAZON"}
+{"ip_prefix":"99.77.142.0/24","region":"ap-east-1","service":"AMAZON"}
+{% endhighlight %}
 
 The correct syntax was ultimately very similar. 
 
-
-
-    
-    $ jq '.prefixes | map(. | select(.service=="AMAZON"))' < ip-ranges.json  | head<br></br>[<br></br>  {<br></br>    "ip_prefix": "18.208.0.0/13",<br></br>    "region": "us-east-1",<br></br>    "service": "AMAZON"<br></br>  },<br></br><br></br>
-
+{% highlight bash %}
+$ jq '.prefixes | map(. | select(.service=="AMAZON"))' < ip-ranges.json | head
+[
+  {
+    "ip_prefix": "18.208.0.0/13",
+    "region": "us-east-1",
+    "service": "AMAZON"
+  },
+{% endhighlight %}
 
 
 

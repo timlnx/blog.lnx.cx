@@ -51,7 +51,7 @@ ioctl requests are just one of many types of system calls. ioctl requests enabl
 
 The following image shows the general flow of control/data when a process has issued an `ioctl()` request. Following the image we'll review what happens at each numbered transition.
 
-[caption id="attachment_701" align="aligncenter" width="854"][![Flow of control/data when handling ioctl requests](https://blog.lnx.cx/wp-content/uploads/2015/02/ioctl-flow.png)](https://blog.lnx.cx/?attachment_id=701) Flow of control/data when handling ioctl requests[/caption]
+[![Flow of control/data when handling ioctl requests](https://blog.lnx.cx/wp-content/uploads/2015/02/ioctl-flow.png)](https://blog.lnx.cx/?attachment_id=701) Flow of control/data when handling ioctl requests
 
 
 
@@ -144,7 +144,7 @@ The approach we will take to finding the necessary request codes is applicable t
 Querying the block device size in Python on a Linux host was as simple as copying and pasting the example code provided in this [stackoverflow answer](http://stackoverflow.com/a/12925285/263969). You can see in here on line number 6 that the original poster was
 
 https://gist.github.com/tbielawa/d49b6e7a057377f6a0ee#file-readsize-py
-
+<script src="https://gist.github.com/tbielawa/d49b6e7a057377f6a0ee.js"></script>
 
 ### How This Works
 
@@ -218,55 +218,30 @@ From this we now know the value of the required request codes for OS X and Linux
 ## Request Codes Review
 
 
-<table style="border-color: #cc3333; background-color: #f7f7f7;" border="1" >
+<table style="border-color: #cc3333; background-color: #f7f7f7;" border="1">
+  <tr style="background-color: #0099cc;">
+    <td><b>OS</b></td>
+    <td><b>Symbol</b></td>
+    <td><b>Value</b></td>
+  </tr>
 
-<tr style="background-color: #0099cc;" >
-
-<td >**OS**
-</td>
-
-<td >**Symbol**
-</td>
-
-<td >**Value**
-</td>
-</tr>
-
-<tbody >
-<tr style="background-color: #f5f5f5;" >
-
-<td >Linux
-</td>
-
-<td >`BLKGETSIZE64`
-</td>
-
-<td >0x80081272
-</td>
-</tr>
-<tr style="background-color: #f5f5f5;" >
-
-<td >OS X
-</td>
-
-<td >`DKIOCGETBLOCKSIZE`
-</td>
-
-<td >0x40046418
-</td>
-</tr>
-<tr style="background-color: #f5f5f5;" >
-
-<td >OS X
-</td>
-
-<td >`DKIOCGETBLOCKCOUNT`
-</td>
-
-<td >0x40086419
-</td>
-</tr>
-</tbody>
+  <tbody >
+    <tr style="background-color: #f5f5f5;">
+      <td>Linux</td>
+      <td><code>BLKGETSIZE64</code></td>
+      <td><code>0x80081272</code></td>
+    </tr>
+    <tr style="background-color: #f5f5f5;">
+      <td>OS X</td>
+      <td><code>DKIOCGETBLOCKSIZE</code></td>
+      <td><code>0x40046418</code></td>
+    </tr>
+    <tr style="background-color: #f5f5f5;">
+      <td>OS X</td>
+      <td><code>DKIOCGETBLOCKCOUNT</code></td>
+      <td><code>0x40086419</code></td>
+    </tr>
+  </tbody>
 </table>
 
 
