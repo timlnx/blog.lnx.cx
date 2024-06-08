@@ -126,13 +126,7 @@ bitmath-1.0.8-1 was published on 2014-08-14.
 
 
 
-### Examples Below the Fold
-
-
-<!-- more -->
-
 
 # Examples
 
-
-https://gist.github.com/tbielawa/f949de30012a5657000f
+<script src="https://gist.github.com/tbielawa/f949de30012a5657000f.js"></script>

@@ -16,10 +16,6 @@ categories:
 
 
 
-* * *
-
-
-
 My old work laptop, the ThinkPad T510, went out of warranty a few months ago. At work this means I'm eligible for a hardware refresh with [Best Monitors under 300](https://poweruphere.com/), i.e., a new  laptop. Because they're so much thinner and lighter, this time I decided to go with the 400 series. All in all it's a fine piece of hardware, so long as you're running Fedora 20 (or newer). I have two lingering issues however.
 
 
@@ -58,8 +54,6 @@ And specific to the T440s:
 
 
 In the past I've dealt with the former issues by simply disabling tap to click and touchpad scroll regions. But the T440s is an entirely different beast which required quite a bit more effort to make it usable.
-
-<!-- more -->
 
 
 # The Taming of the <del>Shrew</del> Touchpad

@@ -35,8 +35,6 @@ In the rest of this blog post we'll learn the basics of how programs can interac
 
 _If you're not familiar with that acronym, "ioctl" stands for "input/output control"._
 
-<!-- more -->
-
 
 # Back to Basics
 
