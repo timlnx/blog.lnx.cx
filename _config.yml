@@ -23,8 +23,8 @@ author: Tim Bielawa
 email: timbielawaatgmaildotcom
 description: >- # this means to ignore newlines until "baseurl:"
   interesting problems (and a few solutions, too)
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://blog.lnx.cx" # the base hostname & protocol for your site, e.g. http://example.com
+#baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://lnx.cx" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username: tbielawa
 permalink: /:year/:month/:day/:title:output_ext
@@ -54,3 +54,6 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+exclude:
+  - README.md
+  - 2024-06-04-welcome-to-jekyll.markdown
