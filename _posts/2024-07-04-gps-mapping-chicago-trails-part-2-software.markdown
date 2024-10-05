@@ -1,115 +1,22 @@
 ---
 author: Tim Bielawa
-date: 2024-06-27
+date: 2024-07-04
 layout: post
-title: "DRAFT: GPS Mapping Chicago Trails"
+title: "GPS Mapping Chicago Trails — Part 2: Software"
 tags:
 - project
+- gps
 - gpx
-- gpx
-- recording
 - trails
 - maps
 - hiking
 ---
 
-Strap yourselves in folks, I can tell this is going to be a long one.
-
 {{ "Intro" | blog_anchor }}
 
-Recently I've been spending time walking the trails in [Schiller Woods
-South](https://fpdcc.com/places/locations/schiller-woods/), a section of the
-[Forest Preserve District](https://fpdcc.com/) located in the Chicago suburbs.
-Specifically, I have been starting my walks at "Hidden Hill" which is accessed
-via the [Che-Che-Pin-Qua
-Woods](https://fpdcc.com/places/locations/schiller-woods/#3103) entrance on
-Irving Park Road.
-
-![Hidden hill, bet you didn't even know it was there, very sneaky!](/assets/images/hiddenhill.jpg "Hidden Hill")
-
-My birthday passed recently. To celebrate I took that week off from work. With
-this free time I thought that I could go map the trails in these woods and post
-them all online for people to enjoy. I had several days set aside for this and
-all that I had to do was walk just a *few* miles of trails, post-process the
-data, and get it uploaded. How hard could it be?
-
-Nominally speaking, it's not very difficult at all to record some GPS tracks and
-upload them online. As the saying goes, `there is an application for that`.
-However, for the case of Schiller Woods South ("SWS" from now on), this turned
-into a series of rabbit holes, emails, and a lot of unexpected learning.
-
-In this post I will try to distill what I learned. If you find that you are
-interested in this kind of project yourself then you may find this information
-useful. If not, then stick around for the trail pictures and pretty maps.
-
-![Schiller Woods South - Ad-hoc shelter](/assets/images/sws-structure.jpg "Ad-hoc shelter")
-
-
-{{ "Why is this Interesting?" | blog_anchor }}
-
-Why is this interesting enough for me to post about it? Because of
-**inconsistency** and **incompleteness**. The data available drove me mad. Let's
-go on a brief tangent, shall we?
-
-At first I thought that the trails in SWS weren't documented online at all. In
-fact, if you take the [Web
-Map](https://map.fpdcc.com/#/?poi=223-Che+Che+Pin+Qua+Woods) link from the FPCC
-(Forest Preserve of Cook County) page for this region, you wont't find any
-evidence of the trails I am talking about.
-
-![Forest Preserve District of Cook County Web Map. Credit: FPCC](/assets/images/fpdccmap.png "No trails here")
-
-For a reasonable person this would be the natural conclusion. The official
-source does not document the trails. Therefore, they are unofficial. But then I
-found this when I pulled in OpenStreet Maps data to overlay my first GPS
-recording over.
-
-**Trails**. Many trails.
-
-Some of these trails you see below were added [almost 14 years
-ago](https://www.openstreetmap.org/way/79159562/history/1) on [OpenStreet
-Maps](https://www.openstreetmap.org/#map=16/41.9476/-87.8456). Some trail data
-have been added or edited as recently as 2 years ago. Some trails you can walk in
-real life aren't represented here.
-
-![Schiller Woods South trails. Credit: OpenStreet Maps](/assets/images/schillerwoods-osm.png "Schiller Woods South trails as seen on OpenStreet Maps")
-
-I wish I could have seen it back then, before the Japanese Barberry established
-itself.
-
-> "What's Japanese Barberry?"
-
-{{ "Japanese Barberry" | blog_anchor_link: "We'll get to that." }}
-
-If you go to the Hiking Project (app or website) you can see that there are some
-trails in a section that's labeled [Schiller Woods
-South](https://www.hikingproject.com/directory/8017260/schiller-woods-south).
-However, these trails aren't in Schiller Woods **South**.
-
-![Documented trails on for other areas. Schiller Woods South identified in rectangle at bottom of image. Credit: HikingProject.com](/assets/images/documented-trails.png "Documented trails for other areas")
-
-Conspicuously missing are entries of the *actual* trails in the SWS region. The
-spurs and trails displayed in that image are in the Schiller Woods West and East
-regions, as well as the Robinson Woods and Catherine Chevalier woods regions.
-
-Now what really chaps my ass about this is that the [Forest Preserve of Cook
-County](https://www.hikingproject.com/user/7040419/forest-preserves-of-cook-county)
-itself was the one uploading the data to the Hiking Project. As of 2024-06-28,
-FPCC is #55 with 1,668 points on the Hiking Project contributions [leader
-board](https://www.hikingproject.com/directory/users).
-
-Unfortunately, it seems that their time with Hiking Project has come to an end.
-Their profile lists their join date as March 2016 and their last visit to the
-site as July 2018.
-
-> Don't get me wrong, I do appreciate their significant contributions, I'm sure
-> that was a massive boon to the project at the time and helped it grow quite a
-> bit. I just include this as a record of the things that drove me mad as I was
-> starting this project.
-
-Oh yeah, that's right. We were talking about my mapping project weren't we?
-
-![Schiller Woods South - Oh dear!](/assets/images/sws-oh-dear.jpg "Oh dear!")
+This is part 2 in a series of blog posts where I am taking a deep dive into the
+world of GPS trail mapping. In this part of the series we're going into the
+software I've been playing with to view and process the captured GPS data.
 
 {{ "Getting Started" | blog_anchor }}
 
@@ -132,6 +39,8 @@ grade, but I didn't need that to go out and have some fun.
 > proper GPS recording device and got blocked by the lack of options I could
 > actually drive to. REI and Best Buy near me were only carrying fitness devices
 > with basic GPS viewing functionality.
+
+
 
 ![Schiller Woods South - Oh dear (2)!](/assets/images/sws-oh-dear2.jpg "Oh dear (2)!")
 
@@ -433,107 +342,4 @@ It's not all bad though:
 
 Much of the center area on the south side of Schiller Brooke, directly opposite
 of Hidden Hill is still gorgeous.
-
-{{ "Sorting out the Mess" | blog_anchor }}
-
-What happened with all that GPS data and the messy trails? I talked with some
-friends about it and they suggested reaching out to someone official who can
-answer with authority about the situation. Primarily I needed to focus on
-answering the question "is there an intended route through this forest?"
-
-I reached out to the people at the Forest Preserve of Cook County:
-
->  Hello, I would like to know if the trails in Schiller Woods South have names
->  or identifiers, and if there are any intended routes.
->
-> Specifically region bordered on the North and South by Irving Park Road and
-> the Indian Boundary Golf Course, and bordered on the East and West by N
-> Cumberland Ave and the Des Plaines River.
->
-> I've noticed there are some markings on some trees but they are inconsistent
-> and do not cover any of the paths entirely.
->
-> There seems to be a blue and yellow bullseye around a triangular path sequence
-> in the middle. And there are red arrows going kind of mostly east and east.
->
-> Do these have names, or is there any intended route? I ask because I want to
-> do some GPS recordings and upload them online, but because the paths aren't
-> very clear there's no obvious way to name or label anything.
->
-> Thanks so much!
-
-A few days later I received a brief response which did not directly answer any
-of my questions.
-
->  Hi Tim,
->
-> Thank you for reaching out to the Forest Preserves of Cook County.
->
-> Typically, we do not name trails (one exception would be at our nature
-> centers) but instead use colors to differentiate between trail segments within
-> a larger named trail system. Any official trail signage on the ground
-> (intersection posts, confidence markers, etc.) should include corresponding
-> colors to match the official trails we publish on our maps, webmap and
-> website:
->
-> [https://fpdcc.com/places/trails/des-plaines-river-trail-system/](https://fpdcc.com/places/trails/des-plaines-river-trail-system/)
-
-I wasn't satisfied with this response so I probed further.
-
-> * Does all this mean that the trails in Schiller Woods South aren't official then?
-> * Do you have any official records or documentation of the myriad trails down there?
-> * These trails do exist, but just aren't documented. What does that mean about their protected or maintenance status?
->
-> Thank you so much for your time! I enjoy these woods and I appreciate your earlier response.
-
-After a few days went by I bumped the email thread and this time I received a
-much more complete response. The answers were not the ones I had hoped to
-receive.
-
-> Correct. The trails in the southern region are not official Forest Preserves
-> trails, but rather, unmarked trails on our website and web map. Here's some
-> more information regarding unofficial trails that may be of interest:
-> 
-> > In addition to designated paved, graded, and primitive/rustic trails, there
-> > are many non-designated trails throughout the Forest Preserves. Such
-> > non-designated trails may occur naturally as deer trails or through human
-> > foot traffic over time. The Forest Preserves does not encourage, but
-> > generally does not prohibit, the use of non-designated trails. Users of such
-> > trails, however, should note that the Forest Preserves does not inspect or
-> > maintain non-designated trails. Accordingly, hidden and latent dangers, as
-> > well as other hazardous conditions, may be encountered on non-designated
-> > trails. Users of non-designated trails do so at their own risk and are
-> > encouraged to minimize their use of such trails. (Source:
-> > [https://fpdcc.com/about/rules-regulations/trail-risk-statement/](https://fpdcc.com/about/rules-regulations/trail-risk-statement/))
-
-I enjoy this next part. It seems that the staff are unsure about those pretty
-crap blazes I observed before:
-
-> As for the markers you've encountered, and upon reviewing internally with
-> staff, it has been relayed that these likely are not official markers—and may
-> be the work of local cub scouts or other groups. If possible, please forward
-> along any photo references you may have for Forest Preserves staff to confirm,
-> or if you don't have any on-hand, we can ask that our staff take a look and
-> confirm on that end.
-
-In a followup response I provided a gallery of about 50 photos I took of all the
-"not official markers" for their review.
-
-The response continues:
-
-> In conclusion, the only official trail running through this area is the yellow
-> unpaved trail (part of the Des Plaines River Trail System) running north to
-> south from Irving Park Road to Belmont Ave. Any other trails in this area
-> would be considered unrecognized, unofficial trails.  These trails were likely
-> formed without Forest Preserves’ consent and are not published on our maps
-> because they present a variety of issues (unmaintained, may occur in
-> ecologically sensitive areas that cause damage to the environment, etc.).
-> Forest Preserves visitors are encouraged to only use our official trails.
-
-There you have it. Those trails are unofficial. Their use use discouraged, but
-not prohibited.
-
-
-{{ "What about that OpenStreetMaps Data?" | blog_anchor }}
-
-I'm glad you asked. Because I'm curious about that too.
+if you 
