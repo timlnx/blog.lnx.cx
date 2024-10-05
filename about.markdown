@@ -7,9 +7,17 @@ permalink: /about/
 # Oh, hi there!
 
 This is the digital home of Tim Bielawa. I'm just another geek from the
-geocities era. This place used to run on WordPress, but I'm over all that extra
-work now.
+GeoCities and Homestead era. Back then before "blogging" we called it `e/n`, or
+everything/nothing. This place used to run on WordPress, but I'm over all that
+extra work now.
 
+I'm a philosophical naturalist. Think "atheist", except instead of defining my
+belief structure by the absence of any theistic system, I define it by the
+abundantly observable natural world around us.
+
+> The Cosmos is all that is or ever was or ever will be (Carl Sagan)
+
+He said it pretty well.
 
 
 

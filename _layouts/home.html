@@ -23,6 +23,7 @@ layout: default
             {{ post.title | escape }}
           </a>
         </h3>
+        {%- if post.tags -%}{%- for t in post.tags -%}<button class="tag-button">{{ t }}</button>{%- endfor -%}{%- endif -%}
         {%- if site.show_excerpts -%}
           {{ post.excerpt }}
         {%- endif -%}
