@@ -2,7 +2,7 @@
 author: Tim Bielawa
 date: 2024-07-06
 layout: post
-title: "DRAFT: GPS Mapping Chicago Trails — Part 3: Putting It All Together"
+title: "WIP: GPS Mapping Chicago Trails — Part 3: Putting It All Together"
 tags:
 - project
 - gps
@@ -162,10 +162,9 @@ blog_anchor_link }} moved in this forest was much clearer and easier to
 navigate. And certainly there has been considerable undergrowth in the decade+
 since that data was acquired and documented.
 
-Perhaps these paths were obvious shortcuts and bypasses to the "unpaved yellow
-trail" (the "Des Plaines River Trail"). It would explain a lot about the
-haphazard 
-
+Perhaps these paths were obvious shortcuts and bypasses to the
+"unpaved yellow trail" (the "Des Plaines River Trail"). It would
+explain a lot about their haphazard routes.
 
 
 ![Hand Drawn and Colored Print of Schiller Woods South circa
@@ -173,3 +172,18 @@ haphazard
 of Schiller Woods South circa 1940s")
 Source: Forest Preserve District of Cook County Records, University of Illinois at Chicago Library - *FPDCC_06_01_0000_0015_015* - [Indian Boundary, Des Plaines River](https://explore.chicagocollections.org/image/uic/65/2s13/)
 
+*This post is still incomplete. Sorry.*
+
+Todo:
+
+* Detail final email exchange about guerilla trail maintenance
+
+Need to copy paste for this
+
+* Detail before and after of big post-storm cleanup
+
+Need to collect and name and crop photos
+
+* Reveal conclusion: the flood bypass theory
+
+Need to write it up and generate some photos
