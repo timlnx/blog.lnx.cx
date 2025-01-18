@@ -6,8 +6,8 @@ permalink: /about/
 
 # Oh, hi there!
 
-This is the digital home of Tim Bielawa. I'm just another geek from the
-GeoCities and Homestead era. Back then before "blogging" we called it `e/n`, or
+This is the homepage of Tim Bielawa. I'm just another geek from the GeoCities
+and Homestead era. Back then before "blogging" we called it `e/n`, or
 everything/nothing. This place used to run on WordPress, but I'm over all that
 extra work now.
 
@@ -19,6 +19,7 @@ abundantly observable natural world around us.
 
 He said it pretty well.
 
+If you think I'm cool, you should check out [my cat](/carl/), he's a superstar.
 
 
 # Colophon

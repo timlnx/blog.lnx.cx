@@ -19,6 +19,8 @@ leave much to be desired. After several years of dealing with my own half-assed
 transcription I am finally getting around to writing it up in a useful format to
 share with folks.
 
+![Two delicious fresh baked loaves of bread](/assets/images/bread.jpg "Perfection")
+
 Because this is baking I am assuming that you already have a digital scale and
 will weigh out your ingredients. So don't complain to me about units, just
 push the unit button.
