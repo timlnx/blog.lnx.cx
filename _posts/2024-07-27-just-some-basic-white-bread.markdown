@@ -21,16 +21,13 @@ share with folks.
 
 ![Two delicious fresh baked loaves of bread](/assets/images/bread.jpg "Perfection")
 
-Because this is baking I am assuming that you already have a digital scale and
-will weigh out your ingredients. So don't complain to me about units, just
-push the unit button.
 
 | Thing | Amount |
 | ----- | ------ |
 | Butter | 100g |
-| Whole Milk | 2.5 cups 😉 |
+| Whole Milk | 555g |
 | Yeast | 9g |
-| Bread Flour | 907 g |
+| Bread Flour | 907g |
 | Sugar | 88g |
 | Salt | 18g |
 
