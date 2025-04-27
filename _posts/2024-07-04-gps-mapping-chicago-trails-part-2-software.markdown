@@ -18,6 +18,10 @@ This is part 2 in a series of blog posts where I am taking a deep dive into the
 world of GPS trail mapping. In this part of the series we're going into the
 software I've been playing with to view and process the captured GPS data.
 
+* [GPS Mapping Chicago Trails — Part 1: Schiller Woods]({% link _posts/2024-06-27-gps-mapping-chicago-trails-part-1.markdown %})
+* [GPS Mapping Chicago Trails — Part 2: Software]({% link _posts/2024-07-04-gps-mapping-chicago-trails-part-2-software.markdown %})
+* [GPS Mapping Chicago Trails — Part 3: Putting It All Together]({% link _posts/2024-07-06-gps-mapping-chicago-trails-part-3.markdown %})
+
 {{ "Getting Started" | blog_anchor }}
 
 Part of my motivation for starting this project was the lack of available

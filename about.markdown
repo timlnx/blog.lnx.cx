@@ -6,10 +6,12 @@ permalink: /about/
 
 # Oh, hi there!
 
-This is the homepage of Tim Bielawa. I'm just another geek from the GeoCities
-and Homestead era. Back then before "blogging" we called it `e/n`, or
-everything/nothing. This place used to run on WordPress, but I'm over all that
-extra work now.
+This is the homepage of Tim Case. You might have known me as Tim Bielawa (or
+Blablabla), or Shaggy back in the late aughts.
+
+I'm just another geek from the GeoCities and Homestead era. Back then before
+"blogging" we called it `e/n`, or everything/nothing. This place used to run on
+WordPress, but I'm over all that extra work now.
 
 I'm a philosophical naturalist. Think "atheist", except instead of defining my
 belief structure by the absence of any theistic system, I define it by the

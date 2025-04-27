@@ -15,10 +15,11 @@ tags:
 This is part 3 in a series of blog posts where I am taking a deep dive into the
 world of GPS mapping. In this part of the series we're going to wrap everything
 up. I will have GPX files available for download and links to trails on Hiking
-Project. [Click
-here](/2024/07/04/gps-mapping-chicago-trails-part-2-software.html) to go back to
-part 2.
+Project.
 
+* [GPS Mapping Chicago Trails — Part 1: Schiller Woods]({% link _posts/2024-06-27-gps-mapping-chicago-trails-part-1.markdown %})
+* [GPS Mapping Chicago Trails — Part 2: Software]({% link _posts/2024-07-04-gps-mapping-chicago-trails-part-2-software.markdown %})
+* [GPS Mapping Chicago Trails — Part 3: Putting It All Together]({% link _posts/2024-07-06-gps-mapping-chicago-trails-part-3.markdown %})
 
 {{ "Sorting out the Mess" | blog_anchor }}
 
