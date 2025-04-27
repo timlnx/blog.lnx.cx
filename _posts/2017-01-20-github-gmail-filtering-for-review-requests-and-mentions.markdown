@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2017-01-20 19:43:50+00:00
 layout: post
 title: '[Updated] GitHub + Gmail — Filtering for Review Requests and Mentions'

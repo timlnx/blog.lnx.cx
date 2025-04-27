@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2009-09-03 15:00:30+00:00
 layout: post
 title: Basic Screen Tutorial

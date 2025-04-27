@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2014-03-16 23:23:01+00:00
 layout: post
 title: 'New side-project: bitmath - A Python module for representing file sizes with

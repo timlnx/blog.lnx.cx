@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2013-04-13 15:30:51+00:00
 layout: post
 title: A new scholarship for open source

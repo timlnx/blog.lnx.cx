@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2012-10-13 01:40:45+00:00
 layout: post
 title: Running despotify on Fedora 17 x64

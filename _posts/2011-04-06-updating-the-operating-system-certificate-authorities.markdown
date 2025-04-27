@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2011-04-06 23:16:24+00:00
 layout: post
 published: false

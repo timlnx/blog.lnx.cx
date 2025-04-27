@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2013-03-30 03:17:44+00:00
 layout: post
 title: 'PROTIP: Shell Functions - cdmkdir'

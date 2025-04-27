@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2010-03-27 01:00:48+00:00
 layout: post
 title: Zone out completely

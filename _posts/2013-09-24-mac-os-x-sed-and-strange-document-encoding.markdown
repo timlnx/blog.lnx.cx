@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2013-09-24 15:03:10+00:00
 layout: post
 title: Mac OS X, Sed, and strange document encoding

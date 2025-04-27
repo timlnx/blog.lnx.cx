@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2009-08-14 01:18:11+00:00
 layout: post
 title: Fixing my missing locales

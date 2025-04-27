@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2024-07-04
 layout: post
 title: "GPS Mapping Chicago Trails — Part 2: Software"

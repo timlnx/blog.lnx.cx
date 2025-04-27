@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2019-09-09 17:18:50+00:00
 layout: post
 title: Using jq to filter an array of objects from JSON

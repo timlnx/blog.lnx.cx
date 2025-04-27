@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2023-02-04 19:49:47+00:00
 layout: post
 title: Querying block device sizes in Python on Linux and Mac OS X

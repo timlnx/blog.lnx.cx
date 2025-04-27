@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2013-07-05 21:01:23+00:00
 layout: post
 title: A Munin plugin for OpenShift

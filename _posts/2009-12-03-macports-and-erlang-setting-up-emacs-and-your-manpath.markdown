@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2009-12-03 03:32:05+00:00
 layout: post
 title: 'Macports, and Erlang: Setting up Emacs and your $MANPATH'

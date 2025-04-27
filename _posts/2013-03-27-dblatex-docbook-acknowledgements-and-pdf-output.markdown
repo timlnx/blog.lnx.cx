@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2013-03-27 15:15:23+00:00
 layout: post
 title: dblatex, DocBook, acknowledgements and PDF output

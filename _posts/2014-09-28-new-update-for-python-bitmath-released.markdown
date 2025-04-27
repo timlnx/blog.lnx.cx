@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2014-09-28 20:38:05+00:00
 layout: post
 title: New update for python-bitmath released

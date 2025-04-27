@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2011-09-14 06:27:22+00:00
 layout: post
 title: Fedora 15 and the Lenovo T520 Thinkpad

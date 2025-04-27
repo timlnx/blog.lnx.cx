@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2010-02-03 05:08:37+00:00
 layout: post
 title: Macports updates their Erlang version, update your load-path's

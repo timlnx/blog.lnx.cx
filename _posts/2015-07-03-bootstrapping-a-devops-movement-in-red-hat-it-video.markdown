@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2015-07-03 02:14:19+00:00
 layout: post
 title: Bootstrapping a DevOps Movement in Red Hat IT - Video

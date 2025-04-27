@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2011-10-15 19:19:11+00:00
 layout: post
 title: Mac OS X 10.7 - Getting songs off an iPod

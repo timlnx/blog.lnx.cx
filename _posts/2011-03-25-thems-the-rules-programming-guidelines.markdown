@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2011-03-25 06:35:40+00:00
 layout: post
 title: Them's the rules (programming guidelines)

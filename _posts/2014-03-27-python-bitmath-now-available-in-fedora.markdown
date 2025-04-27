@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2014-03-27 16:46:22+00:00
 layout: post
 title: python-bitmath - Now available in Fedora!

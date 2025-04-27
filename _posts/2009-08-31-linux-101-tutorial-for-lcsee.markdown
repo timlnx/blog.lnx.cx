@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2009-08-31 03:39:20+00:00
 layout: post
 title: Linux 101 Tutorial for LCSEE

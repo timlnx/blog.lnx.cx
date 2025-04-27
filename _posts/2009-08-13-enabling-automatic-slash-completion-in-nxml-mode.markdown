@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2009-08-13 21:38:46+00:00
 layout: post
 title: Enabling automatic slash completion in nXML-Mode

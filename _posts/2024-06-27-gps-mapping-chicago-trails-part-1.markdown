@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2024-06-27
 layout: post
 title: "GPS Mapping Chicago Trails — Part 1: Schiller Woods"

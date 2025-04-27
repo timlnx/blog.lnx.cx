@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2013-11-30 19:57:34+00:00
 layout: post
 title: Technitribe now Creative Commons BY-SA 4.0

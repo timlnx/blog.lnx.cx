@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2009-09-04 10:27:40+00:00
 layout: post
 title: A haiku for modulus

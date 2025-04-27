@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2013-05-01 19:09:03+00:00
 layout: post
 title: Rails, Bootstrap, Icons, and Classes

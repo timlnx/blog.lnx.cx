@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2013-01-22 03:21:04+00:00
 layout: post
 title: Working on The Virtual Disk Guide

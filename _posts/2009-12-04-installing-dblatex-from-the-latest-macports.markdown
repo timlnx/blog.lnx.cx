@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2009-12-04 09:05:38+00:00
 layout: post
 title: Installing dblatex from the latest MacPorts

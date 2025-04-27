@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2012-01-04 03:29:51+00:00
 layout: post
 title: Excluding in the Emacs file completion buffer

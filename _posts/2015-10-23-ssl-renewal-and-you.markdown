@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2015-10-23 16:54:31+00:00
 layout: post
 title: SSL Renewal And You

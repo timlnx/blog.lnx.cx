@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2016-07-03 13:59:07+00:00
 layout: post
 title: bitmath - Now available in Ubuntu PPAs

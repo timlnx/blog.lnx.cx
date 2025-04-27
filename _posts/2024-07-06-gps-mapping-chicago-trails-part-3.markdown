@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2024-07-06
 layout: post
 title: "WIP: GPS Mapping Chicago Trails — Part 3: Putting It All Together"

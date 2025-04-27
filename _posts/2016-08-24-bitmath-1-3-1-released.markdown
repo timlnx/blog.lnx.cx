@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2016-08-24 16:33:03+00:00
 layout: post
 title: bitmath-1.3.1 released

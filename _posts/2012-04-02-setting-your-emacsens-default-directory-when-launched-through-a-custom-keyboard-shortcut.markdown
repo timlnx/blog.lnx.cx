@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2012-04-02 16:47:54+00:00
 layout: post
 title: Setting your Emacsens default directory when launched through a custom keyboard

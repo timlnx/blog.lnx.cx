@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2013-12-04 14:27:06+00:00
 layout: post
 title: Feeling Developer Pain

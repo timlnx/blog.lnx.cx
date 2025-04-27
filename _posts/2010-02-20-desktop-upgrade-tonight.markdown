@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2010-02-20 01:28:10+00:00
 layout: post
 title: Desktop Upgrade Tonight

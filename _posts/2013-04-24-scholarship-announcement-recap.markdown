@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2013-04-24 05:22:52+00:00
 layout: post
 title: Scholarship Announcement Recap

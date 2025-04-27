@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2016-03-12 00:19:47+00:00
 layout: post
 title: I just published my first book, The Virtual Disk Guide

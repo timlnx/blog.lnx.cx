@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2012-08-30 03:37:07+00:00
 layout: post
 title: On Long-Term Goals

@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2014-04-20 17:26:36+00:00
 layout: post
 title: Red Hat Summit 2014 - Session Slides

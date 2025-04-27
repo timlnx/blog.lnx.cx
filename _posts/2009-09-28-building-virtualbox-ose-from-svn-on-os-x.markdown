@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2009-09-28 05:56:21+00:00
 layout: post
 title: Building VirtualBox OSE from SVN on OS X

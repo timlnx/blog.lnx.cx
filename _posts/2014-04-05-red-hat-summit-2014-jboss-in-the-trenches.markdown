@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2014-04-05 22:15:46+00:00
 layout: post
 title: Red Hat Summit 2014 - JBoss In The Trenches

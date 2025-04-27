@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2024-06-09
 layout: post
 title: Moved the blog to jekyll

@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2010-02-03 08:44:52+00:00
 layout: post
 title: State Transition Diagram featured on blog.xmpp.org

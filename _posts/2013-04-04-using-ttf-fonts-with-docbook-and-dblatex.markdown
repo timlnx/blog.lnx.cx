@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2013-04-04 22:38:29+00:00
 layout: post
 title: Using TTF fonts with DocBook and dblatex

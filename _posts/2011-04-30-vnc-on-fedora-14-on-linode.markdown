@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2011-04-30 05:19:26+00:00
 layout: post
 title: VNC On Fedora 14 on Linode

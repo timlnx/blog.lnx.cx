@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2014-03-20 17:14:23+00:00
 layout: post
 title: Fedora 20 and the ThinkPad T440s touchpad

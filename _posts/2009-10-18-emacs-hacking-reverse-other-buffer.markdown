@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2009-10-18 22:39:51+00:00
 layout: post
 title: Emacs Hacking, reverse other buffer

@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2010-09-23 00:38:09+00:00
 layout: post
 title: Lots more docs published on PeopleAreDucks.com

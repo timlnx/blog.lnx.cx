@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2009-12-14 23:24:46+00:00
 layout: post
 title: Syndication
