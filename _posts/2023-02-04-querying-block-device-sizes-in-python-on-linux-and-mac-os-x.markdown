@@ -21,6 +21,7 @@ tags:
 
 I drafted this blog post in 2016 (at least), but held off publishing it until I could have it fact checked. Well, 6 years have passed... I am 99% sure the information in this blog post is correct. But if you find an error with my explanation of the userspace-kernel-device dataflow then please send me an email so I can understand it better and update this post. Thank you!
 
+> *Updated: 2025-06-06 - Fixed missing ioctl flow image. Sorry about that!*
 
 # The Problem
 
@@ -45,8 +46,8 @@ ioctl requests are just one of many types of system calls. ioctl requests enabl
 
 The following image shows the general flow of control/data when a process has issued an `ioctl()` request. Following the image we'll review what happens at each numbered transition.
 
-[![Flow of control/data when handling ioctl requests](https://blog.lnx.cx/wp-content/uploads/2015/02/ioctl-flow.png)](https://blog.lnx.cx/?attachment_id=701) Flow of control/data when handling ioctl requests
-
+*Flow of control/data when handling ioctl requests*:
+![Flow of control/data when handling ioctl requests](/assets/images/ioctl-call.png)
 
 
  	
@@ -188,9 +189,6 @@ Things to note from this example:
 
  	
     * `DKIOCGETBLOCKCOUNT` to find the number of blocks on the disk
-
-
-
 
 
 
