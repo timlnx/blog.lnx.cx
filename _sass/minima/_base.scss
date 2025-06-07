@@ -130,8 +130,8 @@ a {
  * Blockquotes
  */
 blockquote {
-  color: $grey-color;
-  border-left: 4px solid $grey-color-light;
+  color: $green-color-dark;
+  border-left: 4px solid $green-color-light;
   padding-left: math.div($spacing-unit, 2);
   @include relative-font-size(1);
   letter-spacing: -1px;

@@ -18,6 +18,11 @@ $grey-color:       #729fcf !default;
 $grey-color-light: lighten($grey-color, 15%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
+$green-color:      #0786078b !default;
+$green-color-light: lighten($green-color, 15%) !default;
+$green-color-dark:  darken($green-color, 25%) !default;
+$green-color-darker:  darken($green-color, 35%) !default;
+
 $table-text-align: left !default;
 
 // Width of the content area

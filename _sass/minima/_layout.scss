@@ -4,7 +4,7 @@
 * BEGIN custom blog css
 */
 .tag-button {
-  background-color: $grey-color-light;
+  background-color: $green-color;
   border: 1px solid $grey-color;
   //color: black;
   padding: 3px 10px;
@@ -29,9 +29,9 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
-  border-bottom: 1px solid $grey-color-dark;
-  background-color: $grey-color-light;
+  border-top: 5px solid $green-color-dark;
+  border-bottom: 1px solid $green-color-dark;
+  background-color: $green-color;
   min-height: $spacing-unit * 1.865;
 
   // Positioning context for the mobile navigation icon
@@ -48,7 +48,7 @@
 
   &,
   &:visited {
-    color: $grey-color-dark;
+    color: $green-color-dark;
   }
 }
 
@@ -134,9 +134,9 @@
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $grey-color-dark;
+  border-top: 1px solid $green-color-dark;
   padding: $spacing-unit 0;
-  background-color: $grey-color-light;
+  background-color: $green-color;
 }
 
 .footer-heading {
@@ -152,7 +152,7 @@
 
 .footer-col-wrapper {
   @include relative-font-size(0.9375);
-  color: $grey-color;
+  color: $green-color-darker;
   margin-left: math.div(-$spacing-unit, 2);
   @extend %clearfix;
 }
