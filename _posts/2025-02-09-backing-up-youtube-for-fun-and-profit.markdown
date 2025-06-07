@@ -1,5 +1,5 @@
 ---
-author: Tim Bielawa
+author: Tim Case
 date: 2025-02-09
 title: Backing Up YouTube for Fun and Profit
 layout: post
