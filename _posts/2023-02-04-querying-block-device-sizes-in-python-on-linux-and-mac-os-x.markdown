@@ -23,7 +23,7 @@ I drafted this blog post in 2016 (at least), but held off publishing it until I 
 
 > *Updated: 2025-06-06 - Fixed missing ioctl flow image. Sorry about that!*
 
-# The Problem
+{{ "The Problem" | blog_anchor }}
 
 
 I've been experimenting with creating functionality within [bitmath](https://bitmath.readthedocs.org/en/latest/) for reading the size of storage devices. This would provide a function similar to Python's [`os.path.getsize`](https://docs.python.org/3/library/os.path.html#os.path.getsize), but for storage device capacity instead of file sizes.
@@ -37,7 +37,7 @@ In the rest of this blog post we'll learn the basics of how programs can interac
 _If you're not familiar with that acronym, "ioctl" stands for "input/output control"._
 
 
-# Back to Basics
+{{ "Back to Basics" | blog_anchor }}
 
 
 Before we start learning how to query a storage device's capacity in Python we're going to review (from a very high-level) the core concept of this exercise: `ioctl()` requests and how the operating system handles them.
@@ -69,11 +69,10 @@ The following image shows the general flow of control/data when a process has is
 To briefly review: a process makes an `ioctl()` function call specifying a certain device, request code, and a region of memory identified by the pointer called _buffer_. When the ioctl call is executed by the CPU an _interrupt_ is raised which instantly switches the flow of execution into privileged kernel space. The kernel finds and runs the function which handles the given ioctl request. Once the storage device responds with a result, the result is copied into the memory region called _buffer_. After this is complete, the flow of control returns back to the original process running in user space.
 
 
-# Coding Review
+{{"Coding Review" | blog_anchor }}
 
 
 The Python standard library includes two important modules we'll be using:
-
 
 
  	
@@ -125,7 +124,7 @@ For example, for a call which would return (in C code) an `unsigned long`, we w
 There's still a few more pieces of information we need to uncover before we can get started. We need the hexadecimal request codes used on Linux and Mac OS X when making the ioctl calls. This is when the problem got really interesting to me.
 
 
-# Request Codes
+{{"Request Codes" | blog_anchor }}
 
 
 The approach we will take to finding the necessary request codes is applicable to all operating systems. We'll write some small C programs which include some required headers and then print out the hex value of the symbols we're interested in.
@@ -133,7 +132,7 @@ The approach we will take to finding the necessary request codes is applicable t
 "Wait! Why are these hex values so important?", you may be asking. The answer is because when we write our Python script we must use the request codes actual value. Symbol names (i.e., `BLKGETSIZE64`) are not accepted.
 
 
-## Linux
+{{"Linux" | blog_anchor }}
 
 
 Querying the block device size in Python on a Linux host was as simple as copying and pasting the example code provided in this [stackoverflow answer](http://stackoverflow.com/a/12925285/263969). You can see in here on line number 6 that the original poster was
@@ -141,7 +140,7 @@ Querying the block device size in Python on a Linux host was as simple as copyi
 https://gist.github.com/tbielawa/d49b6e7a057377f6a0ee#file-readsize-py
 <script src="https://gist.github.com/tbielawa/d49b6e7a057377f6a0ee.js"></script>
 
-### How This Works
+{{"How This Works" | blog_anchor }}
 
 
 Having a working example is nice and all, but **understanding** how it works is more important if we're going to make it run on OS X as well. Let's begin by returning to basics, and that means talking about [system calls](http://en.wikipedia.org/wiki/System_call), specifically the [`ioctl`](http://en.wikipedia.org/wiki/Ioctl) (input/output control) system call.
@@ -151,7 +150,7 @@ Now why is this a challenge to port from Linux to Mac? Why doesn't the same code
 Now, let's return to our original example. See that line which reads `req = 0x80081272`? That is the request code we're going to send to the block device. The original author was kind enough to include the symbol name for this request code as well, [`BLKGETSIZE64`](https://github.com/torvalds/linux/blob/fff5a5e7f528b2ed2c335991399a766c2cf01103/include/uapi/linux/fs.h#L174). This is a good thing to know because we're going to need that same type of information to make this all work on Mac OS X.
 
 
-### Symbol Name To Code Value (Linux)
+{{"Symbol Name To Code Value (Linux)" | blog_anchor }}
 
 
 I hope you have a C compiler installed, because we're about to get weird in here. How do we go from a symbol **name** to the symbol **value**? On Linux, the request code we're using is defined in the kernel header file [`/usr/include/linux/fs.h`](https://github.com/torvalds/linux/blob/fff5a5e7f528b2ed2c335991399a766c2cf01103/include/uapi/linux/fs.h#L174). Below is a small C program which loads this header and prints out the hex value of this symbol for us. We'll do a similar thing on OS X in a later example.
@@ -165,7 +164,7 @@ https://gist.github.com/tbielawa/d49b6e7a057377f6a0ee#file-linux-compile-run-req
 Note how the printed value matches the value in our original Python code sample. **That** is how we go from request code symbolic names to request code numerical values.
 
 
-## Request Codes on Mac OS X
+{{"Request Codes on Mac OS X" | blog_anchor }}
 
 
 Now we'll use what we learned above to find the same type of information for OS X. Figuring this out required additional research. As previously noted, the symbol name is not going to be the same on OS X. In fact, [research showed](http://stackoverflow.com/a/9764508/263969) that we will need to know two request codes on OS X. This is because OS X does not have a single request code equivalent to the Linux `BLKGETSIZE64` code.
@@ -175,8 +174,6 @@ Below is the C code from the referenced research. The code shows us how to calcu
 https://gist.github.com/tbielawa/d49b6e7a057377f6a0ee#file-osx-calclulate-disk-size-c
 
 Things to note from this example:
-
-
 
  	
   * Instead of including `linux/fs.h` we must include `sys/disk.h`
@@ -191,10 +188,7 @@ Things to note from this example:
     * `DKIOCGETBLOCKCOUNT` to find the number of blocks on the disk
 
 
-
-
-### Symbol Name To Code Value (Mac OS X)
-
+{{"Symbol Name To Code Value (Mac OS X)" | blog_anchor }}
 
 To obtain the request code values on OS X we will roughly repeat the same process we used on Linux. We'll write a small C program, include the header, and print out the hex values.
 
@@ -207,7 +201,7 @@ https://gist.github.com/tbielawa/d49b6e7a057377f6a0ee#file-osx-compile-run-reque
 From this we now know the value of the required request codes for OS X and Linux:
 
 
-## Request Codes Review
+{{"Request Codes Review" | blog_anchor }}
 
 
 <table style="border-color: #cc3333; background-color: #f7f7f7;" border="1">
@@ -237,16 +231,13 @@ From this we now know the value of the required request codes for OS X and Linux
 </table>
 
 
-# Handling struct.unpack()
-
+{{"Handling struct.unpack()" | blog_anchor }}
 
 Nearly done now! Let's return once again to the original Python code earlier in this blog post. On line **12** we see this statement: `bytes = struct.unpack(fmt, buf)[0]` and `fmt` was set to `L` earlier in the example. What does this mean, and why do we do it?
 
 When we make the ioctl request with Pythons `fcntl.ioctl` function, the value we get back in the buffer variable is a binary structure (think of C `struct`s) which has been "packed" into a string. That is to say, instead of `fcntl.ioctl` returning an integer representing our disk size in bytes, we receive a string representing the binary equivalent of this value. To turn this into something useful we must unpack the string into a data-structure native to Python. Unpacking binary data in Python is done the same way for each packed value, using `struct.unpack`. The difference between unpacking each type is in deciding what to unpack the data into, and that requires knowing the size of the data we're going to unpack.
 
 Every ioctl request will return a value of a known size. These variable sizes are documented in the kernel headers source code. In the case of `BLKGETSIZE64` specifically, this is defined in `/usr/include/linux/fs.h` as such:
-
-
 
  	
   * `#define BLKGETSIZE64 _IOR(0x12,114,size_t) /* return device size in bytes (**u64** *arg) */`
