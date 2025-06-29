@@ -27,6 +27,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 url: "https://lnx.cx" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username: tbielawa
+bluesky_username: lnx.cx
 permalink: /:year/:month/:day/:title:output_ext
 # Build settings
 #theme: minima
@@ -60,3 +61,4 @@ kramdown:
 exclude:
   - README.md
   - 2024-06-04-welcome-to-jekyll.markdown
+  - 2030-01-01-template.markdown
