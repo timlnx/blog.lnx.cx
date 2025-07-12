@@ -39,6 +39,12 @@ plugins:
 kramdown:
   smart_quotes: ["apos", "apos", "quot", "quot"]
 
+og:
+  image:
+    height: 300
+    width: 300
+    path: assets/opengraph/og-image-carl-300x300.png
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

@@ -17,6 +17,9 @@ author: Tim Case
 layout: post
 ---
 
+Due to some new fences, there is now a routing error in the Chicago Outer Belt
+hiking trail maps. This post shows you where the error is and how you can route
+around it.
 
 Last summer I began hiking the >200 mile long [Chicago Outer Belt
 Trail](https://outerbelt.org/). It's a lot of hiking and I'm having a blast. If
