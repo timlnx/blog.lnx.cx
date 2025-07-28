@@ -31,3 +31,19 @@ If you think I'm cool, you should check out [my cat](/carl/), he's a superstar.
 * This lovely font is called [FiraCode](https://github.com/tonsky/FiraCode) [**[OFL-1.1](https://github.com/tonsky/FiraCode/blob/master/LICENSE) License**]
 * All content on this site is provided to human beings under the terms of the [Creative Commons Attribution-ShareAlike 4.0 International](http://creativecommons.org/licenses/by-sa/4.0/)
 * Use of this website by AI/LLM scraper bots for training data constitutes acceptance of a profit sharing agreement, you can opt out over certified mail to my non-existing PO box
+
+{{ "Why the name change?" | blog_anchor }}
+
+That's a fine question to ask. Here's the backstory.
+
+I was born to a single mother and for several years I was named Timothy Matthew Case. When my mom married I was given a new last name. They split up when I was a teenager and that parent basically exited my life.
+
+I grew tired of having an impossible to pronounce surname. It's an extra micro-stress I didn't want to keep dealing with **almost daily**.
+
+On top of that, I'm just a simple dude. I did not like being called `Timothy`, ever. Correcting people, or computer systems at work to use my preferred name was growing tiresome as well. I didn't need all that extra little stress in my life.
+
+For a few years I flirted with the idea of changing back to Case. But, I never got around to it because there was usually something else more urgent that needed to get addressed first.
+
+Fast forward to 2025 and my divorce. I can't think of a better and more appropriate time to get your name changed than that. My attorney and I included it in the settlement agreement and in mid-2025 I got to assume my new (old) identity as Tim Case.
+
+But it's just Tim Case now. No middle name. And never `Timothy`. Just `Tim` and `Case`. 7 letters. Nice and simple.
