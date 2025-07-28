@@ -10,75 +10,41 @@ tags:
 - weehcat
 ---
 
+Weechat is an IRC client. This post has a lot of neat tips and settings for improving the user experience. Circa 2012 that is.
+
 # Plugins ("Scripts")
-
-
-
 
 ## Show the channels you have joined
 
-
-
-
-
-	
-  * From: [http://www.weechat.org/scripts/source/stable/buffers.pl.html/](http://www.weechat.org/scripts/source/stable/buffers.pl.html/)
-
-
-
-	
-  * No setup required to get going.
-
-
-
-	
-  * Drop into `~/.weechat/perl/autoload`
+* From: [http://www.weechat.org/scripts/source/stable/buffers.pl.html/](http://www.weechat.org/scripts/source/stable/buffers.pl.html/)
+* No setup required to get going.
+* Drop into `~/.weechat/perl/autoload`
 
 
 
 
 ## Direct message notifications
 
-
-
-
-
-	
-  * [http://www.weechat.org/scripts/source/stable/notify.py.html/](http://www.weechat.org/scripts/source/stable/notify.py.html/)
-
-	
-  * No setup required to get going.
-
-	
-  * Drop into `~/.weechat/python/autoload`
+* [http://www.weechat.org/scripts/source/stable/notify.py.html/](http://www.weechat.org/scripts/source/stable/notify.py.html/)
+* No setup required to get going.
+* Drop into `~/.weechat/python/autoload`
 
 
 Needs some tweaks on Gnome 3 though for better functionality
-
-	
-  * [http://pastebin.com/7iuu9Bn9](http://pastebin.com/7iuu9Bn9)
+* [http://pastebin.com/7iuu9Bn9](http://pastebin.com/7iuu9Bn9)
 
 
 Explanation for having this:
 
-By default, in GNOME3 every notification you recieve from weechat will stack up in your notification panel until acknowledged. This is not my idea of ideal. In libnotify, setting notifications to transient (see patch) means that they will not hang around on your notification panel forever -- waiting for you to acknowledge them -- one-by-one, before they disappear
+By default, in GNOME3 every notification you receive from weechat will stack up in your notification panel until acknowledged. This is not my idea of ideal. In libnotify, setting notifications to transient (see patch) means that they will not hang around on your notification panel forever -- waiting for you to acknowledge them -- one-by-one, before they disappear
 
 
 ## Plugin for opening links in your browser
 
+* From: [http://www.weechat.org/scripts/source/stable/urlgrab.py.html/](http://www.weechat.org/scripts/source/stable/urlgrab.py.html/)
+* Useful with a `/open` alias, see the aliases section below.
 
-
-
-
-	
-  * From: [http://www.weechat.org/scripts/source/stable/urlgrab.py.html/](http://www.weechat.org/scripts/source/stable/urlgrab.py.html/)
-
-	
-  * Useful with a `/open` alias, see the aliases section below.
-
-	
-  * Drop into  `~/.weechat/python/autoload`
-
+* Drop into  `~/.weechat/python/autoload`
 
 Why not just click the links normally? Presumably, you're running weechat in a terminal, this will cause long links to hard-wrap around the screen. When the links are hard-wrapped like this it causes the clickable portion of the URL to become truncated (you won't be able to click the full url).
 
@@ -89,60 +55,29 @@ This has one obvious limitation: it doesn't work well if you're running weechat 
 
 # Built-In Keybindings
 
-
-
-
 ## Go to the buffer I was last pinged in
 
-
-
-
-
-	
-  * `Alt + a`
-
-
-
+* `Alt + a`
 
 ## Go to buffer #
 
+* `Alt + #`
 
+* Usage:
 
+  * `Alt + 5`
 
-
-	
-  * `Alt + #`
-
-	
-  * Usage:
-
-	
-    * `Alt + 5`
-
-
-
-
-	
-  * The current window will now display buffer number 5
-
+* The current window will now display buffer number 5
 
 See the next tip if you need to show a buffer whose number is two or more digits.
 
-
 ## Go to buffer ##
 
+* `Alt + j ##`
 
+* Usage:
 
-
-
-	
-  * `Alt + j ##`
-
-	
-  * Usage:
-
-	
-    * `Alt + j 10`
+  * `Alt + j 10`
 
 
 
@@ -285,7 +220,7 @@ You may have a problem where your buffer titles (channel topics) only color the 
 
 
 
-At work I am logged into three IRC networks all day long: devel, corp, and freenode, I use this to set a status (tbielawa|brb, or tbielawa|wfh, ...) on all three at once:
+At work I am logged into three IRC networks all day long: devel, corp, and freenode, I use this to set a status (`tbielawa|brb`, or `tbielawa|wfh`, ...) on all three at once:
 
 
 
@@ -305,7 +240,7 @@ At work I am logged into three IRC networks all day long: devel, corp, and freen
 
 
 
-Nick on all networks is now: tbielawa|wfh.
+Nick on all networks is now: `tbielawa|wfh`.
 
 
 ## Close the current buffer (channel window)
@@ -442,7 +377,7 @@ These will build off of some of the aliases we already setup in the "Basic Alias
 
 
 
-My nick would now be set to tbielawa|wfh on all logged in servers. Requires you made the `/appendnick` alias already.
+My nick would now be set to `tbielawa|wfh` on all logged in servers. Requires you made the `/appendnick` alias already.
 
 
 ## Set a 'lunch' nick
@@ -464,7 +399,7 @@ My nick would now be set to tbielawa|wfh on all logged in servers. Requires you 
 
 
 
-My nick would now be set to tbielawa|lunch on all logged in servers.
+My nick would now be set to `tbielawa|lunch` on all logged in servers.
 
 
 ## Set back my normal nick (as if returning from lunch)
@@ -486,7 +421,7 @@ My nick would now be set to tbielawa|lunch on all logged in servers.
 
 
 
-My nick would now be set back to 'tbielawa' on all logged in servers.
+My nick would now be set back to `tbielawa` on all logged in servers.
 
 
 ## Do a Figlet in another buffer
@@ -494,7 +429,7 @@ My nick would now be set back to 'tbielawa' on all logged in servers.
 
 
 
-Ask the _GCA_ bot in #it-eng to do a [Figlet](http://www.figlet.org/) (Figlets are large ASCII text banners). This works no matter what channel you're viewing presently, as long as it's on the same irc network:
+Ask the _GCA_ bot in `#it-eng` to do a [Figlet](http://www.figlet.org/) (Figlets are large ASCII text banners). This works no matter what channel you're viewing presently, as long as it's on the same irc network:
 
 
 
@@ -514,7 +449,7 @@ Ask the _GCA_ bot in #it-eng to do a [Figlet](http://www.figlet.org/) (Figlets a
 
 
 
-The phrase **LOLCATS!** will appear in a large ASCII font in the #it-eng channel.
+The phrase **LOLCATS!** will appear in a large ASCII font in the `#it-eng` channel.
 
 
 ## Display three buffers in multiple windows
@@ -525,7 +460,7 @@ The phrase **LOLCATS!** will appear in a large ASCII font in the #it-eng channe
 This requires that you have three horizontally stacked windows open (see `/split3` above). It will cycle the focus through each window and then set it to display a specific buffer (channel).
 
 
-Say for example you automatically join three channels when opening weechat: #it, #secretfunchannel, and #myteamchannel:
+Say for example you automatically join three channels when opening weechat: `#it`, `#secretfunchannel`, and `#myteamchannel`:
 
 
 
@@ -542,7 +477,7 @@ Say for example you automatically join three channels when opening weechat: #it,
 
 
 
-When the alias finishes the cursor will be focused on the center buffer (channel), which in this example would be #secretfunchannel.
+When the alias finishes the cursor will be focused on the center buffer (channel), which in this example would be `#secretfunchannel`.
 
 Final Window <-> buffer arrangement after running `/mychannels`:
 
