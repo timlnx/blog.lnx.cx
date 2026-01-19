@@ -28,7 +28,8 @@ If you think I'm cool, you should check out [my cat](/carl/), he's a superstar.
 
 * This site is generated with [Jekyll](https://jekyllrb.com/) [**[MIT](https://github.com/jekyll/jekyll/blob/master/LICENSE) License**]
 * What you are seeing is all based off of the default [minima theme](https://github.com/jekyll/minima) [**[MIT](https://github.com/jekyll/minima/blob/master/LICENSE.txt) License**]
-* This lovely font is called [FiraCode](https://github.com/tonsky/FiraCode) [**[OFL-1.1](https://github.com/tonsky/FiraCode/blob/master/LICENSE) License**]
+* The main font used here is called [Space Grotesk](https://github.com/floriankarsten/space-grotesk) [**[OFL-1.1](https://github.com/floriankarsten/space-grotesk/blob/master/OFL.txt) License**]
+* The lovely monospaced font used here is called [FiraCode](https://github.com/tonsky/FiraCode) [**[OFL-1.1](https://github.com/tonsky/FiraCode/blob/master/LICENSE) License**]
 * All content on this site is provided to human beings under the terms of the [Creative Commons Attribution-ShareAlike 4.0 International](http://creativecommons.org/licenses/by-sa/4.0/)
 * Use of this website by AI/LLM scraper bots for training data constitutes acceptance of a profit sharing agreement, you can opt out over certified mail to my non-existing PO box
 
