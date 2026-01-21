@@ -27,6 +27,7 @@ If you think I'm cool, you should check out [my cat](/carl/), he's a superstar.
 {{ "Colophon" | blog_anchor }}
 
 * This site is generated with [Jekyll](https://jekyllrb.com/) [**[MIT](https://github.com/jekyll/jekyll/blob/master/LICENSE) License**]
+* My smart friend [pcon](https://blog.deadlypenguin.com/) has the patience of a saint and answered all of my dumb jekyll questions when I was coming over from wordpress
 * What you are seeing is all based off of the default [minima theme](https://github.com/jekyll/minima) [**[MIT](https://github.com/jekyll/minima/blob/master/LICENSE.txt) License**]
 * The main font used here is called [Space Grotesk](https://github.com/floriankarsten/space-grotesk) [**[OFL-1.1](https://github.com/floriankarsten/space-grotesk/blob/master/OFL.txt) License**]
 * The lovely monospaced font used here is called [FiraCode](https://github.com/tonsky/FiraCode) [**[OFL-1.1](https://github.com/tonsky/FiraCode/blob/master/LICENSE) License**]
