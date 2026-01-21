@@ -19,6 +19,15 @@ module Jekyll
         "<h1><a href='##{anchor_id}' id='#{anchor_id}'>⦾ #{input}</a></h1>"
       end
 
+      def blog_anchor2(input)
+        # Like above, except it's an H2 instead of an H1
+        #
+        # Usage: Create an <h1> header that can be used for permalinks
+        #     {{ "Sub-Section you might want to share a direct link to?" | blog_anchor "}}
+        anchor_id = self.normalize(input)
+        "<h2><a href='##{anchor_id}' id='#{anchor_id}'>→ #{input}</a></h2>"
+      end
+
       def blog_anchor_link(input, display_text=nil)
         # Usage 1: Link using the exact header name:
         #     {{ "Header like you give to blog_anchor filter" | blog_anchor_link }}
