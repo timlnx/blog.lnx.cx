@@ -12,15 +12,32 @@ interests.
 On this page I've cataloged my whole setup.
 
 * {{ "Headphones" | blog_anchor_link }}
+  * {{ "ATH-WP900" | blog_anchor_link }}
+  * {{ "HD 560S" | blog_anchor_link }}
 * {{ "DAC" | blog_anchor_link }}
+  * {{ "Questyle M15i" | blog_anchor_link }}
 * {{ "Turntable" | blog_anchor_link }}
+  * {{ "AT-LP120-USB" | blog_anchor_link }}
+  * {{ "VM540ML/H" | blog_anchor_link }}
 * {{ "Receiver/Speakers" | blog_anchor_link }}
+  * {{ "AVR-591" | blog_anchor_link }}
+  * {{ "HT-SR800 " | blog_anchor_link }}
+  * {{ "R1280T" | blog_anchor_link }}
 * {{ "Streaming" | blog_anchor_link }}
+  * {{ "Qobuz" | blog_anchor_link }}
+
+**Disclosure**: I have no relationship with any companies I link here. I have
+never received free or complimentary services or hardware from any brand, ever.
+I'm not a reviewer, I'm just a dude.
+
 
 {{ "Headphones" | blog_anchor }}
 
 My headphone setup saw significant investment in 2023/2024. Expect some more
-growth in this area in 2026.
+growth in this area in 2026. Maybe a planar magnetic to spice it up a bit?
+
+If that happens I'll probably end up building a desktop amp stack to compliment
+my {{ "Questyle M15i" | blog_anchor_link: "portable DAC" }}.
 
 {{ "ATH-WP900" | blog_anchor2 }}
 
@@ -33,7 +50,7 @@ easily driven by headphone jacks or basic DAC dongles.
 They also support balanced output which is neat I guess. I want to say that I
 can tell the difference, but to be honest, it's probably all in my head.
 
-> IMAGE HERE W/ CARRY CASE
+![ATH-WP900](/assets/images/ATH-WP900.jpg "ATH-WP900")
 
 This carry case pattern is a design I came up with myself and have perfected
 over the last few years. Many of my friends have received one of these as a
@@ -52,10 +69,10 @@ are my open-back "I'm here for the listening experience" headphone. They're
 higher impedance (120Ω) than the {{ "ATH-WP900" | blog_anchor_link }}'s and
 benefit from a more powerful DAC to reach full volume.
 
-> IMAGE HERE W/ CARRY CASE
+![HD-560S](/assets/images/HD-560S.jpg "HD-560S")
 
-They include a quarter-inch adapter which I often use when listening to old
-records through the stereo for more intimate listening sessions.
+They include a quarter-inch adapter which I often use when listening through the
+stereo in more intimate listening sessions.
 
 They're mid-range priced cans ($230 when I bought them in 2023) that I would
 recommend to somebody who is entering the high-fi audio hobby.
@@ -76,7 +93,7 @@ Which is reviewed in greater detail in a [dedicated
 video](https://youtu.be/v5qenyVwumg) on [The Headphone
 Show](https://www.youtube.com/@TheHEADPHONEShow) channel.
 
-> IMAGE HERE
+![M15i](/assets/images/M15i.jpg "M15i")
 
 I like it.
 
@@ -118,6 +135,8 @@ January, 2026 (marked down to $180 on their website at the time of writing).
 
 
 {{ "Turntable" | blog_anchor }}
+
+You can check out my vinyl collection [on Discogs](https://www.discogs.com/user/tim.lnx/collection).
 
 {{ "AT-LP120-USB" | blog_anchor2 }}
 
@@ -183,17 +202,76 @@ thrift store (for $30!). A quick [ebay
 search](https://www.ebay.com/sch/i.html?_nkw=denon+avr-591&_sacat=32852&_odkw=Denon+AVR+591)
 suggests that's still a good deal.
 
-> IMAGE HERE
+![AVR-591](/assets/images/AVR-591.jpg "AVR-591")
 
 Originally released in May of 2010 with an MSRP of $350 this beast has
 everything you could hope for at the time. For my little
 [coach-house](https://en.wikipedia.org/wiki/Secondary_suite) setup it is more
 than enough to shake the cabinets.
 
+I would like to point out that the manual is fantastic and makes me nostalgic
+for the old days.
+
+And it has an OSD (on-screen display):
+
+> IMAGE HERE
+
+How cool is that‽
 
 
+{{ "HT-SR800 " | blog_anchor2 }}
+
+The stereo setup is all pumped through the speakers from a late 2000's Onkyo
+[HT-SR800](https://www.bhphotovideo.com/c/product/484724-REG/Onkyo_HT_SR800B_HT_SR800_7_1_Channel_Home.html)
+7.1 channel theater system
+([manual](https://www.manualslib.com/manual/115340/Onkyo-Ht-R550.html#manual)).
+
+Which I also got at the thrift store for $7.00 per speaker and $10 for the sub!
+
+I spent more money on copper to wire everything than I spent on the receiver and
+speakers together.
+
+The {{ "AVR-591" | blog_anchor_link }} only supports 5.1 audio, so I wired the
+rear/surrounds together in serial for now, and fade the EQ appropriately.
+
+For the curious, that basically looks like this:
+
+![Wiring diagram](/assets/images/doubled_surrounds.png "Wiring diagram")
+
+{{ "R1280T" | blog_anchor2 }}
+
+I started off the "high-fi" setup with the classic Edifier
+[R1280T](https://www.edifier.com/global/p/bookshelf-speakers/r1280t)'s in brown
+fake wood veneer. They were $100 before tax when I bought them in 2018.
+
+> IMAGE HERE
+
+I have nothing bad to say about them. Great experience all around. They're small
+enough to stick in most places and they've got enough power to fill a room. They
+take two RCA input pairs which was also a nice quality of life feature.
 
 {{ "Streaming" | blog_anchor }}
 
 {{ "Qobuz" | blog_anchor2 }}
 
+I was a Spotify subscriber for over a decade. I gave it all up for something
+that treats artists better.
+
+[Maybe you should too](https://youtu.be/7ZlksJq-fkk) ([podcast
+version](https://management7.podbean.com/e/benn-jordan-exposes-spotify/))
+
+Enter Qobuz. High fidelity music streaming and purchases. Everything is at least
+CD quality. And I've seen it as high as 192kHz/24-bit.
+
+![Qobuz](/assets/images/qobuz-new-releases.png "Qobuz")
+
+[They pay artists the
+best](https://community.qobuz.com/press-en/qobuz-unveils-its-average-payout-per-stream).
+So if you want to stream and support artists, they're a great choice.
+
+![Qobuz](/assets/images/qobuz-playlists.png "Qobuz")
+
+Also DRM-free lossless high-fidelity FLAC purchases of most stuff in their
+catalog:
+
+![Qobuz](/assets/images/qobuz-purchases.png "Qobuz")
