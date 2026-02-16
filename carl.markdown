@@ -4,7 +4,7 @@ title: Carlsberg J. Cat
 permalink: /carl/
 ---
 
-This is Carl, he's 11 years old (12 in June, 2025), and he's a good boy.
+This is Carl, he's 12 years old (13 in June, 2026), and he's a good boy.
 
 He is *very mouthy* and loves to hang out.
 

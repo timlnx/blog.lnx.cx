@@ -50,7 +50,7 @@ easily driven by headphone jacks or basic DAC dongles.
 They also support balanced output which is neat I guess. I want to say that I
 can tell the difference, but to be honest, it's probably all in my head.
 
-![ATH-WP900](/assets/images/ATH-WP900.jpg "ATH-WP900")
+![ATH-WP900](/assets/images/audiophile/ATH-WP900.jpg "ATH-WP900")
 
 This carry case pattern is a design I came up with myself and have perfected
 over the last few years. Many of my friends have received one of these as a
@@ -69,7 +69,7 @@ are my open-back "I'm here for the listening experience" headphone. They're
 higher impedance (120Ω) than the {{ "ATH-WP900" | blog_anchor_link }}'s and
 benefit from a more powerful DAC to reach full volume.
 
-![HD-560S](/assets/images/HD-560S.jpg "HD-560S")
+![HD-560S](/assets/images/audiophile/HD-560S.jpg "HD-560S")
 
 They include a quarter-inch adapter which I often use when listening through the
 stereo in more intimate listening sessions.
@@ -93,7 +93,7 @@ Which is reviewed in greater detail in a [dedicated
 video](https://youtu.be/v5qenyVwumg) on [The Headphone
 Show](https://www.youtube.com/@TheHEADPHONEShow) channel.
 
-![M15i](/assets/images/M15i.jpg "M15i")
+![M15i](/assets/images/audiophile/M15i.jpg "M15i")
 
 I like it.
 
@@ -152,7 +152,7 @@ listened to countless hours of vinyl.
 
 No complaints, but I wish it had an automatic tone-arm return function.
 
-> IMAGE HERE
+![AVR-591](/assets/images/audiophile/AT-LP120-USB.jpg "AT-LP120-USB")
 
 I pimped out my unit with a Dark Side of the Moon platter mat. Experts say this
 adds exactly $0.00 in market value, but doubles my cool points.
@@ -202,7 +202,7 @@ thrift store (for $30!). A quick [ebay
 search](https://www.ebay.com/sch/i.html?_nkw=denon+avr-591&_sacat=32852&_odkw=Denon+AVR+591)
 suggests that's still a good deal.
 
-![AVR-591](/assets/images/AVR-591.jpg "AVR-591")
+![AVR-591](/assets/images/audiophile/AVR-591.jpg "AVR-591")
 
 Originally released in May of 2010 with an MSRP of $350 this beast has
 everything you could hope for at the time. For my little
@@ -214,9 +214,11 @@ for the old days.
 
 And it has an OSD (on-screen display):
 
-> IMAGE HERE
+![AVR-591](/assets/images/audiophile/AVR-591-OSD.jpg "AVR-591-OSD")
 
-How cool is that‽
+How cool is that‽ The device does HDMI passthrough, so I'm sure it's not meant
+to be used stand-alone like this. I just think it's neat!
+
 
 
 {{ "HT-SR800 " | blog_anchor2 }}
@@ -236,7 +238,7 @@ rear/surrounds together in serial for now, and fade the EQ appropriately.
 
 For the curious, that basically looks like this:
 
-![Wiring diagram](/assets/images/doubled_surrounds.png "Wiring diagram")
+![Wiring diagram](/assets/images/audiophile/doubled_surrounds.png "Wiring diagram")
 
 {{ "R1280T" | blog_anchor2 }}
 
@@ -263,15 +265,15 @@ version](https://management7.podbean.com/e/benn-jordan-exposes-spotify/))
 Enter Qobuz. High fidelity music streaming and purchases. Everything is at least
 CD quality. And I've seen it as high as 192kHz/24-bit.
 
-![Qobuz](/assets/images/qobuz-new-releases.png "Qobuz")
+![Qobuz](/assets/images/audiophile/qobuz-new-releases.png "Qobuz")
 
 [They pay artists the
 best](https://community.qobuz.com/press-en/qobuz-unveils-its-average-payout-per-stream).
 So if you want to stream and support artists, they're a great choice.
 
-![Qobuz](/assets/images/qobuz-playlists.png "Qobuz")
+![Qobuz](/assets/images/audiophile/qobuz-playlists.png "Qobuz")
 
 Also DRM-free lossless high-fidelity FLAC purchases of most stuff in their
 catalog:
 
-![Qobuz](/assets/images/qobuz-purchases.png "Qobuz")
+![Qobuz](/assets/images/audiophile/qobuz-purchases.png "Qobuz")
