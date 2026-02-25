@@ -31,6 +31,7 @@ bluesky_username: lnx.cx
 youtube_username: TimLNX
 discogs_username: tim.lnx
 instagram_username: tim.lnx
+archive_username: tim_lnx
 permalink: /:year/:month/:day/:title:output_ext
 # Build settings
 #theme: minima
