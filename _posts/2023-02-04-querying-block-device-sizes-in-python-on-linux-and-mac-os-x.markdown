@@ -137,8 +137,8 @@ The approach we will take to finding the necessary request codes is applicable t
 
 Querying the block device size in Python on a Linux host was as simple as copying and pasting the example code provided in this [stackoverflow answer](http://stackoverflow.com/a/12925285/263969). You can see in here on line number 6 that the original poster was
 
-https://gist.github.com/tbielawa/d49b6e7a057377f6a0ee#file-readsize-py
-<script src="https://gist.github.com/tbielawa/d49b6e7a057377f6a0ee.js"></script>
+https://gist.github.com/timlnx/d49b6e7a057377f6a0ee#file-readsize-py
+<script src="https://gist.github.com/timlnx/d49b6e7a057377f6a0ee.js"></script>
 
 {{"How This Works" | blog_anchor }}
 
@@ -155,11 +155,13 @@ Now, let's return to our original example. See that line which reads `req = 0x80
 
 I hope you have a C compiler installed, because we're about to get weird in here. How do we go from a symbol **name** to the symbol **value**? On Linux, the request code we're using is defined in the kernel header file [`/usr/include/linux/fs.h`](https://github.com/torvalds/linux/blob/fff5a5e7f528b2ed2c335991399a766c2cf01103/include/uapi/linux/fs.h#L174). Below is a small C program which loads this header and prints out the hex value of this symbol for us. We'll do a similar thing on OS X in a later example.
 
-https://gist.github.com/tbielawa/d49b6e7a057377f6a0ee#file-linux-request-code-c
+https://gist.github.com/timlnx/d49b6e7a057377f6a0ee#file-linux-request-code-c
+<script src="https://gist.github.com/timlnx/d49b6e7a057377f6a0ee.js"></script>
+
 
 Compile and run this code like this:
 
-https://gist.github.com/tbielawa/d49b6e7a057377f6a0ee#file-linux-compile-run-request-code-sh
+https://gist.github.com/timlnx/d49b6e7a057377f6a0ee#file-linux-compile-run-request-code-sh
 
 Note how the printed value matches the value in our original Python code sample. **That** is how we go from request code symbolic names to request code numerical values.
 
@@ -171,7 +173,7 @@ Now we'll use what we learned above to find the same type of information for OS 
 
 Below is the C code from the referenced research. The code shows us how to calculate the disk size in bytes on OS X, it also tells us the **names** of which request codes we'll need to find the values of (but still no code values).
 
-https://gist.github.com/tbielawa/d49b6e7a057377f6a0ee#file-osx-calclulate-disk-size-c
+https://gist.github.com/timlnx/d49b6e7a057377f6a0ee#file-osx-calclulate-disk-size-c
 
 Things to note from this example:
 
@@ -192,11 +194,11 @@ Things to note from this example:
 
 To obtain the request code values on OS X we will roughly repeat the same process we used on Linux. We'll write a small C program, include the header, and print out the hex values.
 
-https://gist.github.com/tbielawa/d49b6e7a057377f6a0ee#file-osx-request-code-c
+https://gist.github.com/timlnx/d49b6e7a057377f6a0ee#file-osx-request-code-c
 
 Compile and run that example:
 
-https://gist.github.com/tbielawa/d49b6e7a057377f6a0ee#file-osx-compile-run-request-code-sh
+https://gist.github.com/timlnx/d49b6e7a057377f6a0ee#file-osx-compile-run-request-code-sh
 
 From this we now know the value of the required request codes for OS X and Linux:
 
@@ -239,8 +241,9 @@ When we make the ioctl request with Pythons `fcntl.ioctl` function, the value w
 
 Every ioctl request will return a value of a known size. These variable sizes are documented in the kernel headers source code. In the case of `BLKGETSIZE64` specifically, this is defined in `/usr/include/linux/fs.h` as such:
 
- 	
-  * `#define BLKGETSIZE64 _IOR(0x12,114,size_t) /* return device size in bytes (**u64** *arg) */`
+```
+#define BLKGETSIZE64 _IOR(0x12,114,size_t) /* return device size in bytes (**u64** *arg) */
+```
 
 
 That part at the end in bold, **u64**, is what we're interested in. This indicates that the ioctl request returns an `unsigned 64-bit integer` type variable. This is also known as an `unsigned long` type variable. We now know the size and type of the data we're going to unpack. Next we consult the [struct](https://docs.python.org/3/library/struct.html) modules [Table of Formatting Characters](https://docs.python.org/3/library/struct.html#format-characters) to identify which formatting character we will use when we call `struct.unpack` on our packed data. According to the table, the `L` formatting character is equivalent to the `unsigned long` c type (which becomes a Python `integer` once unpacked).

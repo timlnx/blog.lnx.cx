@@ -1,7 +1,7 @@
 ---
 author: Tim Case
 date: 2025-02-09
-title: Backing Up YouTube for Fun and Profit
+title: '[Updated] Backing Up YouTube for Fun and Profit'
 layout: post
 tags:
 - youtube
@@ -9,7 +9,10 @@ tags:
 - media
 - archiving
 - backups
+- updated
 ---
+
+**update 2026-03-12** - *I discovered the command line switches to say "best that isn't `webp`"*
 
 Offline archiving of YouTube videos is possible with this "feature-rich command
 line tool" called [yt-dlp](https://github.com/yt-dlp/yt-dlp). Maybe you suffered
@@ -23,21 +26,20 @@ Here's a command I've cooked up that helped me archive a channels worth of
 content in a date-sortable list.
 
 ```
-$ yt-dlp -S vcodec:h264,res,acodec:m4a -N 4 --cookies-from-browser firefox --output "%(uploader)s - %(upload_date>%Y-%m-%d)s - %(title)s [%(id)s].%(ext)s" https://www.youtube.com/@TimBielawa/videos
+$ yt-dlp -f 'bestvideo[ext!=webm]+bestaudio[ext!=webm]' -N 4 --cookies-from-browser firefox --output "%(uploader)s - %(upload_date>%Y-%m-%d)s - %(title)s [%(id)s].%(ext)s" https://www.youtube.com/@TimLNX/videos
 Extracting cookies from firefox
 Extracted 574 cookies from firefox
-[youtube:tab] Extracting URL: https://www.youtube.com/@TimBielawa/videos
+[youtube:tab] Extracting URL: https://www.youtube.com/@TimLNX/videos
 ```
 
 Why those option flags though?
 
 * `.webm` doesn't integrate well with my current tech stack
 
-Using `-S vcodec:h264,res,acodec:m4a` [is one
-way](https://github.com/yt-dlp/yt-dlp/issues/8322#issuecomment-1755932331) to
-get `yt-dlp` to avoid leaving `webm` files on your disk. I have no personal
-issues with that AV container, it just doesn't integrate well into my stack.
-MP4s are seamless, so I am archiving in that format.
+Using `-f 'bestvideo[ext!=webm]+bestaudio[ext!=webm]` will select the best
+format that isn't 'webp'. I have no personal issues with that AV container, it
+just doesn't integrate well into my stack. MP4s (or whatever else I get) are
+seamless, so I am archiving in that format.
 
 * Archive faster, maybe
 
@@ -63,3 +65,8 @@ By passing in `--cookies-from-browser firefox` I can interact with the YouTube
 API as myself and save my private unlisted videos. If you see a message like
 `ERROR: unable to download video data: HTTP Error 403: Forbidden` then that's
 probably what you're running into.
+
+---
+
+Sometimes stuff just won't work. On Mac I find a `brew upgrade` usually fixes
+the issue.
