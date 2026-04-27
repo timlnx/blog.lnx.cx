@@ -1,0 +1,19 @@
+---
+date: 2026-04-25
+title: bitmath-2.0.0 is finally released!
+tags:
+- bitmath
+- projects
+- python
+categories:
+- projects
+- bitmath
+- Programming
+draft: false
+author: Tim Case
+layout: post
+---
+
+# Placeholder
+
+while I finish publishing some other docs on the project site
