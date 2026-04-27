@@ -27,4 +27,4 @@ Fix it of course!  Below is a Python 2 program I wrote that addresses the issue.
 
 
 
-https://gist.github.com/awood/9ed77d46abe707be451c
+<script src="https://gist.github.com/awood/9ed77d46abe707be451c.js"></script>

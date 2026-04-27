@@ -64,7 +64,7 @@ However, none of those results were quite _exactly_ what I was looking for. The
 
 Here's the code:
 
-https://gist.github.com/5497304
+<script src="https://gist.github.com/timlnx/5497304.js"></script>
 
 
 # Explanation

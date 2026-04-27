@@ -32,11 +32,11 @@ I've never done any real XSLT work before, and even after this I still wouldn't 
 
 I found the location dblatex installs it's XSL documents to on my system, `/usr/share/dblatex/xsl`, then I used grep to find files that matched `colophon` elements: `grep colophon *.xsl`. Examining the `component.xsl` file suggested that it had the templates I needed to copy and modify for feeding into dblatex. After a few attempts I came up with working results. Here's what it ends up looking like:
 
-https://gist.github.com/5254805
+<script src="https://gist.github.com/timlnx/5254805.js"></script>
 
 And you consume it with dblatex in this way:
 
-https://gist.github.com/5254884
+<script src="https://gist.github.com/timlnx/5254884.js"></script>
 
 For an example of how this renders you can look at [the PDF version](http://lnx.cx/docs/vdg/output/Virtual-Disk-Operations.pdf) of the Virtual Disk Guide. I keep the file in version control [on the github project](https://github.com/tbielawa/Virtual-Disk-Guide/blob/master/xsl/dblatex-acknowledgements.xsl) for the book.
 

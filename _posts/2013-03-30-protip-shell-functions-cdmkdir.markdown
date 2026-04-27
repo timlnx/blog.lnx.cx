@@ -11,8 +11,8 @@ categories:
 
 Here's a shell function which unifies the act of creating a directory and then subsequently changing into it:
 
-https://gist.github.com/5275129
+<script src="https://gist.github.com/timlnx/5275129.js"></script>
 
 Example usage:
 
-https://gist.github.com/5275133
+<script src="https://gist.github.com/timlnx/5275133.js"></script>

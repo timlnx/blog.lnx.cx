@@ -77,6 +77,6 @@ Once again, we will [visit our system **locale** settings](http://blog.lnx.cx
 
 [Here's what worked](https://github.com/tbielawa/HamDecks/pull/5) for the HamDecks project:
 
-https://gist.github.com/6685995
+<script src="https://gist.github.com/timlnx/6685995.js"></script>
 
 Instead of just prefixing the **sed** command with **LANG=C**, we prefix it with **LANG=C LANG_ALL=C**. I'm not saying this is a [_silver bullet_](http://en.wikipedia.org/wiki/No_Silver_Bullet), just that it worked for me and might work for you too.

@@ -126,4 +126,4 @@ There are two methods available for setting synaptics options. The temporary sol
 
 Here is my **01-synaptics.conf** file which sets all of these options permanently:
 
-https://gist.github.com/tbielawa/9668968
+<script src="https://gist.github.com/timlnx/9668968.js"></script>

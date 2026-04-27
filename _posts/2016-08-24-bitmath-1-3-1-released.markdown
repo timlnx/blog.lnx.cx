@@ -29,7 +29,7 @@ tags:
 
 This new function accepts inputs using non-standard prefix units such as single-letter, or mis-capitalized units. For example, `parse_string` will not accept a short unit like '**100k**', whereas `parse_string_unsafe` will gladly accept it:
 
-https://gist.github.com/tbielawa/2fdc7fa45d6a5cf6d8d6da9324a12b98
+<script src="https://gist.github.com/timlnx/2fdc7fa45d6a5cf6d8d6da9324a12b98.js"></script>
 
 
 

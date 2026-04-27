@@ -22,7 +22,7 @@ tags:
 
 Need more proof?
 
-https://gist.github.com/tbielawa/9811913
+<script src="https://gist.github.com/timlnx/9811913.js"></script>
 
 **References:**
 

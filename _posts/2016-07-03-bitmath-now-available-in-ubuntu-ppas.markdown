@@ -24,7 +24,7 @@ Since [March 2014](https://blog.lnx.cx/2014/03/27/python-bitmath-now-available-i
 
 Ubuntu users can install bitmath in the following way:
 
-https://gist.github.com/tbielawa/e2bf299e2b9af239542fe6f4dbd57756
+<script src="https://gist.github.com/timlnx/e2bf299e2b9af239542fe6f4dbd57756.js"></script>
 
 Ubuntu support wouldn't have happened if GitHub user [hkraal](https://github.com/hkraal) hadn't submitted an [issue](https://github.com/tbielawa/bitmath/issues/57). Thanks Henk for getting the [fire lit](https://github.com/tbielawa/bitmath/issues/58)!
 

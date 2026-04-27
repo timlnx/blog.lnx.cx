@@ -21,7 +21,7 @@ I've written a new Python module which I'm calling [**bitmath**](https://github
 
 Given my day job as a System Administrator, and the content of my [upcoming book](http://lnx.cx/docs/vdg/output/Virtual-Disk-Operations.pdf) on Linux virtual disks, I frequently find myself in situations requiring me to convert file sizes into various other formats. I recall far too many instances of having to do unit conversions mid-code in projects (_does this look familiar to anyone else?):_
 
-https://gist.github.com/tbielawa/9590427
+<script src="https://gist.github.com/timlnx/9590427.js"></script>
 
 Thus, out of necessity, **bitmath** was born.
 
@@ -50,7 +50,7 @@ Anyone not deeply invested in the heartache that comes with converting base-2 an
 
 **bitmath** finally provides a uniform way to manipulate these units in a way which is natural to Python programmers. There's nothing special or unusual required to work with **bitmath objects**. You can add them, subtract them, multiply and divide them -- just like you're already used to with the **int** and **float** objects. **bitmath objects** support all of the standard [Rich Comparison Operators](http://docs.python.org/2/reference/datamodel.html#object.__lt__) as well!
 
-https://gist.github.com/tbielawa/9591035
+<script src="https://gist.github.com/timlnx/9591035.js"></script>
 
 
 ## bitmath converts anything
@@ -59,7 +59,7 @@ https://gist.github.com/tbielawa/9591035
 Converting **bitmath objects** is a first-class supported operation. Even more complex conversions, like converting from Mibibits to Kilobytes, is trivial. This functionality is supported in both directions: from the lowliest **Bit()** object through the grand **EiB()** object. That is to say, any **bitmath object**, whether it be base-2 ([NIST 'kibi' and 'gibi' style](http://physics.nist.gov/cuu/Units/binary.html)) or base-10 ([SI 'kilo' and 'giga' style](http://physics.nist.gov/cuu/Units/prefixes.html)), supports conversion (without loss of accuracy) to any other valid prefix unit.**
 **
 
-https://gist.github.com/tbielawa/9591150
+<script src="https://gist.github.com/timlnx/9591150.js"></script>
 
 
 ## **bitmath objects** print out nicely
@@ -75,6 +75,6 @@ Fedora/RHEL6 users will need to wait a bit longer for a proper **yum install** 
 
 _However_, there are several other methods available for installation: installing from [PyPi](https://pypi.python.org/pypi/bitmath/), building your **own RPM**, and from **setup/distutils**.
 
-https://gist.github.com/tbielawa/9590664
+<script src="https://gist.github.com/timlnx/9590664.js"></script>
 
 
