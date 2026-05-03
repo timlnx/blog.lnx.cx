@@ -17,3 +17,6 @@ layout: post
 # Placeholder
 
 while I finish publishing some other docs on the project site
+
+More text coming soon!
+
