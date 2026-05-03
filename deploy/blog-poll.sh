@@ -4,10 +4,11 @@
 set -euo pipefail
 
 VERBOSE=0
+FORCE=0
 
 usage() {
     cat <<EOF
-Usage: $(basename "$0") [-h|--help] [-v|--verbose]
+Usage: $(basename "$0") [-h|--help] [-v|--verbose] [-f|--force]
 
 Poll GitHub for new commits to timlnx/blog.lnx.cx. When new commits are
 found, pull them, rebuild the site in a rootless podman container, and
@@ -22,6 +23,7 @@ All output goes to stdout. When run by systemd, the journal captures it:
 Options:
   -h, --help     Show this help and exit
   -v, --verbose  Show git, rsync, and podman output (default: quiet)
+  -f, --force    Build and deploy even if there are no new commits
 
 More information: https://github.com/timlnx/blog.lnx.cx/blob/main/DEPLOY.md
 EOF
@@ -31,6 +33,7 @@ while [ $# -gt 0 ]; do
     case "$1" in
         -h|--help)    usage; exit 0 ;;
         -v|--verbose) VERBOSE=1; shift ;;
+        -f|--force)   FORCE=1; shift ;;
         *) echo "$(basename "$0"): unexpected argument: $1" >&2; usage >&2; exit 1 ;;
     esac
 done
@@ -54,17 +57,20 @@ fi
 LOCAL=$(git rev-parse HEAD)
 REMOTE=$(git rev-parse origin/main)
 
-if [ "$LOCAL" = "$REMOTE" ]; then
+if [ "$LOCAL" = "$REMOTE" ] && [ "$FORCE" -eq 0 ]; then
     log "No new commits ($(git rev-parse --short HEAD)). Nothing to do."
     exit 0
 fi
 
-log "New commits detected: $(git rev-parse --short HEAD) -> $(git rev-parse --short origin/main). Starting build."
-
-if [ "$VERBOSE" -eq 1 ]; then
-    git pull origin main
+if [ "$FORCE" -eq 1 ] && [ "$LOCAL" = "$REMOTE" ]; then
+    log "Force build at $(git rev-parse --short HEAD)."
 else
-    git pull origin main --quiet
+    log "New commits detected: $(git rev-parse --short HEAD) -> $(git rev-parse --short origin/main). Starting build."
+    if [ "$VERBOSE" -eq 1 ]; then
+        git pull origin main
+    else
+        git pull origin main --quiet
+    fi
 fi
 
 # Rebuild container image if Gemfile or Containerfile changed
