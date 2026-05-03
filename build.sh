@@ -3,5 +3,5 @@
 m=$(umask)
 bundle exec jekyll clean
 umask 0002
-bundle exec jekyll build --destination dest
+bundle exec jekyll build
 umask ${m}
