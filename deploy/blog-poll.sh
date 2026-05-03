@@ -3,9 +3,11 @@
 # Run by systemd.timer every 5 minutes as tc (rootless podman).
 set -euo pipefail
 
+VERBOSE=0
+
 usage() {
     cat <<EOF
-Usage: $(basename "$0") [-h|--help]
+Usage: $(basename "$0") [-h|--help] [-v|--verbose]
 
 Poll GitHub for new commits to timlnx/blog.lnx.cx. When new commits are
 found, pull them, rebuild the site in a rootless podman container, and
@@ -15,16 +17,18 @@ This script is normally run automatically by the blog-builder systemd timer.
 To run it manually: /usr/local/bin/blog-poll.sh
 
 Options:
-  -h, --help    Show this help and exit
+  -h, --help     Show this help and exit
+  -v, --verbose  Print log messages to stdout in addition to the journal
 
 More information: https://github.com/timlnx/blog.lnx.cx/blob/main/DEPLOY.md
 EOF
 }
 
-for arg in "$@"; do
-    case "$arg" in
-        -h|--help) usage; exit 0 ;;
-        *) echo "$(basename "$0"): unexpected argument: $arg" >&2; usage >&2; exit 1 ;;
+while [ $# -gt 0 ]; do
+    case "$1" in
+        -h|--help)    usage; exit 0 ;;
+        -v|--verbose) VERBOSE=1; shift ;;
+        *) echo "$(basename "$0"): unexpected argument: $1" >&2; usage >&2; exit 1 ;;
     esac
 done
 
@@ -35,7 +39,10 @@ DOCROOT=/var/www/blog.lnx.cx
 IMAGE_NAME=localhost/blog-builder
 LOG_TAG=blog-builder
 
-log() { logger -t "$LOG_TAG" "$*"; }
+log() {
+    logger -t "$LOG_TAG" "$*"
+    [ "$VERBOSE" -eq 1 ] && echo "[$(date '+%H:%M:%S')] $*"
+}
 
 cd "$REPO_DIR"
 git fetch origin main --quiet
