@@ -1,0 +1,172 @@
+---
+# Blog builder server setup playbook.
+# Run from the server as tc with sudo access:
+#
+#   cd /srv/blog.lnx.cx
+#   ansible-playbook -i localhost, -c local deploy/setup.yml --ask-become-pass
+#
+# Idempotent: safe to re-run after updates.
+
+- name: Blog builder server setup
+  hosts: localhost
+  connection: local
+
+  vars:
+    blog_user: tc
+    blog_group: tc
+    repo_url: https://github.com/timlnx/blog.lnx.cx.git
+    repo_dir: /srv/blog.lnx.cx
+    image_store: /srv/blog-images
+    docroot: /var/www/blog.lnx.cx
+    image_name: localhost/blog-builder
+    poll_script_src: "{{ repo_dir }}/deploy/blog-poll.sh"
+    poll_script_dest: /usr/local/bin/blog-poll.sh
+    systemd_user_dir: "/home/{{ blog_user }}/.config/systemd/user"
+
+  tasks:
+
+    # ── Image store ────────────────────────────────────────────────────────────
+
+    - name: Create image store directory
+      become: true
+      ansible.builtin.file:
+        path: "{{ image_store }}"
+        state: directory
+        owner: "{{ blog_user }}"
+        group: "{{ blog_group }}"
+        mode: "0750"
+
+    - name: Set SELinux fcontext for image store
+      become: true
+      ansible.builtin.command:
+        cmd: semanage fcontext -a -t container_file_t '{{ image_store }}(/.*)?'
+      register: semanage_images
+      changed_when: semanage_images.rc == 0
+      failed_when: semanage_images.rc != 0 and 'already defined' not in semanage_images.stderr
+
+    - name: Apply SELinux context to image store
+      become: true
+      ansible.builtin.command:
+        cmd: restorecon -Rv {{ image_store }}
+      register: restorecon_images
+      changed_when: "'Relabeled' in restorecon_images.stdout"
+
+    # ── Repo checkout ──────────────────────────────────────────────────────────
+
+    - name: Create repo directory
+      become: true
+      ansible.builtin.file:
+        path: "{{ repo_dir }}"
+        state: directory
+        owner: "{{ blog_user }}"
+        group: "{{ blog_group }}"
+        mode: "0755"
+
+    - name: Clone blog repo
+      ansible.builtin.git:
+        repo: "{{ repo_url }}"
+        dest: "{{ repo_dir }}"
+        version: main
+        update: false
+
+    - name: Set SELinux fcontext for repo checkout
+      become: true
+      ansible.builtin.command:
+        cmd: "semanage fcontext -a -t container_file_t '{{ repo_dir }}(/.*)?'"
+      register: semanage_repo
+      changed_when: semanage_repo.rc == 0
+      failed_when: semanage_repo.rc != 0 and 'already defined' not in semanage_repo.stderr
+
+    - name: Apply SELinux context to repo checkout
+      become: true
+      ansible.builtin.command:
+        cmd: restorecon -Rv {{ repo_dir }}
+      register: restorecon_repo
+      changed_when: "'Relabeled' in restorecon_repo.stdout"
+
+    # ── Apache docroot ─────────────────────────────────────────────────────────
+
+    - name: Create /scratch/ in docroot (never wiped by pipeline)
+      become: true
+      ansible.builtin.file:
+        path: "{{ docroot }}/scratch"
+        state: directory
+        owner: "{{ blog_user }}"
+        group: "{{ blog_group }}"
+        mode: "0755"
+
+    # ── Container image ────────────────────────────────────────────────────────
+
+    - name: Build blog-builder container image (rootless podman)
+      ansible.builtin.command:
+        cmd: podman build -t {{ image_name }} {{ repo_dir }}
+      register: podman_build
+      changed_when: "'Successfully tagged' in podman_build.stdout or podman_build.rc == 0"
+
+    # ── Poll script ────────────────────────────────────────────────────────────
+
+    - name: Install blog-poll.sh to /usr/local/bin/
+      become: true
+      ansible.builtin.copy:
+        src: "{{ poll_script_src }}"
+        dest: "{{ poll_script_dest }}"
+        owner: root
+        group: root
+        mode: "0755"
+
+    # ── Systemd user service ───────────────────────────────────────────────────
+
+    - name: Create systemd user directory
+      ansible.builtin.file:
+        path: "{{ systemd_user_dir }}"
+        state: directory
+        mode: "0755"
+
+    - name: Install blog-builder.service
+      ansible.builtin.copy:
+        dest: "{{ systemd_user_dir }}/blog-builder.service"
+        mode: "0644"
+        content: |
+          [Unit]
+          Description=Blog Builder - poll and deploy on new commits
+          After=network-online.target
+
+          [Service]
+          Type=oneshot
+          ExecStart={{ poll_script_dest }}
+          StandardOutput=journal
+          StandardError=journal
+
+    - name: Install blog-builder.timer
+      ansible.builtin.copy:
+        dest: "{{ systemd_user_dir }}/blog-builder.timer"
+        mode: "0644"
+        content: |
+          [Unit]
+          Description=Blog Builder Timer - runs every 5 minutes
+
+          [Timer]
+          OnBootSec=2min
+          OnUnitActiveSec=5min
+          Persistent=true
+
+          [Install]
+          WantedBy=timers.target
+
+    - name: Enable linger for {{ blog_user }}
+      become: true
+      ansible.builtin.command:
+        cmd: loginctl enable-linger {{ blog_user }}
+      changed_when: false
+
+    - name: Reload systemd user daemon
+      ansible.builtin.systemd:
+        daemon_reload: true
+        scope: user
+
+    - name: Enable and start blog-builder timer
+      ansible.builtin.systemd:
+        name: blog-builder.timer
+        state: started
+        enabled: true
+        scope: user
