@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    name: Jekyll build (Fedora)
+    runs-on: ubuntu-latest
+    container:
+      image: fedora:41
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install system dependencies
+        run: |
+          dnf -y install ruby ruby-devel openssl-devel gcc-c++ \
+            make @development-tools git-core && dnf clean all
+
+      - name: Install gems
+        run: |
+          gem install bundler
+          bundle install
+
+      - name: Build site
+        run: bundle exec jekyll build
+
+      - name: Verify output exists
+        run: test -f _site/index.html
