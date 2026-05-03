@@ -108,6 +108,25 @@ journalctl --user -u blog-builder.service -f
 # Watch for: "No new commits" or a build run
 ```
 
+## Watching Build Logs
+
+All output from `blog-poll.sh` goes to stdout. When systemd runs it, the journal captures
+everything — log messages, jekyll output, rsync transfers, the whole run. One command sees
+it all:
+
+```bash
+journalctl --user -u blog-builder.service -f
+```
+
+To watch a manual run with full git and rsync output too:
+
+```bash
+/usr/local/bin/blog-poll.sh -v
+```
+
+Without `-v`, manual runs are quiet (same as the timer). With `-v`, git pull output,
+rsync file transfers, and podman output all show up alongside the timestamped log lines.
+
 ## Day-to-Day
 
 ### Publishing a post
@@ -171,15 +190,45 @@ There's also `./build.sh` for when you just want a fast `bundle exec jekyll buil
 without any container overhead. Images won't be present, but post structure and templates
 validate fine.
 
-## Re-running the Playbook
+## Updating the Server After Changes
 
-If `deploy/blog-poll.sh` or the systemd unit content changes after the initial setup,
-re-run the playbook to push the updates:
+There are three cases depending on what changed.
+
+### Only `deploy/blog-poll.sh` changed
+
+The quick path — no daemon-reload needed since the service and timer units are unchanged:
+
+```bash
+cd /srv/blog.lnx.cx && git pull
+sudo install -m 755 deploy/blog-poll.sh /usr/local/bin/blog-poll.sh
+```
+
+Verify it took:
+
+```bash
+/usr/local/bin/blog-poll.sh --help
+```
+
+### Systemd unit content changed (service or timer)
+
+Re-run the playbook, then reload and restart:
+
+```bash
+cd /srv/blog.lnx.cx && git pull
+ansible-playbook -i localhost, -c local deploy/setup.yml --ask-become-pass
+systemctl --user daemon-reload
+systemctl --user restart blog-builder.timer
+systemctl --user status blog-builder.timer
+```
+
+### `Containerfile` or `Gemfile` changed
+
+The poll script detects this automatically and rebuilds the container image on the next
+run. Nothing to do manually. If the automatic rebuild failed for some reason:
 
 ```bash
 cd /srv/blog.lnx.cx
-git pull
-ansible-playbook -i localhost, -c local deploy/setup.yml --ask-become-pass
+podman build -t localhost/blog-builder .
 ```
 
 ## Troubleshooting
@@ -218,17 +267,6 @@ sudo restorecon -Rv /srv/blog-images /srv/blog.lnx.cx
 Re-applies the `container_file_t` labels. This can happen after certain package updates
 or if files were added to `/srv/blog-images/` by a process that didn't inherit the
 right context (rsyncing from your Mac, for example).
-
-### Gemfile or Containerfile changed and the build is failing
-
-The poll script detects changes to `Gemfile`, `Gemfile.lock`, and `Containerfile` and
-rebuilds the container image automatically. If the automatic rebuild failed for some
-reason, do it manually:
-
-```bash
-cd /srv/blog.lnx.cx
-podman build -t localhost/blog-builder .
-```
 
 ---
 

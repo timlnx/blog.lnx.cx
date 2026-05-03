@@ -16,9 +16,12 @@ rsync the output to the Apache docroot with enforced permissions.
 This script is normally run automatically by the blog-builder systemd timer.
 To run it manually: /usr/local/bin/blog-poll.sh
 
+All output goes to stdout. When run by systemd, the journal captures it:
+  journalctl --user -u blog-builder.service -f
+
 Options:
   -h, --help     Show this help and exit
-  -v, --verbose  Print log messages to stdout in addition to the journal
+  -v, --verbose  Show git, rsync, and podman output (default: quiet)
 
 More information: https://github.com/timlnx/blog.lnx.cx/blob/main/DEPLOY.md
 EOF
@@ -37,15 +40,16 @@ IMAGE_STORE=/srv/blog-images
 OUTPUT_DIR=/tmp/blog-output
 DOCROOT=/var/www/blog.lnx.cx
 IMAGE_NAME=localhost/blog-builder
-LOG_TAG=blog-builder
 
-log() {
-    logger -t "$LOG_TAG" "$*"
-    [ "$VERBOSE" -eq 1 ] && echo "[$(date '+%H:%M:%S')] $*"
-}
+log() { echo "[$(date '+%H:%M:%S')] $*"; }
 
 cd "$REPO_DIR"
-git fetch origin main --quiet
+
+if [ "$VERBOSE" -eq 1 ]; then
+    git fetch origin main
+else
+    git fetch origin main --quiet
+fi
 
 LOCAL=$(git rev-parse HEAD)
 REMOTE=$(git rev-parse origin/main)
@@ -57,7 +61,11 @@ fi
 
 log "New commits detected: $(git rev-parse --short HEAD) -> $(git rev-parse --short origin/main). Starting build."
 
-git pull origin main --quiet
+if [ "$VERBOSE" -eq 1 ]; then
+    git pull origin main
+else
+    git pull origin main --quiet
+fi
 
 # Rebuild container image if Gemfile or Containerfile changed
 if git diff "${LOCAL}" HEAD -- Gemfile Gemfile.lock Containerfile | grep -q .; then
@@ -80,9 +88,16 @@ podman run --rm \
 log "Jekyll build complete."
 
 # Deploy with enforced permissions, never touch /scratch/
-rsync -a --delete \
-    --chmod=D755,F644 \
-    --exclude=/scratch/ \
-    "${OUTPUT_DIR}/" "${DOCROOT}/"
+if [ "$VERBOSE" -eq 1 ]; then
+    rsync -av --delete \
+        --chmod=D755,F644 \
+        --exclude=/scratch/ \
+        "${OUTPUT_DIR}/" "${DOCROOT}/"
+else
+    rsync -a --delete \
+        --chmod=D755,F644 \
+        --exclude=/scratch/ \
+        "${OUTPUT_DIR}/" "${DOCROOT}/"
+fi
 
 log "Deployed $(git rev-parse --short HEAD) to $DOCROOT"
