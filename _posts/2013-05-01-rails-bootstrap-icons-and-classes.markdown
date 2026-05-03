@@ -25,7 +25,7 @@ You're using [Ruby on Rails](http://rubyonrails.org/) and the [Twitter Bootstrap
 
 
 
-[caption id="attachment_427" align="aligncenter" width="412"][![RNOC Action Bar](https://blog.lnx.cx/wp-content/uploads/2013/10/rnoc-button-bar.png)](https://blog.lnx.cx/wp-content/uploads/2013/10/rnoc-button-bar.png) RNOC Action Bar[/caption]
+![RNOC Action Bar](/assets/images/rnoc-button-bar.png "RNOC Action Bar")
 
 
 # The Problem

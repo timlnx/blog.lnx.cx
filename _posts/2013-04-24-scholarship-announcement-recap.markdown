@@ -32,6 +32,6 @@ The presentation is available online: [Open Source: A Guide](http://opensources
 
 Thanks to all the students who came out (especially the folks who asked questions). We're doing this for you!
 
-[caption id="attachment_428" align="aligncenter" width="800"][![Michael Dehaan on Google Hangout](https://blog.lnx.cx/wp-content/uploads/2013/10/scholarship-dehaan-cameo-1024x768.jpg)](https://blog.lnx.cx/wp-content/uploads/2013/10/scholarship-dehaan-cameo.jpg) Michael Dehaan on Google Hangout[/caption]
+![Michael Dehaan on Google Hangout](/assets/images/scholarship-dehaan-cameo.jpg "Michael Dehaan on Google Hangout")
 
 

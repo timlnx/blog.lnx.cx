@@ -13,7 +13,7 @@ tags:
 - wvu
 ---
 
-[caption id="attachment_426" align="aligncenter" width="636"]![Education, Design, Community, Coding, Technical Writing](https://blog.lnx.cx/wp-content/uploads/2013/10/OpenSourceScholars.png) Open Source Scholars[/caption]
+![Education, Design, Community, Coding, Technical Writing](/assets/images/OpenSourceScholars.png "Open Source Scholars")
 
 I'm super proud to be able to say this today:
 

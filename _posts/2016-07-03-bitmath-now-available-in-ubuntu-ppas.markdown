@@ -16,7 +16,7 @@ tags:
 - ubuntu
 ---
 
-[![ubuntu-logo32](https://blog.lnx.cx/wp-content/uploads/2016/07/ubuntu-logo32.png)](https://blog.lnx.cx/wp-content/uploads/2016/07/ubuntu-logo32.png)
+![ubuntu-logo32](/assets/images/ubuntu-logo32.png)
 
 [bitmath](http://bitmath.readthedocs.io/en/latest/) is a Python module I wrote for working with file size units (ex: `12GiB`, `64kB`) as objects. You can use them just like you would use regular numbers in python. It's full of other functionality as well. Objects have native 'convert to _$unit_' methods, support native arithmetic, are sortable, and include a 'best human readable prefix' method.
 

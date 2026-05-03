@@ -152,6 +152,6 @@ In my case there were some unexpected side-effects from switching backends. Here
   * [screen elements](http://www.docbook.org/tdg5/en/html/screen.html) no longer show a 'wrapping character' in long lines
 
 
-[caption id="attachment_425" align="aligncenter" width="300"][![Compare new formatting with old](https://blog.lnx.cx/wp-content/uploads/2013/10/new-old-300x236.png)](https://blog.lnx.cx/wp-content/uploads/2013/10/new-old.png) On the left is the book rendered with xetex and the new fonts. On the right is the book rendered with pdftex and no special font customizations.[/caption]
+![Compare new formatting with old](/assets/images/new-old.png "On the left is the book rendered with xetex and the new fonts. On the right is the book rendered with pdftex and no special font customizations.")
 
 The only thing that really bothers me is the broken word-wrapping character. I can deal with the others breaking. I had intended to remove them from the final product anyway.

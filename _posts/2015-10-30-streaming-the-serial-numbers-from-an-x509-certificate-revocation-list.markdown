@@ -23,7 +23,7 @@ Streaming the CRL means we need to dissect the ASN1 that describes the CRL one p
 That procedure is not exactly a walk in the park, so in the hope that someone else may find it useful, here is [the solution I came up with](https://github.com/awood/crl-stream/blob/master/src/main/java/org/candlepin/util/X509CRLEntryStream.java). Keep in mind that the code does not check the signature on the CRL so this code should not be used for any CRL that you do not trust implicitly.
 
 The end results are pretty dramatic. The benchmarking toolkit I'm using shows an improvement in execution time by an order of magnitude (from around 7 seconds to .7 seconds) and memory usage drops by about 30%. You can see the GC statistics in the graph below.
-[![Visualization of X509CRLStream's benchmarks](https://blog.lnx.cx/wp-content/uploads/2015/10/crl_stream_gc_comparison-200x138.png)](https://blog.lnx.cx/wp-content/uploads/2015/10/crl_stream_gc_comparison.png)
+![Visualization of X509CRLStream's benchmarks](/assets/images/crl_stream_gc_comparison.png)
 
 and the benchmarking results are
 

@@ -19,4 +19,4 @@ I had managed to address an issue with the Content Assist drop-down only to run 
 
 Here's an example:
 
-[![eclipse-dark](https://blog.lnx.cx/wp-content/uploads/2015/08/eclipse-dark.png)](https://blog.lnx.cx/wp-content/uploads/2015/08/eclipse-dark.png)
+![eclipse-dark](/assets/images/eclipse-dark.png)

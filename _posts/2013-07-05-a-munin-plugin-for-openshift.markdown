@@ -21,7 +21,7 @@ I created a [munin](http://munin-monitoring.org/) plugin to chart the number of 
 # Chart: One Host
 
 
-[![Present/Idle gears on a host](http://blog.lnx.cx/wp-content/uploads/2013/07/openshift_gears_present-node01.ose-poc-300x200.png)](http://blog.lnx.cx/wp-content/uploads/2013/07/openshift_gears_present-node01.ose-poc.png)
+![Present/Idle gears on a host](/assets/images/openshift_gears_present-node01.ose-poc.png)
 
 These charts show the number of gears present/idle on a single OpenShift application node instance. Nothing special required to set this plugin up. Just copy the script/configuration to your node and then restart the **munin-node** service.
 
@@ -29,7 +29,7 @@ These charts show the number of gears present/idle on a single OpenShift applica
 # Chart: District
 
 
-[![Gears present across a district](http://blog.lnx.cx/wp-content/uploads/2013/07/openshift_gears_present-nodes-small.ose-poc-300x190.png)](http://blog.lnx.cx/wp-content/uploads/2013/07/openshift_gears_present-nodes-small.ose-poc.png)
+![Gears present across a district](/assets/images/openshift_gears_present-nodes-small.ose-poc.png)
 
 This is a combined/multigraph chart showing the number of gears present on all nodes representing my "small" district. This chart is created using the munin concept of ['loaning' data](http://munin-monitoring.org/wiki/LoaningData).
 

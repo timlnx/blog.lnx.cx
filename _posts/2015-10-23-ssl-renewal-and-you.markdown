@@ -14,7 +14,7 @@ tags:
 - SSL
 ---
 
-![RapidSSL_SEAL-90x50](https://blog.lnx.cx/wp-content/uploads/2015/10/RapidSSL_SEAL-90x50.gif)
+![RapidSSL_SEAL-90x50](/assets/images/RapidSSL_SEAL-90x50.gif)
 
 This post is about renewing SSL certificates. There's not a lot of information I want to communicate here, so I'm going to keep it short.
 

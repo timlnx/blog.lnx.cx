@@ -51,4 +51,4 @@ The one gotcha is that when you update the eclipse-platform package, it will des
 
 
 
-[caption id="attachment_804" align="alignnone" width="1154"][![Screenshot of Eclipse Mars with Dark theme and Adwaita Dark GTK theme](https://blog.lnx.cx/wp-content/uploads/2015/09/eclipse_adwaita_dark.png)](https://blog.lnx.cx/wp-content/uploads/2015/09/eclipse_adwaita_dark.png) Eclipse Mars with the Adwaita Dark GTK theme.[/caption]
+![Screenshot of Eclipse Mars with Dark theme and Adwaita Dark GTK theme](/assets/images/eclipse_adwaita_dark.png "Eclipse Mars with the Adwaita Dark GTK theme.")

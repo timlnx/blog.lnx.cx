@@ -77,7 +77,7 @@ In Gmail we're going to add a new filter. You can reach the new filter menu thr
   * Press the `Create filter with this search »` link
 
 
-[![](https://blog.lnx.cx/wp-content/uploads/2017/01/Screenshot-from-2017-01-20-11-37-35-640x401.png)](https://blog.lnx.cx/wp-content/uploads/2017/01/Screenshot-from-2017-01-20-11-37-35.png)
+![](/assets/images/Screenshot-from-2017-01-20-11-37-35.png)
 
 
 
@@ -91,7 +91,7 @@ In Gmail we're going to add a new filter. You can reach the new filter menu thr
   * Create the new filter
 
 
-[![](https://blog.lnx.cx/wp-content/uploads/2017/01/Screenshot-from-2017-01-20-11-37-20-640x391.png)](https://blog.lnx.cx/wp-content/uploads/2017/01/Screenshot-from-2017-01-20-11-37-20.png)
+![](/assets/images/Screenshot-from-2017-01-20-11-37-20.png)
 
 
 ## Mentions

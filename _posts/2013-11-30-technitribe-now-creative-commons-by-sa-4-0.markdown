@@ -10,7 +10,7 @@ tags:
 - licensing
 ---
 
-[![Creative Commons 4.0](https://blog.lnx.cx/wp-content/uploads/2013/11/4-0-400-300x225.png)](http://creativecommons.org/weblog/entry/40768)I recently read the Creative Commons announcement, [CC’s Next Generation Licenses — Welcome Version 4.0!](http://creativecommons.org/weblog/entry/40768). This made me think more about licensing in general, as it has been a topic receiving increased attention recently in Open Source/Tech communities. I think it's a very important subject that anyone involved in Open Source should have at least _some_ knowledge about.
+[![Creative Commons 4.0](/assets/images/4-0-400-300x225.png)](http://creativecommons.org/weblog/entry/40768)I recently read the Creative Commons announcement, [CC’s Next Generation Licenses — Welcome Version 4.0!](http://creativecommons.org/weblog/entry/40768). This made me think more about licensing in general, as it has been a topic receiving increased attention recently in Open Source/Tech communities. I think it's a very important subject that anyone involved in Open Source should have at least _some_ knowledge about.
 
 Incorrectly or unlicensed software (or any other digital resource for that matter) can become a serious barrier to people attempting to reuse published works. I received my first exposure to the this when I was [contributing to the Ubuntu project](https://bugs.launchpad.net/ubuntu/+bug/254839).
 
