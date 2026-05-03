@@ -3,6 +3,31 @@
 # Run by systemd.timer every 5 minutes as tc (rootless podman).
 set -euo pipefail
 
+usage() {
+    cat <<EOF
+Usage: $(basename "$0") [-h|--help]
+
+Poll GitHub for new commits to timlnx/blog.lnx.cx. When new commits are
+found, pull them, rebuild the site in a rootless podman container, and
+rsync the output to the Apache docroot with enforced permissions.
+
+This script is normally run automatically by the blog-builder systemd timer.
+To run it manually: /usr/local/bin/blog-poll.sh
+
+Options:
+  -h, --help    Show this help and exit
+
+More information: https://github.com/timlnx/blog.lnx.cx/blob/main/DEPLOY.md
+EOF
+}
+
+for arg in "$@"; do
+    case "$arg" in
+        -h|--help) usage; exit 0 ;;
+        *) echo "$(basename "$0"): unexpected argument: $arg" >&2; usage >&2; exit 1 ;;
+    esac
+done
+
 REPO_DIR=/srv/blog.lnx.cx
 IMAGE_STORE=/srv/blog-images
 OUTPUT_DIR=/tmp/blog-output
