@@ -71,3 +71,4 @@ vendor
 .DS_Store
 .vscode
 dest
+assets/images/
