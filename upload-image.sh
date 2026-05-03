@@ -6,7 +6,7 @@ set -euo pipefail
 
 LOCAL_FILE="${1:-}"
 REMOTE_NAME="${2:-}"
-SERVER="tim@lnx.cx"
+SERVER="tc@lnx.cx"
 IMAGE_STORE="/srv/blog-images"
 
 if [ -z "$LOCAL_FILE" ]; then
