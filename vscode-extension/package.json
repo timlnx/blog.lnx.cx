@@ -1,0 +1,55 @@
+{
+  "name": "blog-lnx-cx-filters",
+  "displayName": "blog.lnx.cx Jekyll Filters",
+  "description": "Insert Jekyll Liquid filter calls in blog posts without thinking about syntax.",
+  "version": "1.0.0",
+  "publisher": "tbielawa",
+  "engines": { "vscode": "^1.85.0" },
+  "categories": ["Other"],
+  "activationEvents": ["onLanguage:markdown"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      { "command": "blog-filters.wrapAnchor",     "title": "Blog: Wrap as H1 anchor" },
+      { "command": "blog-filters.wrapAnchor2",    "title": "Blog: Wrap as H2 anchor" },
+      { "command": "blog-filters.wrapAnchorLink", "title": "Blog: Wrap as anchor link" },
+      { "command": "blog-filters.insertCrossLink","title": "Blog: Insert cross-post link" }
+    ],
+    "keybindings": [
+      {
+        "command": "blog-filters.wrapAnchor",
+        "key": "ctrl+shift+1", "mac": "cmd+shift+1",
+        "when": "editorTextFocus && (resourceExtname == '.md' || resourceExtname == '.markdown')"
+      },
+      {
+        "command": "blog-filters.wrapAnchor2",
+        "key": "ctrl+shift+2", "mac": "cmd+shift+2",
+        "when": "editorTextFocus && (resourceExtname == '.md' || resourceExtname == '.markdown')"
+      },
+      {
+        "command": "blog-filters.wrapAnchorLink",
+        "key": "ctrl+shift+l", "mac": "cmd+shift+l",
+        "when": "editorTextFocus && (resourceExtname == '.md' || resourceExtname == '.markdown')"
+      },
+      {
+        "command": "blog-filters.insertCrossLink",
+        "key": "ctrl+shift+x", "mac": "cmd+shift+x",
+        "when": "editorTextFocus && (resourceExtname == '.md' || resourceExtname == '.markdown')"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.0.0",
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.85.0",
+    "@vscode/vsce": "^2.22.0",
+    "jest": "^29.0.0",
+    "ts-jest": "^29.0.0",
+    "typescript": "^5.3.0"
+  }
+}
