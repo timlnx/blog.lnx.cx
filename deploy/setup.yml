@@ -95,6 +95,14 @@
         group: "{{ blog_group }}"
         mode: "0755"
 
+    - name: Create gallery store directory
+      ansible.builtin.file:
+        path: /srv/galleries
+        state: directory
+        owner: "{{ blog_user }}"
+        group: "{{ blog_group }}"
+        mode: "0755"
+
     # ── Container image ────────────────────────────────────────────────────────
 
     - name: Build blog-builder container image (rootless podman)
