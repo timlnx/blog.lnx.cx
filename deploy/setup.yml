@@ -96,6 +96,7 @@
         mode: "0755"
 
     - name: Create gallery store directory
+      become: true
       ansible.builtin.file:
         path: /srv/galleries
         state: directory
