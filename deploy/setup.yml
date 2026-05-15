@@ -95,6 +95,25 @@
         group: "{{ blog_group }}"
         mode: "0755"
 
+    - name: Create /galleries/ in docroot (never wiped by pipeline)
+      become: true
+      ansible.builtin.file:
+        path: "{{ docroot }}/galleries"
+        state: directory
+        owner: "{{ blog_user }}"
+        group: "{{ blog_group }}"
+        mode: "0755"
+
+    - name: Create empty index.html in /galleries/ (prevents directory listing)
+      become: true
+      ansible.builtin.copy:
+        dest: "{{ docroot }}/galleries/index.html"
+        content: ""
+        owner: "{{ blog_user }}"
+        group: "{{ blog_group }}"
+        mode: "0644"
+        force: false
+
     # ── Container image ────────────────────────────────────────────────────────
 
     - name: Build blog-builder container image (rootless podman)

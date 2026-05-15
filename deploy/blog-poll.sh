@@ -98,11 +98,13 @@ if [ "$VERBOSE" -eq 1 ]; then
     rsync -av --delete \
         --chmod=D755,F644 \
         --exclude=/scratch/ \
+        --exclude=/galleries/ \
         "${OUTPUT_DIR}/" "${DOCROOT}/"
 else
     rsync -a --delete \
         --chmod=D755,F644 \
         --exclude=/scratch/ \
+        --exclude=/galleries/ \
         "${OUTPUT_DIR}/" "${DOCROOT}/"
 fi
 

@@ -3,7 +3,7 @@
   "displayName": "blog.lnx.cx Jekyll Filters",
   "description": "Insert Jekyll Liquid filter calls in blog posts without thinking about syntax.",
   "version": "1.0.0",
-  "publisher": "tbielawa",
+  "publisher": "timlnx",
   "engines": { "vscode": "^1.85.0" },
   "categories": ["Other"],
   "activationEvents": ["onLanguage:markdown"],
