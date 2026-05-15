@@ -93,26 +93,28 @@ podman run --rm \
 
 log "Jekyll build complete."
 
-# Merge gallery store into build output before deploy
-if [ -d /srv/galleries ]; then
-    if [ "$VERBOSE" -eq 1 ]; then
-        rsync -av /srv/galleries/ "${OUTPUT_DIR}/galleries/"
-    else
-        rsync -a /srv/galleries/ "${OUTPUT_DIR}/galleries/"
-    fi
-fi
-
-# Deploy with enforced permissions, never touch /scratch/
+# Deploy with enforced permissions, never touch /scratch/ or /galleries/
 if [ "$VERBOSE" -eq 1 ]; then
     rsync -av --delete \
         --chmod=D755,F644 \
         --exclude=/scratch/ \
+        --exclude=/galleries/ \
         "${OUTPUT_DIR}/" "${DOCROOT}/"
 else
     rsync -a --delete \
         --chmod=D755,F644 \
         --exclude=/scratch/ \
+        --exclude=/galleries/ \
         "${OUTPUT_DIR}/" "${DOCROOT}/"
+fi
+
+# Sync gallery store directly to docroot (incremental, skips unchanged files)
+if [ -d /srv/galleries ]; then
+    if [ "$VERBOSE" -eq 1 ]; then
+        rsync -av /srv/galleries/ "${DOCROOT}/galleries/"
+    else
+        rsync -a /srv/galleries/ "${DOCROOT}/galleries/"
+    fi
 fi
 
 log "Deployed $(git rev-parse --short HEAD) to $DOCROOT"

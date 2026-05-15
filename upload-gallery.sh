@@ -40,7 +40,15 @@ PROJECT_DIR="${1%/}"
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 SERVER="tc@lnx.cx"
 IMAGE_STORE="/srv/galleries"
+DOCROOT="/var/www/blog.lnx.cx/galleries"
 DATA_FILE="$SCRIPT_DIR/_data/galleries.yml"
+
+if command -v rclone &>/dev/null; then
+    USE_RCLONE=1
+else
+    USE_RCLONE=0
+    printf '\033[1;33m[INFO] rclone not found — install it to speed up uploads (brew install rclone). Falling back to rsync.\033[0m\n\n'
+fi
 
 if [ ! -d "$PROJECT_DIR" ]; then
     echo "$(basename "$0"): directory not found: $PROJECT_DIR" >&2
@@ -66,8 +74,18 @@ echo "Source       : $LOCAL_DIR/"
 echo "Destination  : $SERVER:$IMAGE_STORE/$GALLERY_NAME/"
 echo ""
 
-ssh "$SERVER" "mkdir -p \"$IMAGE_STORE/$GALLERY_NAME\""
-rsync -av --progress "$LOCAL_DIR/" "$SERVER:$IMAGE_STORE/$GALLERY_NAME/"
+ssh "$SERVER" "mkdir -p \"$IMAGE_STORE/$GALLERY_NAME\" \"$DOCROOT/$GALLERY_NAME\""
+
+if [ "$USE_RCLONE" -eq 1 ]; then
+    rclone sync --transfers 16 --progress \
+        "$LOCAL_DIR/" \
+        ":sftp,host=lnx.cx,user=tc:$IMAGE_STORE/$GALLERY_NAME/"
+else
+    rsync -av --progress "$LOCAL_DIR/" "$SERVER:$IMAGE_STORE/$GALLERY_NAME/"
+fi
+
+# Deploy gallery to docroot immediately without waiting for a blog build
+ssh "$SERVER" "rsync -a \"$IMAGE_STORE/$GALLERY_NAME/\" \"$DOCROOT/$GALLERY_NAME/\""
 
 if ! grep -q "name: $GALLERY_NAME" "$DATA_FILE" 2>/dev/null; then
     printf -- '- name: %s\n  title: %s\n  date: %s\n' \
