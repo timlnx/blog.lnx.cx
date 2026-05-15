@@ -1,0 +1,13 @@
+---
+layout: page
+title: Galleries
+permalink: /galleries/
+---
+<ul>
+{% for gallery in site.data.galleries %}
+  <li>
+    <a href="/galleries/{{ gallery.name }}/">{{ gallery.title }}</a>
+    <span class="post-meta"> &mdash; {{ gallery.date | date: "%B %Y" }}</span>
+  </li>
+{% endfor %}
+</ul>
