@@ -20,21 +20,6 @@ layout: post
 
 Life has required my attention for a while.
 
-
-
-while I finish publishing some other docs on the project site
-
-Are are familiar with bitmath, yes?
-
 - https://github.com/timlnx/bitmath
 - https://bitmath.readthedocs.io/en/latest/
 
-{{ "Floop" | blog_anchor }}
-
-{{ "Floop" | blog_anchor_link }}
-
-{{ "Floopp" | blog_anchor_link: "Deoeopp" }}
-
-{{ "Floop" | blog_anchor_link }}
-
-{{ "
