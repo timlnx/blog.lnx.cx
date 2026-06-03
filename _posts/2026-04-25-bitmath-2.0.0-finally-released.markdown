@@ -9,12 +9,18 @@ categories:
 - projects
 - bitmath
 - Programming
-draft: false
+draft: true
 author: Tim Case
 layout: post
 ---
 
-# Placeholder
+# New bitmath!
+
+[The last bitmath release](/2016/08/24/bitmath-1-3-1-released.html) I wrote about on this blog was almost 10 years ago. After that we skipped 1.3.2 and went straight to [1.3.3](https://bitmath.readthedocs.io/en/latest/NEWS.html#bitmath-1-3-3-1) with mostly minor changes and bug fixes. Since then the project has been basically abandoned. As pull requests languished, the issue tracker became a place where problems and requests go to die.
+
+Life has required my attention for a while.
+
+
 
 while I finish publishing some other docs on the project site
 
@@ -23,3 +29,12 @@ Are are familiar with bitmath, yes?
 - https://github.com/timlnx/bitmath
 - https://bitmath.readthedocs.io/en/latest/
 
+{{ "Floop" | blog_anchor }}
+
+{{ "Floop" | blog_anchor_link }}
+
+{{ "Floopp" | blog_anchor_link: "Deoeopp" }}
+
+{{ "Floop" | blog_anchor_link }}
+
+{{ "
