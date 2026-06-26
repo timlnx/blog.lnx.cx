@@ -1,0 +1,78 @@
+#!/usr/bin/env bash
+#
+# pre-push hook — verify the Jekyll site compiles before allowing a push.
+#
+# Git invokes this with $1 = remote name, $2 = remote URL, and the list of
+# refs being pushed on stdin. We ignore all of that and simply run a full
+# Jekyll build: if the Markdown, Liquid, or YAML front matter won't compile,
+# the build fails and the push is aborted. This is the same check CI runs
+# (.github/workflows/ci.yml), pulled forward so breakage is caught locally.
+#
+# Enable in a fresh clone (run once):
+#     git config core.hooksPath .githooks
+#
+# Run the check manually:
+#     .githooks/pre-push
+#
+# Bypass the check for a single push:
+#     git push --no-verify
+#
+set -euo pipefail
+
+case "${1:-}" in
+    -h|--help)
+        cat <<'EOF'
+pre-push — builds the Jekyll site and blocks the push if it fails.
+
+Normally invoked automatically by `git push`. Manual run: .githooks/pre-push
+Bypass once: git push --no-verify
+Enable in a fresh clone: git config core.hooksPath .githooks
+EOF
+        exit 0
+        ;;
+esac
+
+# Work from the repo root regardless of where git invokes the hook.
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+cd "$REPO_ROOT"
+
+if ! command -v bundle >/dev/null 2>&1; then
+    echo "pre-push: 'bundle' not found on PATH; cannot verify the build." >&2
+    echo "          Install Ruby/Bundler and run 'bundle install', or" >&2
+    echo "          bypass this check with: git push --no-verify" >&2
+    exit 1
+fi
+
+BUILD_DEST="$(mktemp -d)"
+BUILD_LOG="$(mktemp)"
+trap 'rm -rf "$BUILD_DEST" "$BUILD_LOG"' EXIT
+
+echo "pre-push: building Jekyll site to verify Markdown compiles..."
+
+# --strict_front_matter : fail on invalid YAML front matter
+# --drafts / --future   : also compile drafts and future-dated posts so
+#                         nothing slips through unvalidated
+# --destination <tmp>   : don't disturb the working _site/ (or a running serve)
+if bundle exec jekyll build \
+        --destination "$BUILD_DEST" \
+        --strict_front_matter \
+        --drafts \
+        --future >"$BUILD_LOG" 2>&1; then
+    echo "pre-push: build OK — Markdown compiles cleanly."
+else
+    status=$?
+    # Strip the Ruby/bundler backtrace frames so the author sees just the
+    # actionable Jekyll error (file + line + reason). Fall back to the full
+    # log if the filter leaves nothing (unexpected error format).
+    errors="$(grep -vE '/\.(gem/ruby|rubies)/' "$BUILD_LOG" || true)"
+    [ -n "$errors" ] || errors="$(cat "$BUILD_LOG")"
+    {
+        echo ""
+        echo "pre-push: Jekyll build FAILED — push aborted."
+        echo "------------------------------------------------------------"
+        printf '%s\n' "$errors"
+        echo "------------------------------------------------------------"
+        echo "Fix the errors above, or bypass once with: git push --no-verify"
+    } >&2
+    exit "$status"
+fi
