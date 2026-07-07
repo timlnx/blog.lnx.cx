@@ -99,12 +99,14 @@ if [ "$VERBOSE" -eq 1 ]; then
         --chmod=D755,F644 \
         --exclude=/scratch/ \
         --exclude=/galleries/ \
+        --exclude=/.url-manifest.json \
         "${OUTPUT_DIR}/" "${DOCROOT}/"
 else
     rsync -a --delete \
         --chmod=D755,F644 \
         --exclude=/scratch/ \
         --exclude=/galleries/ \
+        --exclude=/.url-manifest.json \
         "${OUTPUT_DIR}/" "${DOCROOT}/"
 fi
 
@@ -118,3 +120,10 @@ if [ -d /srv/galleries ]; then
 fi
 
 log "Deployed $(git rev-parse --short HEAD) to $DOCROOT"
+
+# Best-effort: submit this round's changed pages to the Wayback Machine. LOCAL
+# is the pre-pull HEAD and HEAD is the commit we just deployed, so the diff is
+# exactly what landed. The manifest was emitted into OUTPUT_DIR by the build
+# (_plugins/url_manifest.rb). `|| true` guarantees this can never fail or delay
+# the deploy, which has already completed above.
+/usr/local/bin/archive-update.sh "$LOCAL" HEAD "$OUTPUT_DIR/.url-manifest.json" || true
