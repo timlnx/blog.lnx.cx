@@ -4,8 +4,8 @@ title: Outerbelt Loop - Progress Update
 tags:
 - hiking
 - walks
-- Chicago
 - outerbelt
+- Chicago
 - long term goals
 categories:
 - hiking
