@@ -2,7 +2,7 @@
 # Submit recently-changed blog pages to the Internet Archive Wayback Machine.
 #
 # Called by blog-poll.sh at the very end of a successful deploy, as:
-#   archive-update.sh "$LOCAL" "$HEAD" "$OUTPUT_DIR/.url-manifest.json" || true
+#   archive-update.sh "$LOCAL" HEAD "$OUTPUT_DIR/.url-manifest.json" || true
 #
 # It git-diffs the *source* (never the rendered HTML — the footer's "last built
 # on" date changes every page on every build) over LOCAL..HEAD, resolves each
@@ -175,7 +175,10 @@ classify() {
         else
             if [[ "$path" == _posts/* ]]; then TIER2+=("$path"); else TIER3+=("$path"); fi
         fi
-    done < <(git diff --name-status "$OLD_REF" "$NEW_REF")
+    # core.quotePath=false so non-ASCII source paths come back as literal UTF-8
+    # (matching the UTF-8 manifest keys) instead of octal-escaped, quoted forms.
+    done < <(git -c core.quotePath=false diff --name-status "$OLD_REF" "$NEW_REF")
+    return 0
 }
 
 # ── Selection ────────────────────────────────────────────────────────────────
@@ -231,6 +234,7 @@ select_urls() {
             SELECTED_TIERS+=("4")
         fi
     fi
+    return 0
 }
 
 # ── Submission ───────────────────────────────────────────────────────────────
