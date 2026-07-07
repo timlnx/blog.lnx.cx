@@ -21,6 +21,8 @@
     image_name: localhost/blog-builder
     poll_script_src: "{{ repo_dir }}/deploy/blog-poll.sh"
     poll_script_dest: /usr/local/bin/blog-poll.sh
+    archive_script_src: "{{ repo_dir }}/deploy/archive-update.sh"
+    archive_script_dest: /usr/local/bin/archive-update.sh
     systemd_user_dir: "/home/{{ blog_user }}/.config/systemd/user"
 
   tasks:
@@ -119,6 +121,15 @@
       ansible.builtin.copy:
         src: "{{ poll_script_src }}"
         dest: "{{ poll_script_dest }}"
+        owner: root
+        group: root
+        mode: "0755"
+
+    - name: Install archive-update.sh to /usr/local/bin/
+      become: true
+      ansible.builtin.copy:
+        src: "{{ archive_script_src }}"
+        dest: "{{ archive_script_dest }}"
         owner: root
         group: root
         mode: "0755"
