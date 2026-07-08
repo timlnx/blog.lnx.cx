@@ -239,22 +239,60 @@ select_urls() {
 
 # ── Submission ───────────────────────────────────────────────────────────────
 
+# Plain-English gloss for the curl exit codes we're realistically going to see
+# against Save Page Now. Everything else falls through to the raw number, which
+# `man curl` (EXIT CODES) decodes.
+curl_strerror() {
+    case "$1" in
+        6)  echo "couldn't resolve host (DNS)" ;;
+        7)  echo "failed to connect to host" ;;
+        28) echo "operation timed out" ;;
+        35) echo "TLS/SSL handshake failed" ;;
+        52) echo "empty reply from server" ;;
+        55) echo "failure sending network data" ;;
+        56) echo "failure receiving network data" ;;
+        *)  echo "unexpected curl error" ;;
+    esac
+}
+
 submit_one() {
-    local url="$1" http_code rc
-    http_code=$(curl -sS -A "$USER_AGENT" \
+    local url="$1" metrics rc errfile err http_code
+    errfile=$(mktemp)
+
+    # curl prints the -w timing breakdown on stdout even when the transfer
+    # fails, so we always learn *where* a request died: DNS, TCP connect, TLS,
+    # or waiting on the first response byte (ttfb). SPN's /save/ endpoint holds
+    # the connection open synchronously while it captures, so a timeout normally
+    # shows a healthy dns/conn/tls with ttfb stuck at 0 — the server, not us.
+    # curl's own one-line diagnostic goes to stderr; we keep it instead of
+    # sending it to /dev/null the way the first cut of this script did.
+    metrics=$(curl -sS -A "$USER_AGENT" \
         --connect-timeout "$CONNECT_TIMEOUT" --max-time "$MAX_TIME" \
-        -o /dev/null -w '%{http_code}' \
-        "${SAVE_ENDPOINT}/${url}" 2>/dev/null) && rc=0 || rc=$?
+        -o /dev/null \
+        -w 'code=%{http_code} dns=%{time_namelookup}s conn=%{time_connect}s tls=%{time_appconnect}s ttfb=%{time_starttransfer}s total=%{time_total}s' \
+        "${SAVE_ENDPOINT}/${url}" 2>"$errfile") && rc=0 || rc=$?
+
+    err=$(tr '\n' ' ' < "$errfile"); rm -f "$errfile"
+    err="${err% }"                              # drop the trailing space tr left
+    err="${err#curl: }"                         # we label it "curl:" ourselves
+
+    http_code="${metrics#code=}"; http_code="${http_code%% *}"
     http_code="${http_code:-000}"
+
     if [ "$rc" -ne 0 ]; then
-        log "  ERROR curl exit $rc: $url"
+        log "  ERROR $url"
+        log "        curl exit $rc: $(curl_strerror "$rc") (limits: connect=${CONNECT_TIMEOUT}s max=${MAX_TIME}s)"
+        log "        timing: ${metrics:-unavailable}"
+        [ -n "$err" ] && log "        curl: $err"
         return 1
     fi
     if [ "$http_code" -ge 200 ] && [ "$http_code" -lt 400 ]; then
-        log "  OK ($http_code): $url"
+        log "  OK ($http_code) total=${metrics##*total=} $url"
         return 0
     fi
     log "  ERROR HTTP $http_code: $url"
+    log "        timing: ${metrics:-unavailable}"
+    [ -n "$err" ] && log "        curl: $err"
     return 1
 }
 
