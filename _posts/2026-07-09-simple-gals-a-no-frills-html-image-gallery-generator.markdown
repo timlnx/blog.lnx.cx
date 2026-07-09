@@ -22,6 +22,10 @@ new semi-serious open source project in a long time. Like
 scratch. And that itch was the apparent lack of a modern day "simple HTML image
 gallery generator".
 
+* [Check it out on GitHub!](https://github.com/timlnx/simpleGals)
+
+(organization and demo galleries coming soon!)
+
 *Back in my day*, on Mac the Photos application had this nifty feature. You
 could export a gallery to a simple HTML bundle with forward/backward nagivation.
 It looked a lot like they used the DocBook XSL stylesheets to generate a simple
@@ -63,6 +67,10 @@ But they took that away from us.
 {{ "Modern Features (and anti-features)" | blog_anchor }}
 
 simpleGals takes those core functions and extends them to work better in 2026.
+
+Here's an example of shots I took of the full moon a week ago.
+
+* [Strawberry Full Moon Gallery](https://blog.lnx.cx/galleries/NiceMoons/index.html)
 
 simpleGals is trying to be a very simple command-line driven static HTML image
 gallery generating tool. simpleGals just like to have fun, it doesn't want you
