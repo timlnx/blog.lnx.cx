@@ -1,0 +1,110 @@
+#!/usr/bin/env bash
+#
+# new-post — venv bootstrapper for the new-post scaffolder.
+#
+# Flow:
+#   1. Look for the newpost virtualenv.
+#   2. If it's missing, create it (python3.12 if in PATH, else python3, else
+#      python -- macOS often has no bare `python`, hence the middle fallback).
+#   3. Activate it and make sure gnureadline is installed, so line editing is
+#      real GNU readline (Meta-f / Meta-b / Meta-DEL / yank) instead of the
+#      macOS libedit shim.
+#   4. Exec _new_post.py with the venv interpreter, forwarding all arguments.
+#
+# Wrapper-only flags: --recreate-venv and -h/--help. Everything else is passed
+# straight to _new_post.py, which validates its own arguments (so a bad --flag
+# is rejected there with a real usage message).
+#
+# Override the venv location with NEWPOST_VENV=/some/path.
+
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+WORKER="$SCRIPT_DIR/_new_post.py"
+VENV="${NEWPOST_VENV:-${XDG_CACHE_HOME:-$HOME/.cache}/new-post/venv}"
+DEP="gnureadline"
+
+usage() {
+  cat <<EOF
+Usage: ./new-post [--recreate-venv] [ARGS...]
+
+Bootstraps a private Python virtualenv containing ${DEP} (the real GNU
+readline), then runs the new-post scaffolder inside it. The first run creates
+the venv; after that it's reused.
+
+Wrapper options:
+  --recreate-venv    delete and rebuild the venv, then run
+  -h, --help         this message (plus the tool's own options if the venv exists)
+
+Any other arguments are forwarded to new-post. Set NEWPOST_VENV to change the
+venv location (default: \${XDG_CACHE_HOME:-\$HOME/.cache}/new-post/venv).
+EOF
+}
+
+pick_python() {
+  local candidate
+  for candidate in python3.12 python3 python; do
+    if command -v "$candidate" >/dev/null 2>&1; then
+      printf '%s\n' "$candidate"
+      return 0
+    fi
+  done
+  return 1
+}
+
+recreate=0
+show_help=0
+forward=()
+for arg in "$@"; do
+  case "$arg" in
+    --recreate-venv|--rebuild-venv) recreate=1 ;;
+    -h|--help)                      show_help=1 ;;
+    *)                              forward+=("$arg") ;;
+  esac
+done
+
+if [[ $show_help -eq 1 ]]; then
+  usage
+  if [[ -x "$VENV/bin/python" ]]; then
+    printf '\n---- new-post options ----\n'
+    "$VENV/bin/python" "$WORKER" --help
+  else
+    printf '\n(run ./new-post once to build the venv; then -h also lists the tool options)\n'
+  fi
+  exit 0
+fi
+
+[[ -f "$WORKER" ]] || { printf 'error: worker not found: %s\n' "$WORKER" >&2; exit 1; }
+
+# 1 + recreate: is the venv there?
+if [[ $recreate -eq 1 ]]; then
+  printf '[new-post] removing venv %s\n' "$VENV" >&2
+  rm -rf "$VENV"
+fi
+
+# 2: create it if not
+if [[ ! -x "$VENV/bin/python" ]]; then
+  if ! PY="$(pick_python)"; then
+    printf 'error: no python found (tried python3.12, python3, python)\n' >&2
+    exit 1
+  fi
+  printf '[new-post] creating venv at %s using %s\n' "$VENV" "$PY" >&2
+  mkdir -p "$(dirname "$VENV")"
+  "$PY" -m venv "$VENV"
+fi
+
+# 3: activate, then ensure the dep is present
+set +u                      # venv activate scripts aren't always nounset-clean
+# shellcheck disable=SC1091
+source "$VENV/bin/activate"
+set -u
+
+if ! python -m pip freeze 2>/dev/null | grep -qi "^${DEP}=="; then
+  printf '[new-post] installing %s into venv\n' "$DEP" >&2
+  python -m pip install --quiet --upgrade pip >/dev/null 2>&1 || true
+  python -m pip install "$DEP"
+fi
+
+# 4: run the real script with the venv interpreter, forwarding args.
+# ${arr[@]+"${arr[@]}"} keeps an empty array from tripping set -u on bash 3.2.
+exec python "$WORKER" ${forward[@]+"${forward[@]}"}
