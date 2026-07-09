@@ -1,51 +1,89 @@
 #!/bin/bash
-# Upload an image to the server image store and print the markdown reference.
+# Upload one or more images to the server image store and print markdown snippets.
 set -euo pipefail
+
+SERVER="tc@lnx.cx"
+IMAGE_STORE="/srv/blog-images"
+URL_BASE="/assets/images"
 
 usage() {
     cat <<EOF
-Usage: $(basename "$0") [-h|--help] <local-file> [remote-name]
+Usage: $(basename "$0") [-h|--help] <local-file> ...
 
-Upload an image to the blog image store on lnx.cx and print the markdown
-image reference ready to paste into a post.
+Upload one or more images to the blog image store on lnx.cx and print markdown
+snippets ready to paste into a post. Filenames are slugified for tidy URLs, e.g.
+"Screenshot 2026-07-09 at 2.14.14 AM.png" -> screenshot-2026-07-09-at-2-14-14-am.png
 
 Arguments:
-  local-file    Path to the image file to upload
-  remote-name   Filename to use on the server (default: basename of local-file)
-
-Examples:
-  $(basename "$0") ~/Desktop/photo.jpg
-  $(basename "$0") ~/Desktop/photo.jpg my-renamed-photo.jpg
+  local-file    One or more image files to upload
 
 Options:
   -h, --help    Show this help and exit
+
+Examples:
+  $(basename "$0") ~/Desktop/photo.jpg
+  $(basename "$0") ~/Desktop/*.png
 
 More information: https://github.com/timlnx/blog.lnx.cx/blob/main/DEPLOY.md
 EOF
 }
 
-if [ $# -eq 0 ] || [ "${1:-}" = "-h" ] || [ "${1:-}" = "--help" ]; then
-    usage
-    [ $# -eq 0 ] && exit 1 || exit 0
-fi
+# slugify a filename: lowercase, collapse non-alphanumeric runs to hyphens,
+# keep (and lowercase) the extension. "A Photo.PNG" -> "a-photo.png"
+slugify() {
+    local name base ext slug
+    name="$1"
+    if [[ "$name" == *.* ]]; then
+        base="${name%.*}"
+        ext=".$(printf '%s' "${name##*.}" | tr '[:upper:]' '[:lower:]')"
+    else
+        base="$name"
+        ext=""
+    fi
+    slug="$(printf '%s' "$base" \
+        | tr '[:upper:]' '[:lower:]' \
+        | LC_ALL=C sed -E 's/[^a-z0-9]+/-/g; s/^-+//; s/-+$//')"
+    printf '%s%s' "$slug" "$ext"
+}
 
-if [ $# -gt 2 ]; then
-    echo "$(basename "$0"): too many arguments" >&2
+# --- parse args ---
+FILES=()
+while [ $# -gt 0 ]; do
+    case "$1" in
+        -h|--help) usage; exit 0 ;;
+        --) shift; while [ $# -gt 0 ]; do FILES+=("$1"); shift; done; break ;;
+        -*) echo "$(basename "$0"): unknown option: $1" >&2; usage >&2; exit 1 ;;
+        *) FILES+=("$1") ;;
+    esac
+    shift
+done
+
+if [ ${#FILES[@]} -eq 0 ]; then
     usage >&2
     exit 1
 fi
 
-LOCAL_FILE="$1"
-REMOTE_NAME="${2:-$(basename "$LOCAL_FILE")}"
-SERVER="tc@lnx.cx"
-IMAGE_STORE="/srv/blog-images"
+# --- validate everything exists before uploading anything ---
+for f in "${FILES[@]}"; do
+    if [ ! -f "$f" ]; then
+        echo "$(basename "$0"): file not found: $f" >&2
+        exit 1
+    fi
+done
 
-if [ ! -f "$LOCAL_FILE" ]; then
-    echo "$(basename "$0"): file not found: $LOCAL_FILE" >&2
-    exit 1
-fi
+# --- upload each, collecting the slugified remote names ---
+REMOTE_NAMES=()
+for f in "${FILES[@]}"; do
+    remote="$(slugify "$(basename "$f")")"
+    echo "Uploading $(basename "$f") -> $remote" >&2
+    scp -q "$f" "$SERVER:$IMAGE_STORE/$remote"
+    REMOTE_NAMES+=("$remote")
+done
 
-scp "$LOCAL_FILE" "$SERVER:$IMAGE_STORE/$REMOTE_NAME"
-echo ""
-echo "Uploaded. Reference in posts as:"
-echo "  ![alt text](/assets/images/$REMOTE_NAME)"
+# --- print the markdown snippets (stdout; upload chatter above was stderr) ---
+echo "" >&2
+echo "Paste into your post:" >&2
+for remote in "${REMOTE_NAMES[@]}"; do
+    echo "![Caption]($URL_BASE/$remote \"Alt Text\")"
+    echo ""
+done
