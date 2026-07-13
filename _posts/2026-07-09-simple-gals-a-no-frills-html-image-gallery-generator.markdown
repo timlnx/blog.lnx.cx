@@ -13,6 +13,9 @@ author: Tim Case
 layout: post
 ---
 
+* [Check it out on GitHub!](https://github.com/simplegals/simpleGals)
+* The template showcase [is here](https://simplegals.github.io/)
+
 
 {{ "Simple Gals" | blog_anchor }}
 
@@ -22,7 +25,6 @@ new semi-serious open source project in a long time. Like
 scratch. And that itch was the apparent lack of a modern day "simple HTML image
 gallery generator".
 
-* [Check it out on GitHub!](https://github.com/timlnx/simpleGals)
 
 (organization and demo galleries coming soon!)
 
