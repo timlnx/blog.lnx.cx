@@ -8,12 +8,12 @@ I do things in other places, too. Check 'em out.
 
 # famoe.ly
 
-*jam band fansite w/ song catalog and lots of data visualization"
+*jam band fansite w/ song catalog and lots of data visualization*
 
 In 2026 I bought the [famoe.ly](https://famoe.ly/) domain so I could
 host a fan site for [moe.](https://www.moe.org/) with some
 stats/data/math tools I am working on. It's expanded to include a few
-additional tools I built along the way to validate the set list and
+additional tools I built along the way to validate the set lists and
 track length data I was normalizing and processing.
 
 * [The Songbook](https://famoe.ly/songbook/) - Adjustable "what were
@@ -25,11 +25,16 @@ track length data I was normalizing and processing.
   catalog. Now it's just fun.
 * [The Tape Measure](https://famoe.ly/tapemeasure/) - Normalizing and
   validating data. Lots of visuals about average song lengths and
-  relationships with other songs: common seques, frequent
-  opener/closer, sandwidth plays (wrapping a song around another full
-  song). I just think it's neat!
+  relationships with other songs: common segues, frequent
+  opener/closer status, sandwdichth plays (wrapping a song around
+  another full song). I just think it's neat!
 
 ![They're Neat](/assets/images/neat.png "Marge Simpson holding a potato saying that she just thinks they're neat")
+
+famoe.ly wouldn't be possible without the
+[Internet Archive](https://help.archive.org/help/how-do-i-donate-to-the-internet-archive/)
+for hosting all of the source data, and the famoe.ly fandom for their
+decades of uploaded live recordings.
 
 # Python - bitmath
 
