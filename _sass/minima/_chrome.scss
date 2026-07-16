@@ -1,0 +1,197 @@
+@use "sass:math";
+/**
+ * The window. One object sitting on the X11 root weave — WM title bar, browser
+ * chrome, document. The weave's job is to be BEHIND this, not between its parts.
+ */
+// Sized so the document inside lands near $content-width. Wider than this and
+// the measure gets too long to read comfortably, and the desktop stops reading
+// as a desktop because the weave is reduced to thin strips at the edges.
+.mosaic-window {
+  // `width` and `box-sizing` are both load-bearing, do not drop them:
+  // body is a column flex container, and a flex item with auto side margins
+  // loses its stretch and sizes to MAX-CONTENT capped by max-width — so the
+  // window renders at its full width on a phone and everything inside spills
+  // off screen. `width: 100%` restores the constraint. Without border-box the
+  // 2px frame adds on top of 100% and overflows by exactly the border.
+  box-sizing: border-box;
+  width: 100%;
+  max-width: $content-width + 80px;
+  margin: 34px auto 18px;
+  background-color: $motif-face;
+  @include bevel-raised(2px);
+  // Motif windows cast a hard offset shadow, never a soft blur.
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.4);
+}
+
+// A second window on the desktop, not a slab bolted to the browser's underside.
+// The gap of weave above it is what makes them read as two applications rather
+// than one window with a grey basement.
+.mosaic-window--footer {
+  margin-top: 0;
+  margin-bottom: 34px;
+
+  .site-footer {
+    border: 0;
+    background-color: transparent; // the window's own face shows through
+    margin: 2px;
+    padding: math.div($spacing-unit, 2) 0;
+  }
+
+  .wrapper {
+    max-width: none;
+  }
+}
+
+// Active-window title bar. No minimise/close buttons: they could not work
+// without JS, and an inert control is the one thing we said we would not ship.
+// So the title bar is a label, which is honest, and it carries the site name
+// that the chrome would otherwise have swallowed into a URL field.
+.mosaic-titlebar {
+  background-color: $motif-shadow;
+  color: $titlebar-text;
+  font-family: $chrome-font-family;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  padding: 4px 8px;
+  margin: 2px;
+  @include bevel-raised(2px);
+}
+
+/**
+ * The chrome is the operating system. It speaks Helvetica.
+ * The document below it is the author, and keeps Space Grotesk.
+ */
+.mosaic-chrome {
+  background-color: $motif-face;
+  font-family: $chrome-font-family;
+  font-size: 12px;
+  padding: 5px 6px 6px;
+}
+
+// Inside the window the document is a sunken well filling the frame — it is no
+// longer a column floating on the desktop, because the window is the thing on
+// the desktop now.
+.mosaic-window {
+  .page-content {
+    padding: 0 6px 6px;
+    flex: 1;
+  }
+
+  .page-content > .wrapper {
+    max-width: none;
+    background-color: $document-bg;
+    @include bevel-sunken(2px);
+  }
+
+}
+
+// Location block: the two fields, with the throbber alongside spanning both.
+.mosaic-location {
+  display: flex;
+  align-items: stretch;
+  gap: 6px;
+}
+
+// The bookmarks bar. Sits below the rule, directly above the document — where
+// a modern browser puts its bookmarks, so the muscle memory transfers.
+.mosaic-bookmarks {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+// Motif's separator is an etched groove: a dark line with a light line under
+// it. Two 1px borders, no height. Slim margins keep it from eating the budget.
+.mosaic-rule {
+  border: 0;
+  border-top: 1px solid $motif-dark;
+  border-bottom: 1px solid $motif-light;
+  height: 0;
+  margin: 5px 0;
+}
+
+.mosaic-btn {
+  @include bevel-raised(2px);
+  background-color: $motif-face;
+  color: $text-color;
+  text-decoration: none;
+  padding: 3px 10px;
+  font-family: $chrome-font-family;
+  font-size: 12px;
+  line-height: 1.4;
+  white-space: nowrap;
+
+  &:visited { color: $text-color; }
+  &:hover   { color: $text-color; text-decoration: none; }
+
+  // Motif buttons invert their bevel on press. CSS-only, no JS.
+  &:active {
+    @include bevel-sunken(2px);
+    padding: 4px 9px 2px 11px;
+  }
+}
+
+.mosaic-throbber {
+  @include bevel-sunken(2px);
+  background-color: $throbber-well;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 4px;
+
+  // Nearest-neighbour, always. A pixmap that gets smoothed is just a small
+  // blurry photo; the hard pixel edges are the whole point.
+  > img {
+    display: block;
+    image-rendering: pixelated;
+  }
+}
+
+.mosaic-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.mosaic-field {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.mosaic-field-label {
+  flex: none;
+  width: 108px;
+  text-align: right;
+  color: $text-color;
+}
+
+// Sunken Motif text field. Looks editable, is not — it is display-only, and it
+// prints the truth about where you are.
+.mosaic-field-value {
+  @include bevel-sunken(2px);
+  background-color: $field-bg;
+  flex: 1 1 auto;
+  padding: 2px 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+}
+
+@include media-query($on-palm) {
+  // On a phone the desktop metaphor costs more than it earns: give the screen
+  // to the document and let the weave show as a thin surround.
+  .mosaic-window {
+    margin: 6px auto;
+  }
+
+  .mosaic-bookmarks {
+    flex-wrap: wrap;
+  }
+}
