@@ -6,6 +6,31 @@ permalink: /projects/
 
 I do things in other places, too. Check 'em out.
 
+# famoe.ly
+
+*jam band fansite w/ song catalog and lots of data visualization"
+
+In 2026 I bought the [famoe.ly](https://famoe.ly/) domain so I could
+host a fan site for [moe.](https://www.moe.org/) with some
+stats/data/math tools I am working on. It's expanded to include a few
+additional tools I built along the way to validate the set list and
+track length data I was normalizing and processing.
+
+* [The Songbook](https://famoe.ly/songbook/) - Adjustable "what were
+  they playing and when" song catalog with data going back to 2020.
+* [The Scorecard](https://famoe.ly/scorecard/) - I'm trying to predict
+  upcoming sets based on years of historical data. It gets more
+  accurate the closer we get to an upcoming show. I started it to
+  build practice setlists for me to get familiar with their recent
+  catalog. Now it's just fun.
+* [The Tape Measure](https://famoe.ly/tapemeasure/) - Normalizing and
+  validating data. Lots of visuals about average song lengths and
+  relationships with other songs: common seques, frequent
+  opener/closer, sandwidth plays (wrapping a song around another full
+  song). I just think it's neat!
+
+![They're Neat](/assets/images/neat.png "Marge Simpson holding a potato saying that she just thinks they're neat")
+
 # Python - bitmath
 
 bitmath is a Python library for using file size units (GiB's, kB's, etc) as
