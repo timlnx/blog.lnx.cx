@@ -2,7 +2,7 @@
 author: Tim Case
 date: 2013-03-27 15:15:23+00:00
 layout: post
-title: dblatex, DocBook, acknowledgements and PDF output
+title: '[Updated] dblatex, DocBook, acknowledgements and PDF output'
 categories:
 - DocBook
 - Documentation
@@ -10,7 +10,11 @@ categories:
 - Planet
 - Publishing
 - XML
+tags:
+- updated
 ---
+
+**update 2026-07-16** - *Updated all book URL references to resolve to the canonical scribesguides.com source*
 
 In the book I'm working on, the [Virtual Disk Guide](https://github.com/tbielawa/Virtual-Disk-Guide), I recently decided to start templating out an [Acknowledgements](http://docbook.org/tdg5/en/html/acknowledgements.html) chapter. I'm writing the book in [DocBook5](http://docbook.org/) and my print (PDF) publishing toolchain looks like this:
 
@@ -38,6 +42,6 @@ And you consume it with dblatex in this way:
 
 <script src="https://gist.github.com/timlnx/5254884.js"></script>
 
-For an example of how this renders you can look at [the PDF version](http://lnx.cx/docs/vdg/output/Virtual-Disk-Operations.pdf) of the Virtual Disk Guide. I keep the file in version control [on the github project](https://github.com/tbielawa/Virtual-Disk-Guide/blob/master/xsl/dblatex-acknowledgements.xsl) for the book.
+For an example of how this renders you can look at [the PDF version](https://scribesguides.com/books/vdg/first_edition/Virtual-Disk-Operations.pdf) of the Virtual Disk Guide. I keep the file in version control [on the github project](https://github.com/tbielawa/Virtual-Disk-Guide/blob/master/xsl/dblatex-acknowledgements.xsl) for the book.
 
 Speaking of **Acknowledgements**: Thanks to my buddy Al for dusting off his XSLT skills and debugging this with me initially.

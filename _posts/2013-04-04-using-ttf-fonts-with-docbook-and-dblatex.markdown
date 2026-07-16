@@ -2,7 +2,7 @@
 author: Tim Case
 date: 2013-04-04 22:38:29+00:00
 layout: post
-title: Using TTF fonts with DocBook and dblatex
+title: '[Updated] Using TTF fonts with DocBook and dblatex'
 categories:
 - DocBook
 - Documentation
@@ -22,7 +22,10 @@ tags:
 - ttf
 - xetex
 - XML
+- updated
 ---
+
+**update 2026-07-16** - *Updated all book URL references to resolve to the canonical scribesguides.com source*
 
 # Update 2013-06-23:
 
@@ -33,7 +36,7 @@ Updating to the 0.3.4 version of dblatex has fixed many of the issues detailed i
 # The Problem:
 
 
-You're [writing a book](https://github.com/tbielawa/Virtual-Disk-Guide/) in [DocBook XML](http://www.docbook.org/tdg5/en/html/docbook.html), publishing it with [dblatex](http://dblatex.sourceforge.net/), and you dislike (or want to customize) the fonts it uses in the [rendered PDF](http://lnx.cx/docs/vdg/output/Virtual-Disk-Operations.pdf).
+You're [writing a book](https://github.com/tbielawa/Virtual-Disk-Guide/) in [DocBook XML](http://www.docbook.org/tdg5/en/html/docbook.html), publishing it with [dblatex](http://dblatex.sourceforge.net/), and you dislike (or want to customize) the fonts it uses in the [rendered PDF](https://scribesguides.com/books/vdg/first_edition/Virtual-Disk-Operations.pdf).
 
 You hunt around the internet and find a nice [family](http://blogs.adobe.com/typblography/2012/09/source-code-pro.html) of [fonts](http://blogs.adobe.com/typblography/2012/08/source-sans-pro.html) you want to use in your final product. Best of all, they're free and released under the [Open Font License](http://en.wikipedia.org/wiki/SIL_Open_Font_License)!(Thanks, Adobe!)
 

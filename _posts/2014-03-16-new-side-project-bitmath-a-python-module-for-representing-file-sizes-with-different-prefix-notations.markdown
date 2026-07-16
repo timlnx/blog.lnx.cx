@@ -2,14 +2,18 @@
 author: Tim Case
 date: 2014-03-16 23:23:01+00:00
 layout: post
-title: 'New side-project: bitmath - A Python module for representing file sizes with
+title: '[Updated] New side-project: bitmath - A Python module for representing file sizes with
   different prefix notations'
 categories:
 - Fedora
 - GNU/Linux
 - Planet
 - Programming
+tags:
+- updated
 ---
+
+**update 2026-07-16** - *Updated all book URL references to resolve to the canonical scribesguides.com source*
 
 **Update: **[2014-03-27 - python-bitmath is now in Fedora!](https://blog.lnx.cx/2014/03/27/python-bitmath-now-available-in-fedora/)
 
@@ -19,7 +23,7 @@ categories:
 
 I've written a new Python module which I'm calling [**bitmath**](https://github.com/tbielawa/bitmath).
 
-Given my day job as a System Administrator, and the content of my [upcoming book](http://lnx.cx/docs/vdg/output/Virtual-Disk-Operations.pdf) on Linux virtual disks, I frequently find myself in situations requiring me to convert file sizes into various other formats. I recall far too many instances of having to do unit conversions mid-code in projects (_does this look familiar to anyone else?):_
+Given my day job as a System Administrator, and the content of my [upcoming book](https://scribesguides.com/books/vdg/first_edition/Virtual-Disk-Operations.pdf) on Linux virtual disks, I frequently find myself in situations requiring me to convert file sizes into various other formats. I recall far too many instances of having to do unit conversions mid-code in projects (_does this look familiar to anyone else?):_
 
 <script src="https://gist.github.com/timlnx/9590427.js"></script>
 

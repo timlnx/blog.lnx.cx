@@ -2,7 +2,7 @@
 author: Tim Case
 date: 2010-09-23 00:38:09+00:00
 layout: post
-title: Lots more docs published on PeopleAreDucks.com
+title: '[Updated] Lots more docs published on PeopleAreDucks.com'
 categories:
 - DocBook
 - Documentation
@@ -12,7 +12,11 @@ categories:
 - Planet
 - Tutorials
 - XML
+tags:
+- updated
 ---
+
+**update 2026-07-16** - *Updated all book URL references to resolve to the canonical scribesguides.com source*
 
 While I've been gone from the blogging world I've still been working on projects. Mostly I've been working on documentation.
 
@@ -26,7 +30,7 @@ While I've been gone from the blogging world I've still been working on projects
   * [regexp basics](http://peopleareducks.com/docs/regexp-basics/output/) is a brief tutorial on regular expressions. My roommate [abutcher](http://afrolegs.com) put it together for his WVU CS210 (Advanced File and Data Structures) course. The [DocBook 5](http://www.docbook.org) sources are available [in git](http://git.peopleareducks.com/docs/regexp-basics.git).
 
 	
-  * The biggest doc project I've been working on again (finally) is my Virtual Disk Guide aimed at power users and sysadmins. Currently it's a **rough** draft and is constantly undergoing major changes and additions. It's available as a [single HTML document](http://peopleareducks.com/docs/vdg/output/Virtual-Disk-Operations.html), [chunked into multiple pages](http://peopleareducks.com/docs/vdg/html/), and in [PDF format](http://peopleareducks.com/docs/vdg/output/Virtual-Disk-Operations.pdf). You can get the [DocBook 5](http://www.docbook.org) formatted source to it through [my GitHub](http://github.com/tbielawa/Virtual-Disk-Guide) account.
+  * The biggest doc project I've been working on again (finally) is my Virtual Disk Guide aimed at power users and sysadmins. Currently it's a **rough** draft and is constantly undergoing major changes and additions. It's available as a [single HTML document](https://scribesguides.com/books/vdg/first_edition/Virtual-Disk-Operations.html), [chunked into multiple pages](https://scribesguides.com/books/vdg/first_edition/Virtual-Disk-Operations.html), and in [PDF format](https://scribesguides.com/books/vdg/first_edition/Virtual-Disk-Operations.pdf). You can get the [DocBook 5](http://www.docbook.org) formatted source to it through [my GitHub](http://github.com/tbielawa/Virtual-Disk-Guide) account.
 
 
 
