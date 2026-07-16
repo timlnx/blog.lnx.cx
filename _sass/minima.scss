@@ -10,18 +10,11 @@ $base-line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
 
-$text-color:       #111 !default;
-$background-color: #fdfdfd !default;
-$brand-color:      #2a7ae2 !default;
 
-$grey-color:       #729fcf !default;
-$grey-color-light: lighten($grey-color, 15%) !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
+// Technitribe green survives as an accent only — it is the brand, but it is
+// not era-correct as a link or chrome color. Candidate home: the throbber.
 
-$green-color:      #0786078b !default;
-$green-color-light: lighten($green-color, 15%) !default;
-$green-color-dark:  darken($green-color, 25%) !default;
-$green-color-darker:  darken($green-color, 35%) !default;
+// Retained: _layout.scss and _base.scss still reference these.
 
 $table-text-align: left !default;
 
@@ -50,7 +43,9 @@ $on-laptop:        800px !default;
 
 // Import partials.
 @import
+  "minima/motif",
   "minima/base",
   "minima/layout",
-  "minima/syntax-highlighting"
+  "minima/syntax-highlighting",
+  "minima/chrome"
 ;

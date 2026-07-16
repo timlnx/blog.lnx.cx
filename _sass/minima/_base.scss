@@ -17,7 +17,7 @@ dl, dd, ol, ul, figure {
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $text-color;
-  background-color: $background-color;
+  @include root-weave;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
      -moz-font-feature-settings: "kern" 1;
@@ -101,18 +101,22 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /**
- * Links
+ * Links — the literal browser defaults of 1994.
  */
 a {
-  color: $brand-color;
-  text-decoration: none;
+  color: $link-color;
+  text-decoration: underline;
 
   &:visited {
-    color: darken($brand-color, 15%);
+    color: $link-visited;
+  }
+
+  &:active {
+    color: $link-active;
   }
 
   &:hover {
-    color: $text-color;
+    color: $link-color;
     text-decoration: underline;
   }
 
@@ -130,11 +134,11 @@ a {
  * Blockquotes
  */
 blockquote {
-  color: $green-color-dark;
-  border-left: 4px solid $green-color-light;
+  color: $quote-color;
+  border-left: 4px solid $motif-dark;
   padding-left: math.div($spacing-unit, 2);
   @include relative-font-size(1);
-  letter-spacing: -1px;
+  letter-spacing: 0;
   font-style: italic;
 
   > :last-child {
@@ -147,12 +151,14 @@ blockquote {
 /**
  * Code formatting
  */
+/**
+ * Code — sunken Motif well, square corners.
+ */
 pre,
 code {
   @include relative-font-size(0.9375);
-  border: 1px solid $grey-color-light;
-  border-radius: 3px;
-  background-color: #eef;
+  @include bevel-sunken(2px);
+  background-color: $code-bg;
 }
 
 code {
@@ -195,6 +201,20 @@ pre {
 
 
 /**
+ * The document surface. The weave is the root window; this is the page being
+ * rendered on top of it. A Motif text area is sunken — the document sits IN
+ * the desktop, it doesn't float above it.
+ */
+.page-content > .wrapper {
+  background-color: $document-bg;
+  @include bevel-sunken(2px);
+  padding-top: $spacing-unit;
+  padding-bottom: $spacing-unit;
+}
+
+
+
+/**
  * Clearfix
  */
 %clearfix:after {
@@ -213,7 +233,7 @@ pre {
     width: 16px;
     height: 16px;
     display: inline-block;
-    fill: #{$grey-color};
+    fill: var(--meta-color);
     padding-right: 5px;
     vertical-align: text-top;
 }
@@ -233,23 +253,23 @@ table {
   margin-bottom: $spacing-unit;
   width: 100%;
   text-align: $table-text-align;
-  color: lighten($text-color, 18%);
+  color: $text-color;
   border-collapse: collapse;
-  border: 1px solid $grey-color-light;
+  @include bevel-sunken(2px);
+
   tr {
     &:nth-child(even) {
-      background-color: lighten($grey-color-light, 6%);
+      background-color: $table-stripe;
     }
   }
   th, td {
     padding: math.div($spacing-unit, 3) math.div($spacing-unit, 2);
   }
   th {
-    background-color: lighten($grey-color-light, 3%);
-    border: 1px solid darken($grey-color-light, 4%);
-    border-bottom-color: darken($grey-color-light, 12%);
+    background-color: $motif-face;
+    @include bevel-raised(2px);
   }
   td {
-    border: 1px solid $grey-color-light;
+    border: 1px solid $motif-dark;
   }
 }

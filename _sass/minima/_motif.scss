@@ -1,0 +1,147 @@
+// Motif/CDE grammar. NCSA Mosaic on X11 was a Motif app, so the browser
+// lineage and the widget lineage are the same choice.
+//
+// THIS FILE IS THE PALETTE. Everything colour-bearing lives here; the other
+// partials only reference these names. To retheme the site, edit this file and
+// nothing else — which is what .Xdefaults was for.
+//
+// Two themes ship: CDE grey-blue (light) and dark Motif (dark). The browser
+// picks based on the visitor's OS setting. A 1997 X11 desktop that quietly
+// honours your 2026 system preference.
+//
+// WHY CUSTOM PROPERTIES AND NOT SASS VARIABLES:
+// prefers-color-scheme is a RUNTIME decision; Sass is compile-time. A Sass
+// variable is gone by the time a browser sees the CSS, so it has nothing left
+// to switch. Custom properties survive into the browser and can be swapped by
+// a media query. Zero JS, zero dependencies — this is native CSS.
+//
+// CONSEQUENCE: Sass colour functions (lighten/darken/mix) CANNOT operate on
+// these. If you need a lighter shade, add another custom property with the
+// value you want. Do not reach for darken().
+
+:root {
+  // Tells the browser to render native UI — scrollbars, form controls — to
+  // match. Without this a dark window gets a bright white scrollbar welded to
+  // its edge.
+  color-scheme: light dark;
+
+  // --- furniture ---
+  --motif-face:   #aeb2c3;  // widget face. CDE grey-blue, NOT Win95 #c0c0c0
+  --motif-light:  #d4d7e0;  // top/left bevel
+  --motif-dark:   #6d7183;  // bottom/right bevel
+  --motif-shadow: #4a4d5a;  // deep etch / keylines / title bar
+
+  // --- document ---
+  --document-bg:  #ffffff;
+  --text-color:   #000000;
+  --quote-color:  #333333;
+  --code-bg:      #f4f4f4;
+  --table-stripe: #eef0f4;
+  --meta-color:   #4a4d5a;  // must clear 4.5:1 on --document-bg
+
+  // --- chrome ---
+  --titlebar-text: #ffffff;
+  --throbber-well: #1a1d24;
+  --field-bg:      #cfd3dd;
+
+  // --- the X11 root ---
+  --weave-base:   #5b6070;
+  --weave-light:  #787e94;
+  --weave-dark:   #454a58;
+
+  // --- links: the literal browser defaults of the era ---
+  --link-color:   #0000ee;
+  --link-visited: #551a8b;
+  --link-active:  #ee0000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --motif-face:   #3f4551;
+    --motif-light:  #5a6273;
+    --motif-dark:   #262a33;
+    --motif-shadow: #161920;
+
+    --document-bg:  #1e222a;
+    --text-color:   #d8dbe2;
+    --quote-color:  #a8aeba;
+    --code-bg:      #171a21;
+    --table-stripe: #262b34;
+    --meta-color:   #9aa1ae;
+
+    --titlebar-text: #ffffff;
+    --throbber-well: #0c0e12;
+    --field-bg:      #2a2f3a;
+
+    // Wider thread gap than the light weave needs. At dark values, close
+    // greys optically average into flat colour and the stipple disappears —
+    // which is exactly what the first dark attempt did.
+    --weave-base:   #23262e;
+    --weave-light:  #3a3f4b;
+    --weave-dark:   #15171c;
+
+    // #0000ee on a dark document is ~1.5:1 — unreadable. So the era's loudest
+    // signal has to lift. The honest way to do that is keep the HUE and raise
+    // the luminance: #8080ff is the same pure blue as #0000ee, just brighter
+    // (4.8:1). A desaturated pastel would read as modern dark-mode instead.
+    // Visited keeps its purple hue the same way (6.1:1).
+    --link-color:   #8080ff;
+    --link-visited: #c58ae0;
+    --link-active:  #ff8080;
+  }
+}
+
+// Sass-side aliases. The partials keep using $motif-face and friends; these
+// just forward to the custom properties, so nothing downstream had to change.
+$motif-face:   var(--motif-face);
+$motif-light:  var(--motif-light);
+$motif-dark:   var(--motif-dark);
+$motif-shadow: var(--motif-shadow);
+
+$document-bg:  var(--document-bg);
+$text-color:   var(--text-color);
+$quote-color:  var(--quote-color);
+$code-bg:      var(--code-bg);
+$table-stripe: var(--table-stripe);
+$meta-color:   var(--meta-color);
+
+$titlebar-text: var(--titlebar-text);
+$throbber-well: var(--throbber-well);
+$field-bg:      var(--field-bg);
+
+$weave-base:   var(--weave-base);
+$weave-light:  var(--weave-light);
+$weave-dark:   var(--weave-dark);
+
+$link-color:   var(--link-color);
+$link-visited: var(--link-visited);
+$link-active:  var(--link-active);
+
+// The chrome speaks Helvetica; it is the 1994 workstation. No webfont.
+$chrome-font-family: Helvetica, "Nimbus Sans", "Liberation Sans", Arial, sans-serif;
+
+// Motif's chisel is a SINGLE 2px bevel with a computed light/dark pair.
+// Win95 uses a DOUBLE bevel (white outer, grey inner) — that difference is
+// the whole tell. Never use the CSS outset/inset keywords: browsers render
+// them inconsistently and the result reads Win95.
+@mixin bevel-raised($width: 2px) {
+  border-style: solid;
+  border-width: $width;
+  border-color: $motif-light $motif-dark $motif-dark $motif-light;
+}
+
+@mixin bevel-sunken($width: 2px) {
+  border-style: solid;
+  border-width: $width;
+  border-color: $motif-dark $motif-light $motif-light $motif-dark;
+}
+
+// The X11 root weave — the 50% stipple `xsetroot -def` left behind.
+// 2px threads on a 4px tile. The two greys need a real gap between them: at
+// 1px with close values they optically average into flat colour and the
+// texture vanishes.
+@mixin root-weave {
+  background-color: $weave-base;
+  background-image: repeating-conic-gradient($weave-light 0% 25%, $weave-dark 0% 50%);
+  background-size: 4px 4px;
+}

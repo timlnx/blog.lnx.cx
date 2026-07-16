@@ -1,0 +1,59 @@
+{%- comment -%}
+  Mosaic chrome. Every control is load-bearing:
+  - bookmark buttons are the real site nav
+  - both fields print true Liquid values
+  - the throbber links home, as Mosaic's NCSA globe did
+  There is deliberately no File/Edit menubar: it cannot work without JS, and a
+  dead menu is worse than no menu. This include REPLACES header.html — the
+  Document Title field is the masthead.
+
+  Order matters: location fields sit directly under the title bar, then an
+  etched rule, then the nav as a bookmarks bar above the document. That mirrors
+  where a modern browser puts its bookmarks, so it reads as familiar rather
+  than as a puzzle.
+{%- endcomment -%}
+<div class="mosaic-chrome">
+
+  <div class="mosaic-location">
+    <div class="mosaic-fields">
+      <div class="mosaic-field">
+        <span class="mosaic-field-label">Document Title:</span>
+        <span class="mosaic-field-value">{{ page.title | default: site.title | escape }}</span>
+      </div>
+      <div class="mosaic-field">
+        <span class="mosaic-field-label">Document URL:</span>
+        <span class="mosaic-field-value">{{ site.url }}{{ page.url }}</span>
+      </div>
+    </div>
+
+    {%- comment -%}
+      The throbber. Mosaic's was the NCSA globe and it linked to NCSA; this one
+      is Carl and it links to Carl. Still load-bearing — Home already lives in
+      the bookmarks bar, so this slot is free to be his.
+
+      It is a 32x32 16-colour pixmap, not a photo: quantised and rendered with
+      image-rendering: pixelated, because that is what lived in this slot in
+      1994. Hand-tuned bitmaps in a colour table is exactly what XPM was.
+    {%- endcomment -%}
+    <a class="mosaic-throbber" href="{{ "/carl/" | relative_url }}" title="Carlsberg J. Cat">
+      <img src="{{ "/assets/carl-throbber.png" | relative_url }}"
+           width="32" height="32" alt="Carlsberg J. Cat">
+    </a>
+  </div>
+
+  <hr class="mosaic-rule">
+
+  <div class="mosaic-bookmarks">
+    <a class="mosaic-btn" href="{{ "/" | relative_url }}">Home</a>
+    {%- assign default_paths = site.pages | map: "path" -%}
+    {%- assign page_paths = site.header_pages | default: default_paths -%}
+    {%- for path in page_paths -%}
+      {%- assign my_page = site.pages | where: "path", path | first -%}
+      {%- if my_page.title -%}
+        <a class="mosaic-btn" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+      {%- endif -%}
+    {%- endfor -%}
+    <a class="mosaic-btn" href="{{ "/feed.xml" | relative_url }}">Feed</a>
+  </div>
+
+</div>

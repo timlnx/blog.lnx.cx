@@ -5,15 +5,40 @@
 
   <body>
 
-    {%- include header.html -%}
+    {%- comment -%}
+      One window on the X11 root. The WM title bar carries the site name, the
+      browser chrome carries navigation and location, the document sits inside.
+      The title bar has no minimise/close buttons on purpose: they could not do
+      anything without JS, and an inert control is exactly what we said we would
+      not ship.
+    {%- endcomment -%}
+    <div class="mosaic-window">
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
+      <div class="mosaic-titlebar">{{ site.title | escape }}</div>
 
-    {%- include footer.html -%}
+      {%- include chrome.html -%}
+
+      <main class="page-content" aria-label="Content">
+        <div class="wrapper">
+          {{ content }}
+        </div>
+      </main>
+
+    </div>
+
+    {%- comment -%}
+      The footer is its own window on the desktop, not a slab bolted to the
+      bottom of the browser. A browser window doesn't contain your contact
+      details — a second application would. The gap of weave between them is
+      what sells it.
+    {%- endcomment -%}
+    <div class="mosaic-window mosaic-window--footer">
+
+      <div class="mosaic-titlebar">{{ site.title | escape }}</div>
+
+      {%- include footer.html -%}
+
+    </div>
 
   </body>
 
