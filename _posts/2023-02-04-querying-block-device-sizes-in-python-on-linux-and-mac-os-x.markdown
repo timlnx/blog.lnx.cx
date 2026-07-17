@@ -17,6 +17,10 @@ tags:
 - Python
 - storage
 - system call
+description: >-
+  Python has no cross-platform way to read a storage device's capacity. Here's
+  how to do it with ioctl() on Linux and Mac OS X, and where the request codes
+  come from.
 ---
 
 I drafted this blog post in 2016 (at least), but held off publishing it until I could have it fact checked. Well, 6 years have passed... I am 99% sure the information in this blog post is correct. But if you find an error with my explanation of the userspace-kernel-device dataflow then please send me an email so I can understand it better and update this post. Thank you!

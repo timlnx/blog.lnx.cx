@@ -2,6 +2,11 @@
 layout: page
 title: Socials
 permalink: /socials/
+description: >-
+  Where else to find me: maker project pictures on Instagram, the record
+  collection on Discogs, and Bluesky when I remember to post. No promises.
+seo:
+  type: WebPage
 ---
 
 Find me on other assorted medias social.

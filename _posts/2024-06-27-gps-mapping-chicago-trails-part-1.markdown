@@ -10,6 +10,10 @@ tags:
 - trails
 - maps
 - hiking
+description: >-
+  Schiller Woods South has trails Google Maps has never heard of. Part 1 of
+  mapping them myself: the forest, the Hidden Hill entrance, and why I
+  started.
 ---
 
 This is part 1 in a series of blog posts where I am taking a deep dive into the

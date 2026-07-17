@@ -22,6 +22,10 @@ categories:
 draft: false
 author: Tim Case
 layout: post
+description: >-
+  A probability model for moe. setlists. It doesn't predict 10-song sets at
+  90%; it builds 30-song pools where about a quarter turn up. The math, and
+  the honest caveats.
 ---
 
 👉🏻 [famoe.ly](https://famoe.ly)

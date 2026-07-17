@@ -2,6 +2,12 @@
 layout: page
 title: About
 permalink: /about/
+description: >-
+  Tim Case: philosophical naturalist, and another geek out of the GeoCities
+  and e/n era. Who runs this place, what it used to be, and the cat you should
+  meet.
+seo:
+  type: WebPage
 ---
 
 {{ "Oh, hi there!" | blog_anchor }}

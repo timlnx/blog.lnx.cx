@@ -10,6 +10,9 @@ tags:
 - trails
 - maps
 - hiking
+description: >-
+  Part 3 of mapping Schiller Woods South: 1929 aerial survey photos, sorting
+  out the GPX mess, and the finished trail files.
 ---
 
 This is part 3 in a series of blog posts where I am taking a deep dive into the

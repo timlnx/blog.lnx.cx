@@ -15,6 +15,10 @@ categories:
 draft: false
 author: Tim Case
 layout: post
+description: >-
+  My uncle (also Tim Case, hence THC) mailed me more 1994 issues of The Hemp
+  Coalition's "Almost a Newsletter". Three issues are scanned and up on
+  archive.org.
 ---
 
 {{ "The Help Coalition Newsletters" | blog_anchor }}

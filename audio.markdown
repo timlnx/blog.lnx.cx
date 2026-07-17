@@ -2,6 +2,12 @@
 layout: page
 title: Audiophile
 permalink: /audio/
+description: >-
+  The whole listening setup, cataloged: ATH-WP900 and HD 560S headphones, a
+  Questyle M15i DAC, an AT-LP120-USB turntable, and the receiver behind it
+  all.
+seo:
+  type: WebPage
 ---
 
 

@@ -11,6 +11,10 @@ categories:
 draft: false
 author: Tim Case
 layout: post
+description: >-
+  simpleGals is a no-frills HTML image gallery generator in Python. Static
+  output with forward and back navigation, the way the old Mac Photos export
+  used to work.
 ---
 
 * [Check it out on GitHub!](https://github.com/simplegals/simpleGals)

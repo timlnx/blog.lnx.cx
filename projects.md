@@ -2,6 +2,11 @@
 layout: page
 title: Projects
 permalink: /projects/
+description: >-
+  Things I build elsewhere: famoe.ly, a jam band fansite with a song catalog,
+  setlist prediction, and more data visualization than strictly necessary.
+seo:
+  type: WebPage
 ---
 
 I do things in other places, too. Check 'em out.

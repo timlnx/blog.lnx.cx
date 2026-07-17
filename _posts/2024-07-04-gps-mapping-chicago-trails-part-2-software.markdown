@@ -10,6 +10,10 @@ tags:
 - trails
 - maps
 - hiking
+description: >-
+  Part 2 of mapping Schiller Woods South: the software for viewing and
+  processing captured GPX data, and what it took to turn raw tracks into
+  something usable.
 ---
 
 {{ "Intro" | blog_anchor }}

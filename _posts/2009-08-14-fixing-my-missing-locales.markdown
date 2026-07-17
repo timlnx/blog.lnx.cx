@@ -14,6 +14,10 @@ tags:
 - locales fix slicehost ubuntu
 - slicehost
 - ubuntu
+description: >-
+  "locale: Cannot set LC_ALL to default" on a minimal Ubuntu install, and
+  dpkg-reconfigure locales did nothing. The fix, without the cryptic localedef
+  incantation.
 ---
 
 **Background:** I run this server through [Slicehost](http://slicehost.com), and I enjoy their service immensely. When you set up your first server, or rebuild an existing server you get a very minimal GNU/Linux system installed. For obvious reasons, I like this a lot too.

@@ -11,6 +11,10 @@ tags:
 - Emacs
 - nXML-Mode
 - XML
+description: >-
+  Type the closing slash in nXML mode and Emacs will finish the tag for you.
+  The option hides in customize-apropos under nxml-slash. Here's how to turn
+  it on.
 ---
 
 I do a lot of DocBook XML editing, either at my job or at home. Because of that I've built up a pretty customized .emacs file. Every so often I meet another person whose also found themselves having to edit a bunch of XML. The most fantastic thing about nXML mode I think is the automatic slash completion feature. It works like this: If I have an open element, say I've started an <xref>, you can configure nXML mode such that upon typing the closing </ characters it will complete that sequence for you. I can just never remember how to set that option in emacs. So today I'm taking the time to finally document that procedure.
