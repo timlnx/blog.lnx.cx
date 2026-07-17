@@ -57,7 +57,7 @@
         <a class="mosaic-btn" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
       {%- endif -%}
     {%- endfor -%}
-    <a class="mosaic-btn" href="{{ "/feed.xml" | relative_url }}">Feed</a>
+    <a class="mosaic-btn" href="{{ "/feed.xml" | relative_url }}"><svg class="mosaic-btn-icon" aria-hidden="true" focusable="false"><use href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg>Feed</a>
   </div>
 
 </div>

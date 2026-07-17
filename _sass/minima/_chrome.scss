@@ -133,6 +133,17 @@
   }
 }
 
+// The RSS glyph on the Feed button. currentColor so it takes the button's own
+// text colour in both themes and reads as part of the label rather than a
+// coloured badge. Sized to the label's cap height so it sits, not floats.
+.mosaic-btn-icon {
+  width: 11px;
+  height: 11px;
+  fill: currentColor;
+  margin-right: 5px;
+  vertical-align: -1px;
+}
+
 .mosaic-throbber {
   @include bevel-sunken(2px);
   background-color: $throbber-well;
