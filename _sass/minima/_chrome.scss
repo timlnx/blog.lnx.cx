@@ -141,6 +141,7 @@
   align-items: center;
   justify-content: center;
   padding: 2px 4px;
+  position: relative;
 
   // Nearest-neighbour, always. A pixmap that gets smoothed is just a small
   // blurry photo; the hard pixel edges are the whole point.
@@ -148,6 +149,53 @@
     display: block;
     image-rendering: pixelated;
   }
+
+  // Netscape 1.0's throbber was an "N" that expanded and contracted, and that
+  // motion is what the word throbber names. 1.1 swapped it for the comet
+  // swoosh and the pulse never shipped again. Carl restores it.
+  //
+  // The strip sits under the pixmap rather than replacing it: the img stays a
+  // real img with real alt text, and with CSS off it is still just Carl.
+  // Frame 0 is byte-identical to that pixmap, so uncovering the strip shows
+  // nothing until the steps start marching.
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 32px;
+    height: 50px;
+    background: url("carl-throb.png") 0 0 / 128px 50px no-repeat;
+    image-rendering: pixelated;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  // Deliberately not gated on prefers-reduced-motion. That signal is aimed at
+  // vestibular triggers: large-area motion, parallax, autoplay. Carl is 32x32,
+  // moves only while you are pointing at him, and stops when you leave.
+  &:hover::after,
+  &:focus-visible::after {
+    opacity: 1;
+    animation: carl-throb 480ms steps(4) infinite;
+  }
+}
+
+// Every frame is rendered from the 300x300 source at its own size, never
+// upscaled from the pixmap. Upscaling a pixmap re-quantizes the grid unevenly.
+//
+// Each frame then gets its own 16-color table and its own Floyd-Steinberg
+// dither, so the palette and the speckle both drift while he pulses. The
+// shimmer is deliberate, not an artifact left in by accident. Sharing one
+// table across the four frames removes it; that version was built and
+// rejected. Period encoders quantized every frame separately and this is what
+// it looked like.
+//
+// steps(4) across the 128px strip lands on 0, -32, -64, -96 and never reaches
+// -128, which would be one frame past the end.
+@keyframes carl-throb {
+  from { background-position: 0 0; }
+  to   { background-position: -128px 0; }
 }
 
 .mosaic-fields {

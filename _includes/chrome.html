@@ -31,13 +31,17 @@
       is Carl and it links to Carl. Still load-bearing — Home already lives in
       the bookmarks bar, so this slot is free to be his.
 
-      It is a 32x32 16-colour pixmap, not a photo: quantised and rendered with
+      It is a 16-colour pixmap, not a photo: quantised and rendered with
       image-rendering: pixelated, because that is what lived in this slot in
       1994. Hand-tuned bitmaps in a colour table is exactly what XPM was.
+
+      The tile is 32x50 while Carl himself is 32 wide: the extra height is
+      deliberate margin above and below his face, so the hover throb has room
+      to grow into instead of cropping his chin.
     {%- endcomment -%}
     <a class="mosaic-throbber" href="{{ "/carl/" | relative_url }}" title="Carlsberg J. Cat">
       <img src="{{ "/assets/carl-throbber.png" | relative_url }}"
-           width="32" height="32" alt="Carlsberg J. Cat">
+           width="32" height="50" alt="Carlsberg J. Cat">
     </a>
   </div>
 
