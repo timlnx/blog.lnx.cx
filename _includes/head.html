@@ -17,6 +17,6 @@
   <link rel="stylesheet" href="/assets/fira_code.css">
   <!-- https://fonts.google.com/specimen/Space+Grotesk -->
   <link rel="stylesheet" href="/assets/space_grotesque.css">
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}?v={{ site.time | date: '%s' }}">
   {%- feed_meta -%}
 </head>
