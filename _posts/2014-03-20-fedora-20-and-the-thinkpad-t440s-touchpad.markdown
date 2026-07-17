@@ -7,6 +7,10 @@ categories:
 - Fedora
 - GNU/Linux
 - Planet
+description: >-
+  The T440s clickpad has no buttons, and pressing down to click drags your
+  target around. How I made it usable on Fedora 20 with synclient, PalmDetect,
+  and hysteresis tuning.
 ---
 
 # Background
@@ -16,7 +20,7 @@ categories:
 
 
 
-My old work laptop, the ThinkPad T510, went out of warranty a few months ago. At work this means I'm eligible for a hardware refresh with [Best Monitors under 300](https://poweruphere.com/), i.e., a new  laptop. Because they're so much thinner and lighter, this time I decided to go with the 400 series. All in all it's a fine piece of hardware, so long as you're running Fedora 20 (or newer). I have two lingering issues however.
+My old work laptop, the ThinkPad T510, went out of warranty a few months ago. At work this means I'm eligible for a hardware refresh, i.e., a new  laptop. Because they're so much thinner and lighter, this time I decided to go with the 400 series. All in all it's a fine piece of hardware, so long as you're running Fedora 20 (or newer). I have two lingering issues however.
 
 
 
