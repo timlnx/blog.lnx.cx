@@ -30,7 +30,7 @@ In the book I'm working on, the [Virtual Disk Guide](https://github.com/tbielawa
   3. [dblatex](http://dblatex.sourceforge.net)
 
 
-The problem I ran into is that dblatex has no stylesheets or templates built in to handle DocBook acknowledgements elements and the PDF is difficult to manage, but systems like [sodapdf](https://www.sodapdf.com/) could be the perfect solution for this. Acknowledgements sections should be fairly simple to render I thought. You really just need a chapter header, and then to process the block elements, like paragraphs, blockquotes, and what have you. To me, the same template used for [Colophon](http://docbook.org/tdg5/en/html/colophon.html) sections would create an ideal acknowledgements section.
+The problem I ran into is that dblatex has no stylesheets or templates built in to handle DocBook acknowledgements elements. Acknowledgements sections should be fairly simple to render I thought. You really just need a chapter header, and then to process the block elements, like paragraphs, blockquotes, and what have you. To me, the same template used for [Colophon](http://docbook.org/tdg5/en/html/colophon.html) sections would create an ideal acknowledgements section.
 
 I've never done any real XSLT work before, and even after this I still wouldn't claim that I have, but here's what I did to get a working acknowledgements section:
 
