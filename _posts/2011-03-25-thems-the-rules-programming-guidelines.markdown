@@ -7,6 +7,7 @@ categories:
 - /dev/null
 - Planet
 - Programming
+wayback: https://web.archive.org/web/20240528173441/https://blog.lnx.cx/2011/03/25/thems-the-rules-programming-guidelines/
 ---
 
 In the future I hope to expand on this list. In general though, strive to follow [the basics of the Unix Philosophy.](http://www.catb.org/~esr/writings/taoup/html/ch01s06.html)

@@ -2,21 +2,18 @@
 author: Tim Case
 date: 2014-03-16 23:23:01+00:00
 layout: post
-title: '[Updated] New side-project: bitmath - A Python module for representing file sizes with
+title: 'New side-project: bitmath - A Python module for representing file sizes with
   different prefix notations'
 categories:
 - Fedora
 - GNU/Linux
 - Planet
 - Programming
-tags:
-- updated
+wayback: https://web.archive.org/web/20240221222922/https://blog.lnx.cx/2014/03/16/new-side-project-bitmath-a-python-module-for-representing-file-sizes-with-different-prefix-notations/
+updated:
+- date: '2014-03-27'
+  desc: '[python-bitmath is now available in Fedora!](https://blog.lnx.cx/2014/03/27/python-bitmath-now-available-in-fedora/)'
 ---
-
-**update 2026-07-16** - *Updated all book URL references to resolve to the canonical scribesguides.com source*
-
-**Update: **[2014-03-27 - python-bitmath is now in Fedora!](https://blog.lnx.cx/2014/03/27/python-bitmath-now-available-in-fedora/)
-
 
 # Background
 

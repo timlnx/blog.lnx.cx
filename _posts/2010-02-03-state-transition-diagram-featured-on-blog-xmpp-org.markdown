@@ -10,6 +10,7 @@ tags:
 - FSM
 - omgfamous
 - XMPP
+wayback: https://web.archive.org/web/20240415033337/https://blog.lnx.cx/2010/02/03/state-transition-diagram-featured-on-blog-xmpp-org/
 ---
 
 The XMPP Client [State Transition Diagram](http://github.com/tbielawa/PAD-XMPP/blob/master/Graph/ConnectionStates.png) I created last December was featured on [xmpp.org](http://xmpp.org/2010/01/xmpp-roundup-13-articles-talks-and-events/).

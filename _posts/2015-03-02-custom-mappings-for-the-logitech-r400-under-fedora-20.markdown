@@ -14,6 +14,7 @@ tags:
 - r400
 - scancodes
 - udev
+wayback: https://web.archive.org/web/20240221220249/https://blog.lnx.cx/2015/03/02/custom-mappings-for-the-logitech-r400-under-fedora-20/
 ---
 
 I wanted to use a [Logitech R400](http://www.logitech.com/en-us/product/wireless-presenter-r400) that a friend loaned my in a presentation, but I wanted to tweak the mappings for the buttons a bit. My presentation is done using [Reveal.js](http://lab.hakim.se/reveal-js/#/) and uses both left/right and up/down. The R400 has four buttons but two of them are mapped to "go to black screen" and "slideshow mode" neither of which is useful to me. Here is how I fixed it in Fedora 20.

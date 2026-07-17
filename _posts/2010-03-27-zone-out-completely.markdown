@@ -8,6 +8,7 @@ categories:
 - Planet
 tags:
 - Emacs
+wayback: https://web.archive.org/web/20240528161337/https://blog.lnx.cx/2010/03/26/zone-out-completely/
 ---
 
 While searching for modes which would help me edit [bind9](http://www.bind9.net/) configuration files I came across [this mailing list post](https://lists.isc.org/pipermail/bind-users/2008-September/073061.html). It mentions `zone-mode` which ended up being great for editing the actual zone files A+. It also tipped me off to another emacs Easter Egg, `M-x zone`. Described thus:

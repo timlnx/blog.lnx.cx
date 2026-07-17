@@ -11,6 +11,7 @@ tags:
 - open source
 - scholarship
 - wvu
+wayback: https://web.archive.org/web/20240528155914/https://blog.lnx.cx/2013/04/13/a-new-scholarship-for-open-source/
 ---
 
 ![Education, Design, Community, Coding, Technical Writing](/assets/images/OpenSourceScholars.png "Open Source Scholars")

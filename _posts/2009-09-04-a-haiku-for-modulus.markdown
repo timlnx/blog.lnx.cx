@@ -11,6 +11,7 @@ tags:
 - Haiku
 - Modulus
 - Odd
+wayback: https://web.archive.org/web/20240415015849/https://blog.lnx.cx/2009/09/04/a-haiku-for-modulus/
 ---
 
 <blockquote>I needed to know

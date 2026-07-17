@@ -16,6 +16,7 @@ tags:
 - pypi
 - Python
 - si
+wayback: https://web.archive.org/web/20240415025057/https://blog.lnx.cx/2014/03/27/python-bitmath-now-available-in-fedora/
 ---
 
 [Last week I wrote](https://blog.lnx.cx/2014/03/16/new-side-project-bitmath-a-python-module-for-representing-file-sizes-with-different-prefix-notations/) about [**bitmath**](https://github.com/tbielawa/bitmath/), a [Python]( http://www.python.org/) module I made for working with (prefix) units commonly used to represent file sizes, e.g., kB, GiB, Byte, TB.  I can now happily say that **python-bitmath** has [passed the review process](https://bugzilla.redhat.com/show_bug.cgi?id=1076192#c13) and has been [officially accepted into Fedora](https://admin.fedoraproject.org/pkgdb/package/python-bitmath/)!

@@ -8,6 +8,7 @@ categories:
 tags:
 - creative commons
 - licensing
+wayback: https://web.archive.org/web/20240221215245/https://blog.lnx.cx/2013/11/30/technitribe-now-creative-commons-by-sa-4-0/
 ---
 
 [![Creative Commons 4.0](/assets/images/4-0-400-300x225.png)](http://creativecommons.org/weblog/entry/40768)I recently read the Creative Commons announcement, [CC’s Next Generation Licenses — Welcome Version 4.0!](http://creativecommons.org/weblog/entry/40768). This made me think more about licensing in general, as it has been a topic receiving increased attention recently in Open Source/Tech communities. I think it's a very important subject that anyone involved in Open Source should have at least _some_ knowledge about.

@@ -2,7 +2,7 @@
 author: Tim Case
 date: 2013-03-27 15:15:23+00:00
 layout: post
-title: '[Updated] dblatex, DocBook, acknowledgements and PDF output'
+title: dblatex, DocBook, acknowledgements and PDF output
 categories:
 - DocBook
 - Documentation
@@ -10,11 +10,8 @@ categories:
 - Planet
 - Publishing
 - XML
-tags:
-- updated
+wayback: https://web.archive.org/web/20240528174634/https://blog.lnx.cx/2013/03/27/dblatex-docbook-acknowledgements-and-pdf-output/
 ---
-
-**update 2026-07-16** - *Updated all book URL references to resolve to the canonical scribesguides.com source*
 
 In the book I'm working on, the [Virtual Disk Guide](https://github.com/tbielawa/Virtual-Disk-Guide), I recently decided to start templating out an [Acknowledgements](http://docbook.org/tdg5/en/html/acknowledgements.html) chapter. I'm writing the book in [DocBook5](http://docbook.org/) and my print (PDF) publishing toolchain looks like this:
 

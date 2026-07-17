@@ -21,6 +21,10 @@ description: >-
   Python has no cross-platform way to read a storage device's capacity. Here's
   how to do it with ioctl() on Linux and Mac OS X, and where the request codes
   come from.
+wayback: https://web.archive.org/web/20240528173835/https://blog.lnx.cx/2023/02/04/querying-block-device-sizes-in-python-on-linux-and-mac-os-x/
+updated:
+- date: '2025-06-06'
+  desc: 'Fixed the missing ioctl flow image. Sorry about that!'
 ---
 
 I drafted this blog post in 2016 (at least), but held off publishing it until I could have it fact checked. Well, 6 years have passed... I am 99% sure the information in this blog post is correct. But if you find an error with my explanation of the userspace-kernel-device dataflow then please send me an email so I can understand it better and update this post. Thank you!

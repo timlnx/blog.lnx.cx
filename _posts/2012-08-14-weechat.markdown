@@ -8,6 +8,7 @@ categories:
 - Planet
 tags:
 - weehcat
+wayback: https://web.archive.org/web/20240528162938/https://blog.lnx.cx/2012/08/14/weechat/
 ---
 
 Weechat is an IRC client. This post has a lot of neat tips and settings for improving the user experience. Circa 2012 that is.

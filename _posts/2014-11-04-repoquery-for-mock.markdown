@@ -8,6 +8,7 @@ categories:
 tags:
 - packaging
 - zsh
+wayback: https://web.archive.org/web/20231202052713/https://blog.lnx.cx/2014/11/04/repoquery-for-mock/
 ---
 
 I use [mock](http://fedoraproject.org/wiki/Projects/Mock) frequently when I am building packages for Fedora. Koji is great, but mock really shines when you are rapidly iterating over spec file changes. The `--no-clean` option keeps the chroot around so you don't have to download packages repeatedly and you can actually look around inside the chroot to see where a build is going wrong if you need to.

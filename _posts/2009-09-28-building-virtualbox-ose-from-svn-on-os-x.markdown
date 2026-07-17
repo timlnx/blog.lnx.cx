@@ -8,6 +8,7 @@ categories:
 - Planet
 tags:
 - VirtualBox
+wayback: https://web.archive.org/web/20240528172708/https://blog.lnx.cx/2009/09/28/building-virtualbox-ose-from-svn-on-os-x/
 ---
 
 Today abutcher and I found every way to fail to build VirtualBox OSE from source on OS X. We followed the [build instructions](http://www.virtualbox.org/wiki/Mac%20OS%20X%20build%20instructions) on their web site but had some problems. I'll post a more detailed writeup of what happened and what you need to do to build it later. Until then, [here's a link](http://peopleareducks.com/~tbielawa/VirtualBoxOSE-r23341.dmg) to download the most recent checkout from svn, built for OS X 10.6 (Snow Leopard). And here's the SHA256:

@@ -1,29 +1,41 @@
 ---
 layout: default
 ---
+{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+{%- assign updates = "" | split: "" -%}
+{%- if page.updated -%}{%- assign updates = page.updated | sort: "date" | reverse -%}{%- endif -%}
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <h1 class="post-title p-name" itemprop="name headline">{% if page.updated %}[Updated] {% endif %}{{ page.title | escape }}</h1>
     <p class="post-meta">
+      {%- if page.wayback -%}
+      <a href="{{ page.wayback }}" title="This links to the last capture on the Wayback Machine where public comments may be posted and the pre-Jekyll 2024 conversion is saved unmodified." aria-label="This links to the last capture on the Wayback Machine where public comments may be posted and the pre-Jekyll 2024 conversion is saved unmodified."><svg class="svg-icon" aria-hidden="true" focusable="false"><use href="{{ '/assets/minima-social-icons.svg#archive' | relative_url }}"></use></svg></a>
+      {%- endif -%}
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         {{ page.date | date: date_format }}
       </time>
       {%- if page.author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
       {%- endif -%}
-      {%- if page.updated -%}
-      &nbsp;•  Last Updated 
-      <time class="dt-updated" datetime="{{ page.updated | date_to_xmlschema }}" itemprop="dateUpdated">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.updated | date: date_format }}
+      {%- if updates.size > 0 -%}
+      {%- assign newest = updates | first -%}
+      &nbsp;•  Last Updated
+      <time class="dt-updated" datetime="{{ newest.date | date_to_xmlschema }}" itemprop="dateModified">
+        {{ newest.date | date: date_format }}
       </time>
       {%- endif -%}
     </p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
+    {%- if updates.size > 0 -%}
+    <div class="post-updates">
+      {%- for update in updates -%}
+      <p class="post-update"><strong>{{ update.date | date: date_format }}</strong> &bull; {{ update.desc | markdownify | remove: "<p>" | remove: "</p>" | strip }}</p>
+      {%- endfor -%}
+    </div>
+    {%- endif -%}
     {{ content }}
   </div>
 

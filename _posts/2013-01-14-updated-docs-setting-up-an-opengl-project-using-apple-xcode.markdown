@@ -11,6 +11,7 @@ tags:
 - opengl
 - Tutorial
 - xcode
+wayback: https://web.archive.org/web/20240415031627/https://blog.lnx.cx/2013/01/13/updated-docs-setting-up-an-opengl-project-using-apple-xcode/
 ---
 
 Documentation for [Setting up an OpenGL project using Apple Xcode](http://lnx.cx/docs/opengl-in-xcode/) has been updated for Xcode 4.2.5.

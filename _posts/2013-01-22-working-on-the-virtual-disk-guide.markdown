@@ -2,18 +2,15 @@
 author: Tim Case
 date: 2013-01-22 03:21:04+00:00
 layout: post
-title: '[Updated] Working on The Virtual Disk Guide'
+title: Working on The Virtual Disk Guide
 categories:
 - DocBook
 - Documentation
 - Planet
 - Publishing
 - XML
-tags:
-- updated
+wayback: https://web.archive.org/web/20240415034834/https://blog.lnx.cx/2013/01/21/working-on-the-virtual-disk-guide/
 ---
-
-**update 2026-07-16** - *Updated all book URL references to resolve to the canonical scribesguides.com source*
 
 I've been working on my book, [The Linux Sysadmins Guide to Virtual Disks](https://scribesguides.com/books/vdg/first_edition/Virtual-Disk-Operations.pdf), since my post about [long-term goals](http://blog.lnx.cx/2012/08/29/on-long-term-goals/) a few months back. I think it's about time I post some updates.
 

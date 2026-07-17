@@ -14,6 +14,7 @@ tags:
 - pypi
 - Python
 - ubuntu
+wayback: https://web.archive.org/web/20240221224148/https://blog.lnx.cx/2016/07/03/bitmath-now-available-in-ubuntu-ppas/
 ---
 
 ![ubuntu-logo32](/assets/images/ubuntu-logo32.png)

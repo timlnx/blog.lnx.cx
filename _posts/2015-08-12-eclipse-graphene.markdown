@@ -9,6 +9,7 @@ categories:
 tags:
 - eclipse
 - java
+wayback: https://web.archive.org/web/20240415033128/https://blog.lnx.cx/2015/08/12/eclipse-graphene/
 ---
 
 Dear Internet,

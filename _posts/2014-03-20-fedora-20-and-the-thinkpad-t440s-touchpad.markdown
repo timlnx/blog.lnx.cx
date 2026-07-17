@@ -11,13 +11,17 @@ description: >-
   The T440s clickpad has no buttons, and pressing down to click drags your
   target around. How I made it usable on Fedora 20 with synclient, PalmDetect,
   and hysteresis tuning.
+wayback: https://web.archive.org/web/20240221221805/https://blog.lnx.cx/2014/03/20/fedora-20-and-the-thinkpad-t440s-touchpad/
+updated:
+- date: '2014-10-17'
+  desc: 'The [Insensitive Message Tray](https://extensions.gnome.org/extension/616/insensitive-message-tray/)
+    extension fixed the message tray appearing when I did not want it'
 ---
 
+Installation of the "[Insensitive Message Tray](https://extensions.gnome.org/extension/616/insensitive-message-tray/)" extension has solved my issue with the notification bar frequently appearing when I did not want it to. This is on Gnome version 3.10.2. Note that pressing the **Super+M** keyboard shortcut will allow you to view the message tray when you want to.
+
+
 # Background
-
-
-**UPDATE 2014-10-17 - **Installation of the "[Insensitive Message Tray](https://extensions.gnome.org/extension/616/insensitive-message-tray/)" extension has solved my issue with the notification bar frequently appearing when I did not want it to. This is on Gnome version 3.10.2. Note that pressing the **Super+M** keyboard shortcut will allow you to view the message tray when you want to.
-
 
 
 My old work laptop, the ThinkPad T510, went out of warranty a few months ago. At work this means I'm eligible for a hardware refresh, i.e., a new  laptop. Because they're so much thinner and lighter, this time I decided to go with the 400 series. All in all it's a fine piece of hardware, so long as you're running Fedora 20 (or newer). I have two lingering issues however.

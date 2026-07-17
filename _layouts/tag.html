@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<div class="home">
+  <h1 class="page-heading">Posts tagged &ldquo;{{ page.tag }}&rdquo;</h1>
+
+  <ul class="post-list">
+    {%- for post in page.posts -%}
+      {%- include post-list-item.html post=post -%}
+    {%- endfor -%}
+  </ul>
+
+  <p class="rss-subscribe">back to <a href="{{ '/' | relative_url }}">all posts</a></p>
+</div>

@@ -10,6 +10,7 @@ categories:
 tags:
 - open source
 - scholarship
+wayback: https://web.archive.org/web/20240415020558/https://blog.lnx.cx/2013/04/24/scholarship-announcement-recap/
 ---
 
 Gave the Open Source Scholarship talk today with [@akbutcher](http://twitter.com/akbutcher). It was a smash hit. We were lucky to get a lot of great promotion around the internet for this event:

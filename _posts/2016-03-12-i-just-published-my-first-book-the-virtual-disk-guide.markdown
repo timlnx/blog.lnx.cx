@@ -22,6 +22,7 @@ tags:
 - virtual disk guide
 - XML
 - xsl
+wayback: https://web.archive.org/web/20240528161141/https://blog.lnx.cx/2016/03/11/i-just-published-my-first-book-the-virtual-disk-guide/
 ---
 
 I'm very excited (and proud) to announce that on March 3rd, 2016 I reached a [long-term goal](https://blog.lnx.cx/2012/08/29/on-long-term-goals/) I set for myself 3½ years ago, by self-publishing my first book, **The Linux Sysadmin's Guide to Virtual Disks**. The book is published under my new brand, [Scribe's Guides](http://scribesguides.com/).

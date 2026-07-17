@@ -15,6 +15,7 @@ tags:
 - Music
 - OS X
 - OS X Fuse
+wayback: https://web.archive.org/web/20240415034118/https://blog.lnx.cx/2011/10/15/mac-os-x-10-7-getting-songs-off-an-ipod/
 ---
 
 A while back I wanted to backup the songs I've saved to my [iPod](http://www.apple.com/ipodclassic/). I was running [Mac OS X Leopard](http://en.wikipedia.org/wiki/Mac_OS_X#Versions) (10.5). When I searched around I found a tool called [iPodDisk](http://code.google.com/p/ipoddisk/). It worked great! Then Snow Leopard (10.6) came out.

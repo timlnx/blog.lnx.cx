@@ -7,6 +7,7 @@ categories:
 - GNU/Linux
 - OS X
 - Tutorials
+wayback: https://web.archive.org/web/20240221213055/https://blog.lnx.cx/2009/09/09/because-old-archived-logs-on-secure-servers-are-pointless/
 ---
 
 Often we get Nagios alerts letting us know that your kernel is about to panic and your server is going to crash and die because read/write operations are going to FAIL MISERABLY.

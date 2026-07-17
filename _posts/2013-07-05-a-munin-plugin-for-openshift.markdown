@@ -13,6 +13,7 @@ tags:
 - munin
 - OpenShift
 - Red Hat
+wayback: https://web.archive.org/web/20240221213801/https://blog.lnx.cx/2013/07/05/a-munin-plugin-for-openshift/
 ---
 
 I created a [munin](http://munin-monitoring.org/) plugin to chart the number of gears present/idle on [OpenShift](https://www.openshift.com/) application node instances. The plugin was written for/tested against [OpenShift Enterprise 1.2](http://www.redhat.com/products/cloud-computing/openshift-enterprise/).

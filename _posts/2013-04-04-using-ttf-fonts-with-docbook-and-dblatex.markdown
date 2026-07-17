@@ -2,7 +2,7 @@
 author: Tim Case
 date: 2013-04-04 22:38:29+00:00
 layout: post
-title: '[Updated] Using TTF fonts with DocBook and dblatex'
+title: Using TTF fonts with DocBook and dblatex
 categories:
 - DocBook
 - Documentation
@@ -22,16 +22,12 @@ tags:
 - ttf
 - xetex
 - XML
-- updated
+wayback: https://web.archive.org/web/20240415020027/https://blog.lnx.cx/2013/04/04/using-ttf-fonts-with-docbook-and-dblatex/
+updated:
+- date: '2013-06-23'
+  desc: 'Upgrading to dblatex 0.3.4 fixed many of the issues described in **The Aftermath**
+    — see [the follow-up post](http://blog.lnx.cx/2013/06/23/update-using-ttf-fonts-with-docbook-and-dblatex/)'
 ---
-
-**update 2026-07-16** - *Updated all book URL references to resolve to the canonical scribesguides.com source*
-
-# Update 2013-06-23:
-
-
-Updating to the 0.3.4 version of dblatex has fixed many of the issues detailed in **The Aftermath** (end of this blog post). See [the blog post](http://blog.lnx.cx/2013/06/23/update-using-ttf-fonts-with-docbook-and-dblatex/) for more information.
-
 
 # The Problem:
 

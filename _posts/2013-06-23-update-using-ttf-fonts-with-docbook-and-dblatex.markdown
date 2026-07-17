@@ -2,18 +2,15 @@
 author: Tim Case
 date: 2013-06-23 18:46:17+00:00
 layout: post
-title: '[Updated] Update: Using TTF Fonts with DocBook and Dblatex'
+title: 'Update: Using TTF Fonts with DocBook and Dblatex'
 categories:
 - DocBook
 - Documentation
 - GNU/Linux
 - Planet
 - XML
-tags:
-- updated
+wayback: https://web.archive.org/web/20240221202634/https://blog.lnx.cx/2013/06/23/update-using-ttf-fonts-with-docbook-and-dblatex/
 ---
-
-**update 2026-07-16** - *Updated all book URL references to resolve to the canonical scribesguides.com source*
 
 _This is an update to [a previous blog post](http://blog.lnx.cx/2013/04/04/using-ttf-fonts-with-docbook-and-dblatex/) where I described how I was able to use custom fonts in my **docbook -> dblatex -> pdf** toolchain by switching to the **XeTeX** backend._
 

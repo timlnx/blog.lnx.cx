@@ -11,6 +11,7 @@ tags:
 - Linux
 - OMGNEWVERSION
 - Upgrade
+wayback: https://web.archive.org/web/20240221222650/https://blog.lnx.cx/2010/02/19/desktop-upgrade-tonight/
 ---
 
 Tonight I'm upgrading my desktop ("fridge") from Fedora 11 to 12. For my own personal benefit I'll be documenting the process. Things I want to take note of in particular include: which additional files must be backed up for system services like samba, my current partition map, and what process I used to perform the upgrade (optical media, netboot?).

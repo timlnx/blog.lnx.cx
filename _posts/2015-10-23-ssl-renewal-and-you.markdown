@@ -12,6 +12,7 @@ tags:
 - csr
 - renew
 - SSL
+wayback: https://web.archive.org/web/20240415032521/https://blog.lnx.cx/2015/10/23/ssl-renewal-and-you/
 ---
 
 ![RapidSSL_SEAL-90x50](/assets/images/RapidSSL_SEAL-90x50.gif)

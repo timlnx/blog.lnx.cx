@@ -8,6 +8,7 @@ categories:
 - GNU/Linux
 - Planet
 - Programming
+wayback: https://web.archive.org/web/20240528165732/https://blog.lnx.cx/2013/12/04/feeling-developer-pain/
 ---
 
 My first blog post (co-authored wtih [Steve Milner](http://stevemilner.org/)) on the [Red Hat Developer Blog](http://developerblog.redhat.com/) ([@RHELDevelop](https://twitter.com/RHELdevelop)) has just been published!

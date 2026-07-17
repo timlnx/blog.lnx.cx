@@ -13,6 +13,7 @@ tags:
 - fedora 17
 - Linux
 - spotify
+wayback: https://web.archive.org/web/20240415022456/https://blog.lnx.cx/2012/10/12/running-despotify-on-fedora-17/
 ---
 
 [Spotify](http://www.spotify.com) is pretty damn cool. I think we can all agree on this. What's even cooler (if you're an Open Source/Linux geek) is running a third-party ncurses client to connect to Spotify. Here's what I had to do on Fedora 17 (64 bit).

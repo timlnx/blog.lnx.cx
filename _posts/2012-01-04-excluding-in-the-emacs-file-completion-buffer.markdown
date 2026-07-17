@@ -13,6 +13,7 @@ tags:
 - exclude
 - filter
 - stackoverflow
+wayback: https://web.archive.org/web/20240221214332/https://blog.lnx.cx/2012/01/03/excluding-in-the-emacs-file-completion-buffer/
 ---
 
 I realized tonight While hacking on [Taboot](http://fedorahosted.org/Taboot) that Emacs was showing particularly_ uninteresting _files in the completion buffer when opening a file. For example, `scripts.pyc`.

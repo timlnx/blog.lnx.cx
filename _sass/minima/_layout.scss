@@ -15,6 +15,20 @@
   margin: 3px 2px;
   font-size: 12px;
   font-family: $chrome-font-family;
+
+  // These are anchors now, and the base `a` rules carry a pseudo-class, so they
+  // out-specify the bare class above on color and underline. Restate both here.
+  &:visited,
+  &:hover,
+  &:active {
+    color: $text-color;
+    text-decoration: none;
+  }
+
+  // A widget that doesn't depress on click reads as painted-on furniture.
+  &:active {
+    @include bevel-sunken(2px);
+  }
 }
 
 
@@ -129,6 +143,25 @@
 .post-meta-updated {
   font-size: $small-font-size;
   color: $meta-color;
+}
+
+// The revision list the post layout renders from `page.updated`, above the
+// body. A sunken panel on the chrome face reads as a Motif inset note.
+.post-updates {
+  background-color: $motif-face;
+  @include bevel-sunken(2px);
+  padding: math.div($spacing-unit, 2);
+  margin-bottom: $spacing-unit;
+  font-family: $chrome-font-family;
+  font-size: $small-font-size;
+
+  .post-update {
+    margin: 0;
+
+    & + .post-update {
+      margin-top: math.div($spacing-unit, 4);
+    }
+  }
 }
 
 .post-link {

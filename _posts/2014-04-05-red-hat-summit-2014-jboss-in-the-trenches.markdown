@@ -16,6 +16,7 @@ tags:
 - migration
 - redhat summit
 - summit
+wayback: https://web.archive.org/web/20240528180517/https://blog.lnx.cx/2014/04/05/red-hat-summit-2014-jboss-in-the-trenches/
 ---
 
 Just a heads up, at [Red Hat Summit](http://www.redhat.com/summit/) this year I'll be co-presenting a session with [Andy](http://blog.andyserver.com/) [Block](https://twitter.com/sabre1041). The presentation is on **Wednesday, April 16** from **3:40 pm - 4:40 pm**.

@@ -23,6 +23,7 @@ tags:
 - summit
 - video
 - youtube
+wayback: https://web.archive.org/web/20240528165245/https://blog.lnx.cx/2015/07/02/bootstrapping-a-devops-movement-in-red-hat-it-video/
 ---
 
 Back in late 2013 I joined what was jokingly referred to as the Red Hat IT "DevOps" team. We didn't like that name, so we changed it and there-after became officially known as **Team**_** Inception**. _From the time the team was formed, we all accepted that the team was to retire in 18-24 months. We were totally cool with that too! To us having a pure "DevOps" team in perpetuity just didn't make sense.

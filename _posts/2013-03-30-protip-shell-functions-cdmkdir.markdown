@@ -7,6 +7,7 @@ categories:
 - GNU/Linux
 - Planet
 - Programming
+wayback: https://web.archive.org/web/20240528170446/https://blog.lnx.cx/2013/03/29/protip-shell-functions-cdmkdir/
 ---
 
 Here's a shell function which unifies the act of creating a directory and then subsequently changing into it:

@@ -10,6 +10,7 @@ tags:
 - dblatex
 - Macports
 - Python
+wayback: https://web.archive.org/web/20240528165158/https://blog.lnx.cx/2009/12/04/installing-dblatex-from-the-latest-macports/
 ---
 
 I ran into this issue while installing dblatex (0.2.10) from the most recent MacPorts tree today:

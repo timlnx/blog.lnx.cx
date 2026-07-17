@@ -2,7 +2,7 @@
 author: Tim Case
 date: 2017-01-20 19:43:50+00:00
 layout: post
-title: '[Updated] GitHub + Gmail — Filtering for Review Requests and Mentions'
+title: 'GitHub + Gmail — Filtering for Review Requests and Mentions'
 categories:
 - Planet
 - Programming
@@ -15,19 +15,19 @@ tags:
 - Mentions
 - Pull Requests
 - Reviews
+wayback: https://web.archive.org/web/20240221223042/https://blog.lnx.cx/2017/01/20/github-gmail-filtering-for-review-requests-and-mentions/
+updated:
+- date: '2017-01-27'
+  desc: 'GitHub shipped native [review-status filtering](https://github.com/blog/2306-filter-pull-request-reviews-and-review-requests)
+    three days after this post went up'
 ---
-
-# Update - 2017-01-27
-
 
 Just 3 days after publishing this blog post GitHub made a new blog post:
 
 
-<blockquote><a href="https://help.github.com/articles/about-pull-request-reviews/" target=_blank>Pull request reviews</a> are a great way to share the weight of building software, and with <a href="https://help.github.com/articles/requesting-a-pull-request-review/" target=_blank>review requests</a> you can get the exact feedback you need.</blockquote>
+<blockquote><a href="https://help.github.com/articles/about-pull-request-reviews/" target=_blank>Pull request reviews</a> are a great way to share the weight of building software, and with <a href="https://help.github.com/articles/requesting-a-pull-request-review/" target=_blank>review requests</a> you can get the exact feedback you need. To make it easier to find the pull requests that need your attention, you can now <a href="https://help.github.com/articles/filtering-pull-requests-by-review-status" target=_blank>filter by review status</a> from your repository pull request index.</blockquote>
 
-To make it easier to find the pull requests that need your attention, you can now [filter by review status](https://help.github.com/articles/filtering-pull-requests-by-review-status) from your repository pull request index.</blockquote>
-
-Source: [Filter pull request reviews and review requests](https://github.com/blog/2306-filter-pull-request-reviews-and-review-requests)
+Source: [Filter pull request reviews and review requests](https://github.com/blog/2306-filter-pull-request-reviews-and-review-requests)
 
 I have tried this out and it's great! Like most everything else on GitHub it's very intuitive and simple to use. I won't steal their thunder and describe it all here. So [go check out the blog post for yourself](https://github.com/blog/2306-filter-pull-request-reviews-and-review-requests) and read up on the details (screenshots included!).
 

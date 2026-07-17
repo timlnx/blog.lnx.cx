@@ -12,6 +12,7 @@ tags:
 - Erlang
 - Macports
 - Manpath
+wayback: https://web.archive.org/web/20240221205256/https://blog.lnx.cx/2009/12/02/macports-and-erlang-setting-up-emacs-and-your-manpath/
 ---
 
 You may find this helpful if you should find yourself using [Erlang](http://www.erlang.org/) on OS X and you've installed it using [Macports](http://www.macports.org). After a default installation you'll need to manually configure your .emacs file for **erlang-mode** and set your $MANPATH variable correctly, here's how.

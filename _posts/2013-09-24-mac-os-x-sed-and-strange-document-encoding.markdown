@@ -15,6 +15,7 @@ tags:
 - sed
 - utf8
 - Windows-1252
+wayback: https://web.archive.org/web/20240528161414/https://blog.lnx.cx/2013/09/24/mac-os-x-sed-and-strange-document-encoding/
 ---
 
 # The Problem

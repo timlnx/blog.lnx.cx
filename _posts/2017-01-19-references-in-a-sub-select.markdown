@@ -5,6 +5,7 @@ layout: post
 title: References in a sub-select
 categories:
 - /dev/null
+wayback: https://web.archive.org/web/20240528155548/https://blog.lnx.cx/2017/01/19/references-in-a-sub-select/
 ---
 
 Have you ever had a sub-select where you really needed to reference a value in the outer query?  I know I have!  The naive way would be to run the outer query and then loop over the results running the inner query on each one.  Luckily, there's a better way.  The [Correlated subquery](https://en.wikipedia.org/wiki/Correlated_subquery).  Check it out!  The example given is 

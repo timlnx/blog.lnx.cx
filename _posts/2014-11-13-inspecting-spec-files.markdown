@@ -8,6 +8,7 @@ categories:
 tags:
 - packaging
 - rpm
+wayback: https://web.archive.org/web/20240221210534/https://blog.lnx.cx/2014/11/13/inspecting-spec-files/
 ---
 
 In my experience, the best way to learn about how to package RPMs is to look at how other people package RPMs.  That means looking at lots of spec files.  Sure `fedpkg` will let you clone lots of package repos, but what if you only have the SRPM?  You can get the spec file out of a SRPM, but it takes a little work with `cpio`, a tool with so many options that I can never remember the exact invocation.  So I wrote a quick two-liner to save me some aggravation:

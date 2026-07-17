@@ -9,6 +9,7 @@ tags:
 - DNS
 - libvirt
 - Linux
+wayback: https://web.archive.org/web/20240221211521/https://blog.lnx.cx/2014/10/23/dns-for-your-virtual-machines/
 ---
 
 For me, the holy grail of working with virtual machines is

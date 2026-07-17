@@ -9,6 +9,7 @@ categories:
 tags:
 - GNU Screen
 - Tutorial
+wayback: https://web.archive.org/web/20240528164022/https://blog.lnx.cx/2009/09/03/basic-screen-tutorial/
 ---
 
 I wrote a basic GNU Screen tutorial a while back for my work place. I'm posting it here for the unknown masses to enjoy too.

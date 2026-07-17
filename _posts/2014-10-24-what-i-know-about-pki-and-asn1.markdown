@@ -8,6 +8,7 @@ categories:
 tags:
 - java
 - pki
+wayback: https://web.archive.org/web/20240221220819/https://blog.lnx.cx/2014/10/24/what-i-know-about-pki-and-asn1/
 ---
 
 Much of the data in the PKI world is stored in Abstract Syntax Notation One (ASN.1) so a [basic understanding](http://luca.ntop.org/Teaching/Appunti/asn1.html) is necessary. ASN.1 is a way to describe data by starting from primitive types and building up to more complex types. Do you remember Backus-Naur Form? What about writing XML schemas in XSD? It's the same concept.

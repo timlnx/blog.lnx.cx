@@ -10,6 +10,7 @@ categories:
 tags:
 - Emacs
 - lisp
+wayback: https://web.archive.org/web/20240415022741/https://blog.lnx.cx/2009/10/18/emacs-hacking-reverse-other-buffer/
 ---
 
 I started reading _Writing GNU Emacs Extensions_ by Bob Glickstein. The first real meaty example you work through in it is making an 'other-buffer' like key command that works in reverse. So here I present to the internet, my version of previous-window.

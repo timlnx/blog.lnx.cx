@@ -18,6 +18,7 @@ tags:
 - T520
 - thinkpad
 - xorg
+wayback: https://web.archive.org/web/20240528170945/https://blog.lnx.cx/2011/09/14/fedora-15-and-the-lenovo-t520-thinkpad/
 ---
 
 I just went through a harrowing experience of attempting to install Fedora 14 on a Lenovo T520 Thinkpad with my good friend, [abutcher](http://afrolegs.com). The issue presented itself first as X failing to start after the installer loaded. After switching into low graphics mode we were able to go through the installer successfully. But that did not solve our problems completely. After booting into the desktop we were unable to change the display resolution from 1280x1024 to the native 1600x900.

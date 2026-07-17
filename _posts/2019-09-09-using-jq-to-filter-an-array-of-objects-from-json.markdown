@@ -19,6 +19,7 @@ description: >-
   jq's select() prints matching objects one after another instead of as an
   array. The fix is wrapping select() in map(), shown here against the AWS IP
   ranges feed.
+wayback: https://web.archive.org/web/20240221212258/https://blog.lnx.cx/2019/09/09/using-jq-to-filter-an-array-of-objects-from-json/
 ---
 
 For some reason it took me an unreasonable amount of time to figure out how to filter an array (or list) of objects from a JSON stream. Every single example I found was a little too weird for me, or resulted in printing each object, but not in a final array format. Here's what I came up with:

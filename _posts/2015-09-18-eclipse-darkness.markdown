@@ -9,6 +9,7 @@ tags:
 - eclipse
 - fedora 22
 - java
+wayback: https://web.archive.org/web/20240415022822/https://blog.lnx.cx/2015/09/18/eclipse-darkness/
 ---
 
 

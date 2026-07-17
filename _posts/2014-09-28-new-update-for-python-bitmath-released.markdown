@@ -20,6 +20,7 @@ tags:
 - Python
 - release
 - si
+wayback: https://web.archive.org/web/20240528165348/https://blog.lnx.cx/2014/09/28/new-update-for-python-bitmath-released/
 ---
 
 bitmath-1.0.8-1 was published on 2014-08-14.

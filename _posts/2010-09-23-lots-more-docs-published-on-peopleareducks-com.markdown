@@ -2,7 +2,7 @@
 author: Tim Case
 date: 2010-09-23 00:38:09+00:00
 layout: post
-title: '[Updated] Lots more docs published on PeopleAreDucks.com'
+title: Lots more docs published on PeopleAreDucks.com
 categories:
 - DocBook
 - Documentation
@@ -12,11 +12,8 @@ categories:
 - Planet
 - Tutorials
 - XML
-tags:
-- updated
+wayback: https://web.archive.org/web/20240221223618/https://blog.lnx.cx/2010/09/22/lots-more-docs-published-on-peopleareducks-com/
 ---
-
-**update 2026-07-16** - *Updated all book URL references to resolve to the canonical scribesguides.com source*
 
 While I've been gone from the blogging world I've still been working on projects. Mostly I've been working on documentation.
 

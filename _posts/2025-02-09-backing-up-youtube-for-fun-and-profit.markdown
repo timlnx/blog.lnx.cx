@@ -1,7 +1,7 @@
 ---
 author: Tim Case
 date: 2025-02-09
-title: '[Updated] Backing Up YouTube for Fun and Profit'
+title: Backing Up YouTube for Fun and Profit
 layout: post
 tags:
 - youtube
@@ -9,10 +9,10 @@ tags:
 - media
 - archiving
 - backups
-- updated
+updated:
+- date: '2026-03-12'
+  desc: 'I discovered the command line switches to say "best that isn''t `webp`"'
 ---
-
-**update 2026-03-12** - *I discovered the command line switches to say "best that isn't `webp`"*
 
 Offline archiving of YouTube videos is possible with this "feature-rich command
 line tool" called [yt-dlp](https://github.com/yt-dlp/yt-dlp). Maybe you suffered

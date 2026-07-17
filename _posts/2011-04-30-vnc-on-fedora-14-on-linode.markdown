@@ -6,6 +6,7 @@ title: VNC On Fedora 14 on Linode
 categories:
 - Fedora
 - Planet
+wayback: https://web.archive.org/web/20240221222609/https://blog.lnx.cx/2011/04/30/vnc-on-fedora-14-on-linode/
 ---
 
 Installed and configured tigervnc on my Linode host today, had a nasty problem getting fonts to display though. After KDE had loaded only the fixed width font used by vncconfig was showing, the rest were empty squares. Here's what didn't work on my Fedora 14 host:

@@ -5,6 +5,7 @@ layout: post
 title: Open URL Bug with XDG on XFCE4
 categories:
 - /dev/null
+wayback: https://web.archive.org/web/20240528174130/https://blog.lnx.cx/2015/03/16/open-url-bug-with-xdg-on-xfce4/
 ---
 
 Recently I noticed that in my IRC client, when I right-click a URL and select "Open Link In Browser", the system would open a new browser window (or tab if appropriate) but not pointed to the link I wanted to visit.  It would just open the home page.

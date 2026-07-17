@@ -5,6 +5,7 @@ layout: post
 title: Two Year Break -- And we're back!
 categories:
 - Life
+wayback: https://web.archive.org/web/20240415022124/https://blog.lnx.cx/2018/11/16/two-year-break-and-were-back/
 ---
 
 Where has Technitribe been for the last 2 years? The short answer: in domain limbo.

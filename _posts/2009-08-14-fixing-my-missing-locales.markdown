@@ -18,6 +18,11 @@ description: >-
   "locale: Cannot set LC_ALL to default" on a minimal Ubuntu install, and
   dpkg-reconfigure locales did nothing. The fix, without the cryptic localedef
   incantation.
+wayback: https://web.archive.org/web/20240528180053/https://blog.lnx.cx/2009/08/13/fixing-my-missing-locales/
+updated:
+- date: '2013-05-25'
+  desc: 'Added a closing note — the post reached far more of the internet than I expected,
+    and I have since moved to Fedora on Linode'
 ---
 
 **Background:** I run this server through [Slicehost](http://slicehost.com), and I enjoy their service immensely. When you set up your first server, or rebuild an existing server you get a very minimal GNU/Linux system installed. For obvious reasons, I like this a lot too.
@@ -64,6 +69,6 @@ I hope this helps some one else whose had this problem before or for the first t
 
 
 
-**Update: 2013-05-25: **This post has reached more parts of the Internet than I ever thought when I wrote it 4 years ago. Thanks to everyone who linked back instead of just copy and pasting the solution directly.
+**Update:** This post has reached more parts of the Internet than I ever thought when I wrote it 4 years ago. Thanks to everyone who linked back instead of just copy and pasting the solution directly.
 
 These days I'm running Fedora on [Linode](https://www.linode.com/). And all is well.

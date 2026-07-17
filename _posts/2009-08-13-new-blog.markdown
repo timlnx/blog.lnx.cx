@@ -7,6 +7,7 @@ categories:
 - /dev/null
 tags:
 - blog
+wayback: https://web.archive.org/web/20240528160130/https://blog.lnx.cx/2009/08/13/new-blog/
 ---
 
 We'll probably change the name. For now it's plain and descriptive: Yet another geeky blog. Let the acronyms fly!

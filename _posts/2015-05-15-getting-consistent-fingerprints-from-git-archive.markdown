@@ -5,6 +5,7 @@ layout: post
 title: Getting consistent fingerprints from git-archive
 categories:
 - /dev/null
+wayback: https://web.archive.org/web/20240221222324/https://blog.lnx.cx/2015/05/15/getting-consistent-fingerprints-from-git-archive/
 ---
 
 The "git archive" man page states:

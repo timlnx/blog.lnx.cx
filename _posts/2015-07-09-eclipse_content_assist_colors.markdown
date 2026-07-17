@@ -11,6 +11,7 @@ tags:
 - eclipse
 - fedora 22
 - gtk3
+wayback: https://web.archive.org/web/20240528164550/https://blog.lnx.cx/2015/07/09/eclipse_content_assist_colors/
 ---
 
 When I write Java, I use Eclipse.  It does what I need it to do, but there are a few things about it that bother me.  One of them is that Eclipse allows very limited control over the color scheme.  Most of the color settings are inherited from the desktop theme that you're using.  I recently upgraded to Fedora 22 and with the Adwaita theme under XFCE, this is what the Eclipse content assist dropdown looks like:

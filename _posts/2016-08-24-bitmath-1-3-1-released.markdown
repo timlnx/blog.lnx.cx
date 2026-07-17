@@ -12,6 +12,7 @@ tags:
 - module
 - project
 - Python
+wayback: https://web.archive.org/web/20240415025929/https://blog.lnx.cx/2016/08/24/bitmath-1-3-1-released/
 ---
 
 [bitmath](http://bitmath.readthedocs.io/en/latest/) is a Python module I wrote which simplifies many facets of interacting with file sizes in various units as python objects. A few weeks ago version 1.3.1 was released with a few small updates.

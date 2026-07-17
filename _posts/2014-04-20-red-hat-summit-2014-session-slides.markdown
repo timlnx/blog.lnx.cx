@@ -18,6 +18,7 @@ tags:
 - san francisco
 - session
 - slides
+wayback: https://web.archive.org/web/20240221222528/https://blog.lnx.cx/2014/04/20/red-hat-summit-2014-session-slides/
 ---
 
 This is an **update** to my previous post about [my (then) upcoming conference presentation](https://blog.lnx.cx/2014/04/05/red-hat-summit-2014-jboss-in-the-trenches/).

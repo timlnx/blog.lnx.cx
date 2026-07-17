@@ -11,6 +11,7 @@ tags:
 - DNS
 - LDAP
 - Virtualization
+wayback: https://web.archive.org/web/20240221211309/https://blog.lnx.cx/2010/03/21/dnsldap/
 ---
 
 Hopefully getting something that resembles a DNS server polling from LDAP set up tonight. I love virtual machines.

@@ -10,6 +10,7 @@ tags:
 - java
 - pki
 - x509
+wayback: https://web.archive.org/web/20240528172634/https://blog.lnx.cx/2015/10/30/streaming-the-serial-numbers-from-an-x509-certificate-revocation-list/
 ---
 
 [The project I work on](http://www.candlepinproject.org) uses X509 certificates with custom extensions to manage content access on the Red Hat CDN. The basic idea is that Candlepin issues X509 certificates with an extension saying what content the certificate is good for. Client systems then use that certificate for TLS client authentication when connecting to the CDN. If the content they are requesting (deduced from the request URL) matches the content available to them in the certificate, then access is granted.

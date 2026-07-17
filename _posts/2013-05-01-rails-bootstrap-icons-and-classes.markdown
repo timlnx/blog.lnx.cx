@@ -13,6 +13,7 @@ tags:
 - ERB
 - html
 - ruby on rails
+wayback: https://web.archive.org/web/20240528170902/https://blog.lnx.cx/2013/05/01/rails-bootstrap-icons-and-classes/
 ---
 
 # Scope

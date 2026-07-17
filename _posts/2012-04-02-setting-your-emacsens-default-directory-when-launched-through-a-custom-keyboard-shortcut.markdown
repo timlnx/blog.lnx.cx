@@ -11,6 +11,7 @@ tags:
 - default-directory
 - Emacs
 - gnome 2
+wayback: https://web.archive.org/web/20240415015133/https://blog.lnx.cx/2012/04/02/setting-your-emacsens-default-directory-when-launched-through-a-custom-keyboard-shortcut/
 ---
 
 I noticed that Emacs was getting a `default-directory` value of `/` when launching it with a custom keyboard shortcut I set up in Gnome (2). The result is that opening a file started my search in the root (`/`) of the filesystem.

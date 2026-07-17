@@ -11,6 +11,7 @@ tags:
 - Emacs
 - Erlang
 - XMPP
+wayback: https://web.archive.org/web/20240415033246/https://blog.lnx.cx/2010/02/03/macports-updates-their-erlang-version/
 ---
 
 I've been working on my [XMPP server](http://github.com/tbielawa/PAD-XMPP) pet project recently, and the need for a good Erlang XML parser has finally struck. I decided to go with [Erlsom](http://erlsom.sourceforge.net/). It's in MacPorts, so from there I installed it. Now, since I  don't update my port tree frequently I get delightful surprises from time to time. This time installing Erlsom triggered an update of Erlang, to the latest version!

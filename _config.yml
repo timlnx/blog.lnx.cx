@@ -70,6 +70,8 @@ og:
 #   - vendor/ruby/
 exclude:
   - README.md
+  - .omc/
+  - .remember/
   # scratch/ is gitignored, so anything in it is invisible to git status but
   # was still being read as site source. /pgp/ was publishing from an untracked
   # file in there. Keep drafts unbuilt as well as uncommitted.

@@ -10,6 +10,7 @@ tags:
 - opengl
 - Tutorial
 - xcode
+wayback: https://web.archive.org/web/20240528154943/https://blog.lnx.cx/2009/08/31/setting-up-an-opengl-project-using-apple-xcode/
 ---
 
 [![OpenGL](/assets/images/OpenGL_ai31.png)](http://www.opengl.org/)

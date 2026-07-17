@@ -15,6 +15,7 @@ tags:
 - project
 - Python
 - update
+wayback: https://web.archive.org/web/20240415015414/https://blog.lnx.cx/2016/02/03/bitmath-1-3-0-released/
 ---
 
 It's been quite a while since I've posted any [bitmath](https://bitmath.readthedocs.org/en/latest/index.html) updates (bitmath is a Python module I wrote which simplifies many facets of interacting with file sizes in various units as python objects) . In fact, it seems that the last time I wrote about bitmath here was [back in 2014](https://blog.lnx.cx/2014/09/28/new-update-for-python-bitmath-released/) when 1.0.8 was released! So here is an update covering everything post 1.0.8 up to 1.3.0.

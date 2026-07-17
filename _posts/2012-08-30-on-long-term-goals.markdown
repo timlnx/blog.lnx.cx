@@ -8,6 +8,7 @@ categories:
 - Planet
 tags:
 - goals
+wayback: https://web.archive.org/web/20240221211006/https://blog.lnx.cx/2012/08/29/on-long-term-goals/
 ---
 
 When I started considering my "long-term" goals I realized it's important that the goals are not trivial, or even just "hard". I believe that long-term goals should require a great effort on one's part to attain. For me they should represent stretches of my abilities that will result in improvements to my person, both generally and professionally.
