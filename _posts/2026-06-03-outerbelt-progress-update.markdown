@@ -13,8 +13,8 @@ draft: false
 author: Tim Case
 layout: post
 description: >-
-  Outerbelt Loop progress as of June 2026: roughly 85 miles and 10 hikes left,
-  finishing where the segments meet at the Adler Planetarium on Lake Michigan.
+  Hiking the Chicago Outerbelt Loop, progress as of June 2026: roughly 85 miles and 10 hikes left,
+  finishes at the Adler Planetarium on Lake Michigan.
 ---
 
 Where do we stand today?

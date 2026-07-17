@@ -3,8 +3,7 @@ layout: page
 title: Projects
 permalink: /projects/
 description: >-
-  Things I build elsewhere: famoe.ly, a jam band fansite with a song catalog,
-  setlist prediction, and more data visualization than strictly necessary.
+  Things I build elsewhere: famoe.ly, a jam band fansite, bitmath for python file size stuff, and the virtual disk book I wrote!
 seo:
   type: WebPage
 ---

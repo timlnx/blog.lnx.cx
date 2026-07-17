@@ -127,8 +127,3 @@ If you've enjoyed the story thus far, please join me in [part
 2](/2024/07/04/gps-mapping-chicago-trails-part-2-software.html) where I begin
 exploring assorted GPS software and the GPX data exchange format. It's
 thrilling.
-
-
-
-
-

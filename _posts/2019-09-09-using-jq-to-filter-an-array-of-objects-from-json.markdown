@@ -22,9 +22,14 @@ description: >-
 wayback: https://web.archive.org/web/20240221212258/https://blog.lnx.cx/2019/09/09/using-jq-to-filter-an-array-of-objects-from-json/
 ---
 
-For some reason it took me an unreasonable amount of time to figure out how to filter an array (or list) of objects from a JSON stream. Every single example I found was a little too weird for me, or resulted in printing each object, but not in a final array format. Here's what I came up with:
+For some reason it took me an unreasonable amount of time to figure out how to
+filter an array (or list) of objects from a JSON stream. Every single example I
+found was a little too weird for me, or resulted in printing each object, but
+not in a final array format. Here's what I came up with:
 
-Say for example you are parsing the [AWS IP ranges JSON stream](https://aws.amazon.com/blogs/aws/aws-ip-ranges-json/), you will receive an object like this:
+Say for example you are parsing the [AWS IP ranges JSON
+stream](https://aws.amazon.com/blogs/aws/aws-ip-ranges-json/), you will receive
+an object like this:
 
 {% highlight json %}
 {
@@ -38,7 +43,9 @@ Say for example you are parsing the [AWS IP ranges JSON stream](https://aws.amaz
     },
 {% endhighlight %}
 
-I was attempting to filter this down to ONLY objects where the `service` attribute was `AMAZON`. Using this jql I would get objects printed one after the other which is not what I wanted:
+I was attempting to filter this down to ONLY objects where the `service`
+attribute was `AMAZON`. Using this jql I would get objects printed one after the
+other which is not what I wanted:
 
 {% highlight bash %}
 $ jq -c '.prefixes[] | select(.service=="AMAZON")' < ip-ranges.json | head
@@ -59,4 +66,9 @@ $ jq '.prefixes | map(. | select(.service=="AMAZON"))' < ip-ranges.json | head
   },
 {% endhighlight %}
 
-Now we are getting each object returned as a member of an array. The difference is that we're putting the `.prefixes` array objects into the `map` function and telling it to iterate every object through the `select` function. The `map` takes all of those matching objects and returns them as an array, whereas, previously we were only selecting objects that matched our `select` criteria. To get the objects back in a list we required the `map`.
+Now we are getting each object returned as a member of an array. The difference
+is that we're putting the `.prefixes` array objects into the `map` function and
+telling it to iterate every object through the `select` function. The `map`
+takes all of those matching objects and returns them as an array, whereas,
+previously we were only selecting objects that matched our `select` criteria. To
+get the objects back in a list we required the `map`.

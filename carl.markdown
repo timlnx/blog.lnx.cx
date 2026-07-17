@@ -4,7 +4,7 @@ title: Carlsberg J. Cat
 permalink: /carl/
 description: >-
   Carl is 13, very mouthy, and negotiates to keep the front door cracked year
-  round so he can watch the critters. This is his page. He's a good boy.
+  round so he can watch the critters. This is his page. He is a good boy.
 seo:
   type: WebPage
 ---

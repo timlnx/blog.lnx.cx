@@ -65,7 +65,7 @@
     --document-bg:  #1e222a;
     --text-color:   #d8dbe2;
     --quote-color:  #a8aeba;
-    --code-bg:      #171a21;
+    --code-bg:      #3f4551;  // matches --motif-face panel; #171a21 read too dark
     --table-stripe: #262b34;
     --meta-color:   #9aa1ae;
 
@@ -134,6 +134,14 @@ $chrome-font-family: Helvetica, "Nimbus Sans", "Liberation Sans", Arial, sans-se
   border-style: solid;
   border-width: $width;
   border-color: $motif-dark $motif-light $motif-light $motif-dark;
+}
+
+// Same sunken tell, top and bottom edges only — no side borders.
+// Reads as a full-width band rather than a boxed well.
+@mixin bevel-sunken-y($width: 2px) {
+  border-style: solid;
+  border-width: $width 0;
+  border-color: $motif-dark transparent $motif-light transparent;
 }
 
 // The X11 root weave — the 50% stipple `xsetroot -def` left behind.

@@ -15,9 +15,7 @@ tags:
 - slicehost
 - ubuntu
 description: >-
-  "locale: Cannot set LC_ALL to default" on a minimal Ubuntu install, and
-  dpkg-reconfigure locales did nothing. The fix, without the cryptic localedef
-  incantation.
+  Simple fix for "locale: Cannot set LC_ALL to default" on a minimal Ubuntu install
 wayback: https://web.archive.org/web/20240528180053/https://blog.lnx.cx/2009/08/13/fixing-my-missing-locales/
 updated:
 - date: '2013-05-25'
@@ -31,44 +29,47 @@ updated:
 
 **How do you know** if your locales aren't correctly defined? On my Jaunty Jackalope system I see messages like this:
 
+derp derp
 
-<blockquote>
+```
+locale: Cannot set LC_MESSAGES to default locale: No such file or directory
+locale: Cannot set LC_ALL to default
+locale: No such file or directory
+```
 
->     
->     locale: Cannot set LC_MESSAGES to default locale: No such file or directory
->     locale: Cannot set LC_ALL to default
->     locale: No such file or directory
-> 
-> 
-</blockquote>
+I tried running `dpkg-reconfigure locales`, but that had no effect. Searching
+the Internet for the messages above provided a couple of possible solutions, but
+none of them looked like anything I was interested in. I'm a firm believer that
+if the Internet tells me to run a command with more than a couple of options,
+that it may work, but there is probably an easier, less cryptic solution. For
+example:
 
+```
+localedef -v -c -i en_US -f UTF-8 en_US.UTF-8
+```
 
-I tried running **dpkg-reconfigure locales**, but that had no effect. Searching the Internet for the messages above provided a couple of possible solutions, but none of them looked like anything I was interested in. I'm a firm believer that if the Internet tells me to run a command with more than a couple of options, that it may work, but there is probably an easier, less cryptic solution. For example:
+No way I'm running that. I instead searched for "slicehost locale" and found
+this article: [Ubuntu Hardy
+setup](http://articles.slicehost.com/2008/4/25/ubuntu-hardy-setup-page-2). I
+enjoy this much more:
 
-
-<blockquote>
-
->     
->     localedef -v -c -i en_US -f UTF-8 en_US.UTF-8
-> 
-> 
-</blockquote>
-
-
-No way I'm running that. I instead searched for "slicehost locale" and found this article: [Ubuntu Hardy setup](http://articles.slicehost.com/2008/4/25/ubuntu-hardy-setup-page-2). I enjoy this much more:
-
-    
-    locale-gen en_US.UTF-8
-    
-    update-locale LANG=en_US.UTF-8
+```
+locale-gen en_US.UTF-8
+update-locale LANG=en_US.UTF-8
+```
 
 
-Turns out that update-locale is a Debian/Ubuntu specific command. It updates your systems default locale setting file. I had checked for one before running it and found that none existed yet on my system. After running those two commands above I found one had been created with "LANG=en_US.UTF-8" in it. It's possible that running update-locale could have been all I needed to do to begin with.
+Turns out that `update-locale` is a Debian/Ubuntu specific command. It updates
+your systems default locale setting file. I had checked for one before running
+it and found that none existed yet on my system. After running those two
+commands above I found one had been created with `"LANG=en_US.UTF-8"` in it. It's
+possible that running `update-locale` could have been all I needed to do to begin
+with.
 
 I hope this helps some one else whose had this problem before or for the first time.
 
-
-
-**Update:** This post has reached more parts of the Internet than I ever thought when I wrote it 4 years ago. Thanks to everyone who linked back instead of just copy and pasting the solution directly.
+**Update:** This post has reached more parts of the Internet than I ever thought
+when I wrote it 4 years ago. Thanks to everyone who linked back instead of just
+copy and pasting the solution directly.
 
 These days I'm running Fedora on [Linode](https://www.linode.com/). And all is well.

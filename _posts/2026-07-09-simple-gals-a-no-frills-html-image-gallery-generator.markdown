@@ -30,8 +30,6 @@ scratch. And that itch was the apparent lack of a modern day "simple HTML image
 gallery generator".
 
 
-(organization and demo galleries coming soon!)
-
 *Back in my day*, on Mac the Photos application had this nifty feature. You
 could export a gallery to a simple HTML bundle with forward/backward nagivation.
 It looked a lot like they used the DocBook XSL stylesheets to generate a simple
@@ -51,7 +49,9 @@ the ass-end of
 ![That library is pretty sweet](https://lnx.cx/~tbielawa/Minecraft-GrandLibrary/Images/88.jpg)
 
 
-You can see the rest of that gallery [here](https://lnx.cx/~tbielawa/Minecraft-GrandLibrary/) with (most of) the full build from beginning to end.
+You can see the rest of that gallery
+[here](https://lnx.cx/~tbielawa/Minecraft-GrandLibrary/) with (most of) the full
+build from beginning to end.
 
 I think I had a screen recording, or screenshots of, a giant library burning
 (after we backed up the world files). It brought the server (probably my old
@@ -93,7 +93,8 @@ degrades gracefully to a simple point and click adventure, just like the old
 days.
 
 simpleGals has a full TUI interface for configuring projects and modifying
-properties. The `sgui` tui can rebuild the gallery, just as well as the batch `simpleGals` command. There are progress bars, because I was feeling fancy.
+properties. The `sgui` tui can rebuild the gallery, just as well as the batch
+`simpleGals` command. There are progress bars, because I was feeling fancy.
 
 Also, you get actual image-previews IN THE CONSOLE when you're setting
 captions/alt text, or toggling individual "include in gallery" options.

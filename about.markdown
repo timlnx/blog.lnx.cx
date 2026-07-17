@@ -4,8 +4,7 @@ title: About
 permalink: /about/
 description: >-
   Tim Case: philosophical naturalist, and another geek out of the GeoCities
-  and e/n era. Who runs this place, what it used to be, and the cat you should
-  meet.
+  and e/n era. I run this place. You should meet my cat.
 seo:
   type: WebPage
 ---

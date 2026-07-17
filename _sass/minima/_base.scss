@@ -157,15 +157,16 @@ blockquote {
 pre,
 code {
   @include relative-font-size(0.9375);
-  @include bevel-sunken(2px);
   background-color: $code-bg;
 }
 
 code {
+  @include bevel-sunken(2px);
   padding: 1px 5px;
 }
 
 pre {
+  @include bevel-sunken-y(2px);
   padding: 8px 12px;
   overflow-x: auto;
 

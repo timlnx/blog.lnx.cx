@@ -116,7 +116,7 @@ has written thousands of pages of documentation, this is a big compliment.
 Here's a simple truncated example of a fully formed document with two track
 points I recorded myself:
 
-{% highlight bash %}
+{% highlight xml %}
 <?xml version="1.0" encoding="utf-8"?>
 <gpx version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xmlns="http://www.topografix.com/GPX/1/1"
@@ -350,4 +350,3 @@ It's not all bad though:
 
 Much of the center area on the south side of Schiller Brooke, directly opposite
 of Hidden Hill is still gorgeous.
-if you 
