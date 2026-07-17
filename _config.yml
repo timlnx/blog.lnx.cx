@@ -74,6 +74,16 @@ exclude:
   # was still being read as site source. /pgp/ was publishing from an untracked
   # file in there. Keep drafts unbuilt as well as uncommitted.
   - scratch/
+  # dest/ holds build output from container-build.sh. Jekyll was reading it back
+  # in as source, so a local build republished the whole site under /dest/ and
+  # put 92 duplicate URLs in the sitemap. Production builds from a clean tree so
+  # it never shipped, but a deploy from a dirty _site would have.
+  - dest/
+  # Jekyll's stock node_modules exclude only covers the repo root, so the
+  # extension's nested copy got published: a sprintf-js demo, tslib, and
+  # uglify-js domprops.html all landed in the sitemap pointing at 404s. None of
+  # this directory is blog content.
+  - vscode-extension/
 
 header_pages:
   - about.markdown
