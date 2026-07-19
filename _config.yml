@@ -33,6 +33,12 @@ discogs_username: tim.lnx
 instagram_username: tim.lnx
 archive_username: tim_lnx
 permalink: /:year/:month/:day/:title:output_ext
+# Pinned so post timestamps do not depend on where the build ran. lnx.cx is
+# America/Chicago, but jekyll runs inside a fedora container that carries UTC,
+# so the deployed feed was stamping +00:00 while a local build stamped -05:00 --
+# five hours apart for the same post. A bare `date: 2025-02-09` means the 9th
+# here, not 6pm on the 8th.
+timezone: America/Chicago
 # Build settings
 #theme: minima
 plugins:
