@@ -40,7 +40,9 @@ if [ $# -gt 1 ]; then
 fi
 
 PROJECT_DIR="${1%/}"
-SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+# CDPATH is cleared so an exported CDPATH cannot make cd echo its target and put
+# two lines in SCRIPT_DIR (which happens when invoked as `bin/upload-gallery.sh`).
+SCRIPT_DIR="$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)"
 SERVER="tc@lnx.cx"
 IMAGE_STORE="/srv/galleries"
 DOCROOT="/var/www/blog.lnx.cx/galleries"

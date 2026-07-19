@@ -18,7 +18,7 @@ jobs:
       - name: Install system dependencies
         run: |
           dnf -y install ruby ruby-devel openssl-devel gcc-c++ \
-            make @development-tools git-core && dnf clean all
+            make @development-tools git-core python3 python3-lxml && dnf clean all
 
       - name: Install gems
         run: |
@@ -30,3 +30,6 @@ jobs:
 
       - name: Verify output exists
         run: test -f _site/index.html
+
+      - name: Validate the Atom feed
+        run: python3 bin/validate-feed.py _site/feed.xml

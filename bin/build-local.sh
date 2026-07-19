@@ -37,7 +37,11 @@ for arg in "$@"; do
     esac
 done
 
-REPO_DIR="$(cd "$(dirname "$0")" && pwd)"
+# This script lives in bin/, so the repo root is one level up. CDPATH is cleared
+# because an exported CDPATH makes cd echo its target, which would put two lines
+# in REPO_DIR when this is invoked as `bin/build-local.sh` rather than
+# `./bin/build-local.sh`.
+REPO_DIR="$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)"
 BLOG_IMAGES="${BLOG_IMAGES:-$HOME/blog-images}"
 OUTPUT_DIR="$REPO_DIR/_site"
 IMAGE_NAME="localhost/blog-builder"

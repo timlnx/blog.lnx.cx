@@ -50,12 +50,20 @@ and failed to do reliably. Ask me how I know.
 | `assets/{css,woff,woff2,opengraph,gpx}/` | Static assets — in git |
 | `assets/images/` | **Gitignored.** Populated at build time from `/srv/blog-images/` |
 | `Containerfile` | Fedora 41 multi-arch build image |
-| `container-build.sh` | Entrypoint script that runs inside the container |
-| `build-local.sh` | Mac podman build helper (ARM-native) |
-| `upload-image.sh` | scp wrapper — uploads to server and prints the markdown ref |
+| `bin/` | Every loose script. Excluded from the build as one line in `_config.yml` |
+| `bin/container-build.sh` | Entrypoint script that runs inside the container |
+| `bin/build-local.sh` | Mac podman build helper (ARM-native) |
+| `bin/upload-image.sh` | scp wrapper — uploads to server and prints the markdown ref |
+| `bin/new-post` | Post scaffolder; bootstraps its own venv and runs `new_post.py` |
+| `bin/validate-feed.py` | RFC 4287 check on the built feed. Runs in CI and in the container |
 | `deploy/blog-poll.sh` | The poll + build + deploy script that systemd runs |
 | `deploy/setup.yml` | Ansible playbook for first-time server setup |
 | `.github/workflows/ci.yml` | GitHub Actions CI |
+
+Scripts live in `bin/` so `_config.yml` can exclude them with a single `bin/`
+entry. Before that they were loose in the repo root and the exclude list was a
+pile of extension globs that kept missing things — `new-post` has no extension
+at all, so `*.sh` never caught it and it was being published to the live site.
 
 ## First-Time Server Setup
 
@@ -141,7 +149,7 @@ From the GitHub web UI: navigate to `_posts/`, create a new file named
 From your Mac:
 
 ```bash
-./upload-image.sh ~/Desktop/photo.jpg
+./bin/upload-image.sh ~/Desktop/photo.jpg
 ```
 
 Output looks like:
@@ -173,7 +181,7 @@ scp thing.zip tc@lnx.cx:/var/www/blog.lnx.cx/scratch/
 ### Local Mac build
 
 ```bash
-./build-local.sh
+./bin/build-local.sh
 # Builds inside a native ARM64 Fedora container
 # Uses ~/blog-images/ for images (or set BLOG_IMAGES=/path/to/yours)
 # Output: _site/
@@ -183,10 +191,10 @@ If you've changed `Containerfile` or `Gemfile`, you need to rebuild the local im
 
 ```bash
 podman rmi localhost/blog-builder
-./build-local.sh   # rebuilds automatically on first run
+./bin/build-local.sh   # rebuilds automatically on first run
 ```
 
-There's also `./build.sh` for when you just want a fast `bundle exec jekyll build`
+There's also `./bin/build.sh` for when you just want a fast `bundle exec jekyll build`
 without any container overhead. Images won't be present, but post structure and templates
 validate fine.
 

@@ -9,18 +9,20 @@
 #   3. Activate it and make sure gnureadline is installed, so line editing is
 #      real GNU readline (Meta-f / Meta-b / Meta-DEL / yank) instead of the
 #      macOS libedit shim.
-#   4. Exec _new_post.py with the venv interpreter, forwarding all arguments.
+#   4. Exec new_post.py with the venv interpreter, forwarding all arguments.
 #
 # Wrapper-only flags: --recreate-venv and -h/--help. Everything else is passed
-# straight to _new_post.py, which validates its own arguments (so a bad --flag
+# straight to new_post.py, which validates its own arguments (so a bad --flag
 # is rejected there with a real usage message).
 #
 # Override the venv location with NEWPOST_VENV=/some/path.
 
 set -euo pipefail
 
-SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-WORKER="$SCRIPT_DIR/_new_post.py"
+# CDPATH is cleared so an exported CDPATH cannot make cd echo its target and put
+# two lines in SCRIPT_DIR (which happens when invoked as `bin/new-post`).
+SCRIPT_DIR="$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)"
+WORKER="$SCRIPT_DIR/new_post.py"
 VENV="${NEWPOST_VENV:-${XDG_CACHE_HOME:-$HOME/.cache}/new-post/venv}"
 DEP="gnureadline"
 

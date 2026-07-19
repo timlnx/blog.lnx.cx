@@ -67,18 +67,50 @@ og:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+# Everything the site is NOT. Jekyll has no allowlist mode, so this is a
+# denylist and it has to be kept honest: anything tracked at the repo root that
+# is not a page or an asset gets published unless it is named here. Paths
+# starting with _ or . are skipped by Jekyll already, which is why _plugins/,
+# _layouts/, and .github/ are absent from this list.
+#
+# Audit it after adding anything to the repo root:
+#   blogenv/bin/python bin/validate-feed.py   # feed still sane
+#   find _site -maxdepth 1                    # nothing surprising at the top
 exclude:
+
+  # -- Notes and docs written for people, not readers of the blog -------------
   - README.md
+  - CLAUDE.md
+  - AGENTS.md
+  - DEPLOY.md
+  - docs/
+
+  # -- Repo tooling: build, deploy, and authoring helpers ---------------------
+  # Every loose script lives in bin/ now, so this is one line instead of a list
+  # of extensions that kept missing things (`new-post` has no extension at all,
+  # and the old *.sh glob sailed straight past it).
+  - bin/
+  - deploy/
+  - Containerfile
+  - ansible.cfg
+  - LICENSES/
+
+  # -- Other people's trees --------------------------------------------------
+  # Jekyll's stock node_modules exclude only covers the repo root, so the
+  # extension's nested copy got published: a sprintf-js demo, tslib, and
+  # uglify-js domprops.html all landed in the sitemap pointing at 404s.
+  - vscode-extension/
+  # The python virtualenvs. Both are ignored via .git/info/exclude, which is
+  # local-only, so they never reach the server -- but build-local.sh mounts the
+  # whole working copy into the container, and blogenv/bin/python is a symlink
+  # to Homebrew python that dangles in there. Jekyll's reader opens every file
+  # it does not exclude, so the container build died on a broken symlink.
+  - blogenv/
+  - ia/
+
+  # -- Agent and build scratch space -----------------------------------------
   - .omc/
   - .remember/
-  # Repo tooling is not website content. These are public on GitHub anyway, so
-  # this is about what belongs in the build output, not about secrecy -- there
-  # is no reason for _site to carry the scripts that produce and deploy it.
-  # (_new_post.py was already absent only because Jekyll skips underscored paths.)
-  - "*.sh"
-  - "*.py"
-  # License texts belong to the repo, not the published site.
-  - LICENSES/
   # scratch/ is gitignored, so anything in it is invisible to git status but
   # was still being read as site source. /pgp/ was publishing from an untracked
   # file in there. Keep drafts unbuilt as well as uncommitted.
@@ -88,11 +120,6 @@ exclude:
   # put 92 duplicate URLs in the sitemap. Production builds from a clean tree so
   # it never shipped, but a deploy from a dirty _site would have.
   - dest/
-  # Jekyll's stock node_modules exclude only covers the repo root, so the
-  # extension's nested copy got published: a sprintf-js demo, tslib, and
-  # uglify-js domprops.html all landed in the sitemap pointing at 404s. None of
-  # this directory is blog content.
-  - vscode-extension/
 
 header_pages:
   - about.markdown
