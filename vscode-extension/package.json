@@ -4,6 +4,7 @@
   "description": "Insert Jekyll Liquid filter calls in blog posts without thinking about syntax.",
   "version": "1.0.0",
   "publisher": "timlnx",
+  "license": "MIT",
   "engines": { "vscode": "^1.85.0" },
   "categories": ["Other"],
   "activationEvents": ["onLanguage:markdown"],

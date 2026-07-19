@@ -1,4 +1,7 @@
 #!/bin/bash
+# SPDX-FileCopyrightText: 2026 Tim Case <tim@lnx.cx>
+# SPDX-License-Identifier: MIT
+
 # Local Mac build using rootless podman.
 # Builds a native ARM64 image (quay.io/fedora/fedora:41 is multi-arch).
 # Images come from ~/blog-images/ or override with BLOG_IMAGES env var.

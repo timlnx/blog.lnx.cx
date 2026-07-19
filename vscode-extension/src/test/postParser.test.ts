@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 Tim Case <tim@lnx.cx>
+// SPDX-License-Identifier: MIT
+
 import { parseFrontMatterTitle, parseAnchors } from '../postParser';
 
 describe('parseFrontMatterTitle', () => {

@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2026 Tim Case <tim@lnx.cx>
+# SPDX-License-Identifier: MIT
+
 ---
 # Blog builder server setup playbook.
 # Run from the server as tc with sudo access:

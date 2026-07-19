@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2026 Tim Case <tim@lnx.cx>
+# SPDX-License-Identifier: MIT
+
 # _plugins/tag_pages.rb
 #
 # Emits /tags/<slug>.html for every tag in use: a date-descending index of the

@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 Tim Case <tim@lnx.cx>
+// SPDX-License-Identifier: MIT
+
 // Strips " so user-typed titles can't break Liquid string delimiters.
 function sanitize(s: string): string {
     return s.replace(/"/g, '');

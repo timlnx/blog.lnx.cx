@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 Tim Case <tim@lnx.cx>
+// SPDX-License-Identifier: MIT
+
 export const CompletionItemKind = { Function: 2, Method: 1 };
 
 export class CompletionItem {

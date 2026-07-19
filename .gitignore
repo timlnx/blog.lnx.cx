@@ -67,6 +67,14 @@ _site
 .jekyll-metadata
 vendor
 
+# python
+# Bytecode caches from the repo's own scripts. The blogenv/ and ia/ virtualenvs
+# are ignored locally via .git/info/exclude, which is not shared, so a fresh
+# clone will not inherit that -- this covers only what the scripts themselves
+# leave behind.
+__pycache__/
+*.py[cod]
+
 
 .DS_Store
 .vscode

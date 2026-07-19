@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2026 Tim Case <tim@lnx.cx>
+# SPDX-License-Identifier: MIT
+
 # _plugins/updated_tag.rb
 #
 # Derives the "updated" tag from a post's `updated` front-matter list instead of

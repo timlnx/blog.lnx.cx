@@ -1,4 +1,7 @@
 #!/bin/bash
+# SPDX-FileCopyrightText: 2026 Tim Case <tim@lnx.cx>
+# SPDX-License-Identifier: MIT
+
 # Polls GitHub for new commits; builds and deploys the site when found.
 # Run by systemd.timer every 5 minutes as tc (rootless podman).
 set -euo pipefail

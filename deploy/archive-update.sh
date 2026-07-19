@@ -1,4 +1,7 @@
 #!/bin/bash
+# SPDX-FileCopyrightText: 2026 Tim Case <tim@lnx.cx>
+# SPDX-License-Identifier: MIT
+
 # Submit recently-changed blog pages to the Internet Archive Wayback Machine.
 #
 # Called by blog-poll.sh at the very end of a successful deploy, as:

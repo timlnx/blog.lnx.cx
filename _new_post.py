@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2026 Tim Case <tim@lnx.cx>
+# SPDX-License-Identifier: MIT
+
 """
 new-post.py - Scaffold a new Jekyll _posts/ entry, old-school TUI style.
 

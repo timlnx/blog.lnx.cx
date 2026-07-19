@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2024-2026 Tim Case <tim@lnx.cx>
+# SPDX-License-Identifier: MIT
+
 module Jekyll
     module AnchorFilter
       def normalize(input)

@@ -1,4 +1,7 @@
 #!/bin/bash
+# SPDX-FileCopyrightText: 2026 Tim Case <tim@lnx.cx>
+# SPDX-License-Identifier: MIT
+
 # Regenerate the Carl throbber pixmap and its hover-throb sprite strip.
 set -euo pipefail
 

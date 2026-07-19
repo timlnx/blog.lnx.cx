@@ -36,7 +36,6 @@ permalink: /:year/:month/:day/:title:output_ext
 # Build settings
 #theme: minima
 plugins:
-  - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
 
@@ -72,6 +71,14 @@ exclude:
   - README.md
   - .omc/
   - .remember/
+  # Repo tooling is not website content. These are public on GitHub anyway, so
+  # this is about what belongs in the build output, not about secrecy -- there
+  # is no reason for _site to carry the scripts that produce and deploy it.
+  # (_new_post.py was already absent only because Jekyll skips underscored paths.)
+  - "*.sh"
+  - "*.py"
+  # License texts belong to the repo, not the published site.
+  - LICENSES/
   # scratch/ is gitignored, so anything in it is invisible to git status but
   # was still being read as site source. /pgp/ was publishing from an untracked
   # file in there. Keep drafts unbuilt as well as uncommitted.

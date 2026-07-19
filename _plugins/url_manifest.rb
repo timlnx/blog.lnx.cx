@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2026 Tim Case <tim@lnx.cx>
+# SPDX-License-Identifier: MIT
+
 # _plugins/url_manifest.rb
 #
 # Emits `.url-manifest.json` into the site output on every build: an

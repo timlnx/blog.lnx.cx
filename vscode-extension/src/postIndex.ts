@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 Tim Case <tim@lnx.cx>
+// SPDX-License-Identifier: MIT
+
 import * as vscode from 'vscode';
 import * as fs from 'fs';
 import * as path from 'path';
