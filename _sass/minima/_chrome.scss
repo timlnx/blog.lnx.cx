@@ -42,7 +42,19 @@
   }
 }
 
-// Active-window title bar. No minimise/close buttons: they could not work
+// Bottom legal strip. The float grid above stacks columns; this one row wants
+// the copyright at the left and the page links (Privacy) hard right on the same
+// baseline, dropping to stacked rows only when the window gets too narrow to
+// hold both. Flexbox does that in a few lines; floats would fight it.
+.footer-legal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 4px math.div($spacing-unit, 2);
+}
+
+// Active-window title bar. No minimize/close buttons: they could not work
 // without JS, and an inert control is the one thing we said we would not ship.
 // So the title bar is a label, which is honest, and it carries the site name
 // that the chrome would otherwise have swallowed into a URL field.

@@ -1,0 +1,23 @@
+{%- comment -%}
+  turnstile.html - the only JavaScript this site ships (the SEO metadata block
+  is inert application/ld+json data, not code), and it is here for privacy, not
+  for the page. The blog renders and reads perfectly with JavaScript disabled;
+  nothing here changes a single thing you see or can do.
+
+  Its one job is to RESPECT a privacy request. If you have signaled Do Not
+  Track or Global Privacy Control, this fires nothing at all - no request ever
+  leaves your browser. If you have not, it loads one 1x1 SVG so a single
+  web-server log line can record that a real browser rendered a page. No
+  cookie, no stored identifier, no profile: turnstile counting only.
+
+  Bonus: the scrapers we are trying to tell apart from real readers do not run
+  a JavaScript engine, so gating on JS is both the privacy check AND a cleaner
+  human/bot signal than any forgeable HTTP header. Full detail at /privacy/.
+{%- endcomment -%}
+<script>
+  (function () {
+    var dnt = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+    if (dnt === "1" || dnt === "yes" || navigator.globalPrivacyControl) { return; }
+    new Image().src = "{{ '/assets/turnstile.svg' | relative_url }}?" + Date.now();
+  })();
+</script>

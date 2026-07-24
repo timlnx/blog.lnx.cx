@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1">
+  <!--
+    turnstile.svg - a privacy-respecting visit counter.
+
+    A real browser loads this 1x1 image when it renders a page, but ONLY
+    if you have not signaled Do Not Track or Global Privacy Control (see
+    /_includes/turnstile.html, the only script on this site). My web server
+    then writes one ordinary log line. Counting those lines tells me "a real
+    browser rendered a page" so I can tell humans from the scrapers that now
+    dominate the logs.
+
+    It sets no cookie, carries no identifier, and builds no profile. It is a
+    turnstile: it clicks once when someone walks through, and cannot know who.
+    Full explanation, and how to opt out: /privacy/   - Tim
+  -->
+</svg>

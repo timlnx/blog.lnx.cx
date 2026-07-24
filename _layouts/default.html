@@ -8,7 +8,7 @@
     {%- comment -%}
       One window on the X11 root. The WM title bar carries the site name, the
       browser chrome carries navigation and location, the document sits inside.
-      The title bar has no minimise/close buttons on purpose: they could not do
+      The title bar has no minimize/close buttons on purpose: they could not do
       anything without JS, and an inert control is exactly what we said we would
       not ship.
     {%- endcomment -%}
@@ -39,6 +39,14 @@
       {%- include footer.html -%}
 
     </div>
+
+    {%- comment -%}
+      The site's only JavaScript. It ships nothing to look at and nothing to click:
+      its sole job is to respect Do Not Track / GPC before a 1x1 turnstile pixel
+      is ever requested. No-JS visitors read the whole site; they just aren't
+      counted. See _includes/turnstile.html and /privacy/.
+    {%- endcomment -%}
+    {%- include turnstile.html -%}
 
   </body>
 
