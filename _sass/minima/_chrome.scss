@@ -255,6 +255,55 @@
   min-width: 0;
 }
 
+// A document image dressed as a Motif widget: the same raised chisel and hard
+// offset shadow as the window, with a face-coloured mat between frame and
+// photo. Floated so the prose wraps around it. The photo links to the full
+// size; the caption strip is its own link out to the Instagram highlight.
+.portrait-frame {
+  float: right;
+  width: 200px;
+  max-width: 45%;
+  margin: 4px 0 $spacing-unit $spacing-unit;
+  padding: 4px;
+  background-color: $motif-face;
+  @include bevel-raised(2px);
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.4);
+
+  .portrait-photo {
+    display: block;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    @include bevel-sunken(2px); // the photo sits in a recessed well
+  }
+
+  // A Motif label strip below the photo carrying the branding. Same raised
+  // chisel and Helvetica chrome voice as the title bar, so it reads as part
+  // of the widget rather than a caption pasted underneath.
+  .portrait-caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4px;
+    padding: 3px 6px;
+    background-color: $motif-shadow;
+    color: $titlebar-text;
+    font-family: $chrome-font-family;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    text-decoration: none; // it's a link; the strip itself is the affordance
+    @include bevel-raised(2px);
+
+    .svg-icon {
+      fill: $titlebar-text; // white on the dark strip, not the meta grey
+      padding-right: 4px;
+    }
+  }
+}
+
 @include media-query($on-palm) {
   // On a phone the desktop metaphor costs more than it earns: give the screen
   // to the document and let the weave show as a thin surround.
@@ -264,5 +313,13 @@
 
   .mosaic-bookmarks {
     flex-wrap: wrap;
+  }
+
+  // Too narrow to wrap text around a floated portrait: center it and let the
+  // prose sit below on its own full-width lines.
+  .portrait-frame {
+    float: none;
+    max-width: 60%;
+    margin: 0 auto $spacing-unit;
   }
 }

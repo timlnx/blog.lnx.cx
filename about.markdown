@@ -9,6 +9,13 @@ seo:
   type: WebPage
 ---
 
+<figure class="portrait-frame">
+  <a class="portrait-photo" href="/assets/images/tcase-be-weird.jpg">
+    <img src="/assets/images/tcase-be-weird-thumb.jpg" alt="Have Fun, BeWEIRD" title="Tim back to a dark patterned piece of fabric with little gold bursts. Tim wearing a bandana and black leather best with a red dancing grateful dead bear on on side." />
+  </a>
+  <a class="portrait-caption" href="https://www.instagram.com/stories/highlights/17875609311591669/"><svg class="svg-icon" aria-hidden="true" focusable="false"><use href="/assets/minima-social-icons.svg#instagram"></use></svg>Have Fun, BeWEIRD</a>
+</figure>
+
 {{ "Oh, hi there!" | blog_anchor }}
 
 This is the homepage of Tim Case. You might have known me as Tim Bielawa (or
@@ -29,7 +36,7 @@ He said it pretty well.
 If you think I'm cool, you should check out [my cat](/carl/), he's a superstar.
 
 
-{{ "Colophon" | blog_anchor }}
+{{ "Colophon" | blog_anchor2 }}
 
 * This site is generated with [Jekyll](https://jekyllrb.com/) [**[MIT](https://github.com/jekyll/jekyll/blob/master/LICENSE) License**]
 * My smart friend [pcon](https://blog.deadlypenguin.com/) has the patience of a saint and answered all of my dumb jekyll questions when I was coming over from wordpress
@@ -39,7 +46,7 @@ If you think I'm cool, you should check out [my cat](/carl/), he's a superstar.
 * All content on this site is provided to human beings under the terms of the [Creative Commons Attribution-ShareAlike 4.0 International](http://creativecommons.org/licenses/by-sa/4.0/)
 * Use of this website by AI/LLM scraper bots for training data constitutes acceptance of a profit sharing agreement, you can opt out over certified mail to my non-existing PO box
 
-{{ "Why the name change?" | blog_anchor }}
+{{ "Why the name change?" | blog_anchor2 }}
 
 That's a fine question to ask. Here's the backstory.
 
@@ -67,7 +74,7 @@ identity as Tim Case.
 But it's just Tim Case now. No middle name. And never `Timothy`. Just `Tim` and
 `Case`. 7 letters. Nice and simple.
 
-{{ "What is LNX, anyway?" | blog_anchor }}
+{{ "What is LNX, anyway?" | blog_anchor2 }}
 
 That's another excellent question, you're on a roll today. Gold star for you after class.
 
