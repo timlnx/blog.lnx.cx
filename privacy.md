@@ -15,11 +15,10 @@ hammer it. Lately the scrapers badly outnumber and outshout the humans in my
 logs, and I could not tell the two apart. What follows is the least-invasive
 thing I could build that answers "human, or bot?" without watching you.
 
-I care about this stuff. I donate to the [Electronic Frontier
-Foundation](https://www.eff.org/) every year and I browse with
-[Privacy Badger](https://privacybadger.org/) and uBlock Origin like a lot of
-you do. So this is built to the standard I would want applied to me. None of
-what follows is a boast, it's just me showing receipts.
+I care about this stuff. I browse with
+[Privacy Badger](https://privacybadger.org/) and uBlock Origin like a
+lot of you do. So this is built to the standard I would want applied
+to me. None of what follows is a boast, it's just me showing receipts.
 
 {{ "The short version" | blog_anchor2 }}
 
@@ -33,7 +32,7 @@ someone walks through, and it cannot know who walked through.
 
 - **No cookies.** None are set, none are read. Check for yourself.
 - **No identifier in the count.** The turnstile writes to its own log that
-  records only a date and which page - no IP address, no time of day, no name.
+  records only a date and which page. No IP address, no time of day, no name.
   There is nothing in it to tie one visit to another, or to you.
 - **No third parties.** The image comes from this site. Nothing is sent to
   Google, to Meta, or to an analytics company.
@@ -77,7 +76,7 @@ exactly the same site as everyone else. You simply are not counted. That means
 my count is always an **undercount**, never an inflated one. I am glad to make
 that trade: I would rather miss you than track you.
 
-{{ "The entire mechanism, shown" | blog_anchor2 }}
+{{ "The entire mechanism" | blog_anchor2 }}
 
 You should be able to check my claims instead of trusting them, so here is the
 whole thing:

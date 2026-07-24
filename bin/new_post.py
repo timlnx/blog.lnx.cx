@@ -241,7 +241,7 @@ def main():
         ),
     )
     parser.add_argument("title", nargs="*", help="post title (otherwise you'll be prompted)")
-    parser.add_argument("--posts-dir", type=Path, default=here / "_posts",
+    parser.add_argument("--posts-dir", type=Path, default=here / "../_posts",
                         help="directory to scan and write into (default: ./_posts next to this script)")
     parser.add_argument("--date", metavar="YYYY-MM-DD", default=None,
                         help="override the post date (default: today)")
