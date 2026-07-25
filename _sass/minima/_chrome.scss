@@ -255,6 +255,14 @@
   min-width: 0;
 }
 
+// Sized in em so it tracks the field's text rather than a fixed pixel height.
+.mosaic-lock {
+  width: 0.72em;
+  height: 0.86em;
+  margin-right: 4px;
+  vertical-align: -0.1em;
+}
+
 // A document image dressed as a Motif widget: the same raised chisel and hard
 // offset shadow as the window, with a face-coloured mat between frame and
 // photo. Floated so the prose wraps around it. The photo links to the full
