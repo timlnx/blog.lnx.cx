@@ -43,10 +43,11 @@ PROJECT_DIR="${1%/}"
 # CDPATH is cleared so an exported CDPATH cannot make cd echo its target and put
 # two lines in SCRIPT_DIR (which happens when invoked as `bin/upload-gallery.sh`).
 SCRIPT_DIR="$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)"
+REPO_DIR="$(CDPATH= cd -- "$SCRIPT_DIR/.." && pwd)"
 SERVER="tc@lnx.cx"
 IMAGE_STORE="/srv/galleries"
 DOCROOT="/var/www/blog.lnx.cx/galleries"
-DATA_FILE="$SCRIPT_DIR/_data/galleries.yml"
+DATA_FILE="$REPO_DIR/_data/galleries.yml"
 
 if command -v rclone &>/dev/null; then
     USE_RCLONE=1
