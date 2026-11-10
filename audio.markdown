@@ -19,6 +19,7 @@ On this page I've cataloged my whole setup.
 * {{ "Headphones" | blog_anchor_link }}
   * {{ "ATH-WP900" | blog_anchor_link }}
   * {{ "HD 560S" | blog_anchor_link }}
+  * {{ "OpenFit 2+" | blog_anchor_link }}
 * {{ "DAC" | blog_anchor_link }}
   * {{ "Questyle M15i" | blog_anchor_link }}
 * {{ "Turntable" | blog_anchor_link }}
@@ -81,6 +82,95 @@ stereo in more intimate listening sessions.
 
 They're mid-range priced cans ($230 when I bought them in 2023) that I would
 recommend to somebody who is entering the high-fi audio hobby.
+
+
+
+{{ "OpenFit 2+" | blog_anchor2 }}
+
+Produced by [Shokz](https://shokz.com/), the [OpenFit
+2+](https://shokz.com/products/openfit2plus)s are "open-ear" buds. No
+insertion, no bone conduction. They just hang out on top of my ears and in front
+of the ear canal.
+
+*It was almost impossible to read inside the charging case, but the exact model
+is `SKOKZ T921`, or `T921-ST-BK-US` as written on the Best Buy website.*
+
+I bought them in early June of 2026 for $200. As of November 10, 2026 the price
+has remained constant.
+
+**Assessment? I'm delighted by them**. I haven't owned wireless buds in quite a
+while, so some of my joy comes from that de-tethering. The majority of my
+approval comes from the many many hours I've spent with them since June. Allow
+me to ramble for a bit.
+
+> Brief flashback, when I started upping my audio game I began with a set of wired
+Crinacle [ZERO:
+RED](https://shenzhenaudio.com/products/truthear-x-crinacle-zero-red-dual-dynamic-drivers-in-ear-headphone)
+(Purchased for $60 in August of 2023) in-ear's which I thought I'd use as my
+"moving around" audio hardware. They sounded just fine, no complaints there. But
+they reminded me of what I don't like about in-ear audio gear, the ear wax, and
+the pressure, and the consumable foam inserts. Once the inserts wore out I
+stashed the IEM in its container and forgot about it.
+> 
+> Also the wires. Always tangling. No thank you.
+
+> Flash forward about 3 years and I have a long overnight walk coming up. I was
+fund raising for the [American Foundation for Suicide
+Prevention](https://afsp.org/). The campaign ended with a 16 mile [overnight
+walk](https://www.theovernight.org/home) through Chicago. I didn't want wires to
+deal with for 6+ hours.
+
+OK, backstory over.
+
+These are **fantastic**. I'm now a firm believer in the "open-ear" bud design.
+If you're like me and bothered by stuff you gotta insert into your head, this
+style is worth trying out.
+
+These are light enough that I forget I'm wearing them sometimes. And on multiple
+occasions, when listening to [live music](https://archive.org/details/moe), I've
+felt like I was there. Like I was hearing the music in the room around me, not
+just in my audio gear. Their design makes for such a surprisingly wide sound
+stage.
+
+I've thought about this for a while and I think it's specifically the
+directionality of the drivers. They don't just point into the ear canal, they
+also point at the external ear anatomy. I think it's called the concha, the area
+just external to the ear canal opening. Two drivers (or emission holes) point up
+and down perpendicular to the ear canal driver. Kind of like a sideways `T`
+character.
+
+That vibration, the sound emissions on the external ear anatomy, are giving
+**me** the sensation of a much wider sound stage than I expected. Certainly much
+more than any in-ear buds are capable of.
+
+Couple that with their light weight and how well they stick to my head without
+requiring constant adjustment and it's a recipe for success. I just forget I'm
+wearing them.
+
+I've had great success with them as I taken up running. Not constantly making
+adjustments, or any worry that they're about to come loose. The battery time is
+fantastic and the quick charge works great. I know that eventually the batteries
+will wear out and they'll be come land waste.
+
+Cons? Their case is really smooth and my fingers slip trying to open it
+sometimes. I think I can fix this if I take some needle files and work a
+checkering pattern into the case around the opening.
+
+Some people say that volume is a problem for them. Eh? All ears are shaped
+different, that might just be one of those anatomy specific cases. They aren't
+damaging loud, that's for sure. The only time I've thought they could be louder
+was when I was walking between two train engines. Then again, I think I can be
+understanding if this open-ear design struggles in that specific context.
+
+Really, for me, I like that they allow me to have a little more situational
+awareness. I'm not trying to bock all sounds out. These fit under my ANC
+workshop ear protection anyway if that's what I'm going for (for a few hours
+anyway).
+
+They have an app, because of course they do. You can do some BARE-BONES DSP with
+it. They have sliders for 80Hz, 500Hz, 1.3kHz, 4kHz, 12kHz. There are also
+options for enabling Dolby, customizing button actions, and multipoint pairing.
+
 
 {{ "DAC" | blog_anchor }}
 
