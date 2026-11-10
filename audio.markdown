@@ -7,6 +7,11 @@ description: >-
   Questyle M15i DAC, an AT-LP120-USB turntable, receiver, and so on.
 seo:
   type: WebPage
+og_image:
+  path: assets/opengraph/audio-945x630.jpg
+  width: 945
+  height: 630
+  alt: "Audio-Technica ATH-WP900 headphones"
 ---
 
 

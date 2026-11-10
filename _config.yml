@@ -49,10 +49,21 @@ kramdown:
   smart_quotes: ["apos", "apos", "quot", "quot"]
 
 og:
+  # Default social preview image, at its actual dimensions. Pages can
+  # override it with an og_image: block in front matter (see bin/og-image.sh).
   image:
     height: 300
     width: 300
     path: assets/opengraph/og-image-carl-300x300.png
+    alt: >-
+      Carlsberg a male tuxedo cat with an emerald glow around his head in a
+      pink framed square. The cat looking up at his human, probably waiting
+      for food or pets
+  # Bounding box for per-page images. bin/og-image.sh downscales to fit
+  # inside it, keeping the aspect ratio, and never enlarges.
+  max:
+    width: 1200
+    height: 630
 
 # Exclude from processing.
 # The following items will not be processed, by default.
